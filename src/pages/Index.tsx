@@ -28,7 +28,7 @@ const Index = () => {
       <footer className="py-8 border-t border-border">
         <div className="container text-center">
           <p className="text-sm text-muted-foreground font-body">
-            © 2026 [NOME_DO_GESTOR] · Gestão de Tráfego para Negócios Locais
+            © 2026 Gabriel Di Tullio · Gestão de Tráfego para Negócios Locais
           </p>
         </div>
       </footer>

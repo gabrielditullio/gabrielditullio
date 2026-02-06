@@ -1,12 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const niches = [
-  { emoji: "🍽️", name: "Restaurantes & Bares", result: "+180 reservas/mês" },
-  { emoji: "💪", name: "Academias & Studios", result: "+90 matrículas/mês" },
-  { emoji: "🏥", name: "Clínicas & Consultórios", result: "+65 agendamentos/mês" },
-  { emoji: "💇", name: "Salões & Barbearias", result: "+120 clientes/mês" },
-  { emoji: "🏪", name: "Lojas & Comércios", result: "+200% em vendas" },
-  { emoji: "🐾", name: "Pet Shops & Veterinárias", result: "+85 atendimentos/mês" },
+  { emoji: "⚖️", name: "Escritórios de Advocacia", result: "+75 consultas/mês" },
+  { emoji: "💈", name: "Barbearias", result: "+120 agendamentos/mês" },
+  { emoji: "🎂", name: "Confeitarias", result: "+200% em encomendas" },
+  { emoji: "🍕", name: "Pizzarias", result: "+150 pedidos/mês" },
 ];
 
 const SpecialtiesSection = () => {
@@ -28,7 +26,7 @@ const SpecialtiesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
           {niches.map((n, i) => (
             <div
               key={n.name}
