@@ -1,5 +1,6 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import { getWhatsAppLink } from "@/lib/whatsapp";
+import aboutPhoto from "@/assets/about-photo.png";
 
 const AboutSection = () => {
   const ref = useScrollReveal();
@@ -11,25 +12,17 @@ const AboutSection = () => {
           {/* Photo area */}
           <div className="fade-up">
             <div className="relative w-full max-w-md mx-auto">
-              {/* Glow behind photo */}
               <div className="absolute inset-0 rounded-2xl bg-primary/10 blur-2xl scale-95" />
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-card border border-border shadow-card-glow">
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10" />
-                {/* Replace this div with an <img> tag using your photo */}
-                <div className="w-full h-full flex flex-col items-center justify-center text-center p-8">
-                  <div className="w-32 h-32 rounded-full bg-primary/20 mb-6 flex items-center justify-center">
-                    <span className="text-6xl">👨‍💻</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground font-body">
-                    Sua foto profissional aqui
-                  </p>
-                  <p className="text-xs text-muted-foreground/60 font-body mt-1">
-                    Recomendado: 600×800px
-                  </p>
-                </div>
+                <img
+                  src={aboutPhoto}
+                  alt="Gabriel Di Tullio"
+                  className="w-full h-full object-cover object-top"
+                />
                 {/* Name overlay at the bottom */}
                 <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
-                  <p className="text-xl font-bold font-heading">[NOME_DO_GESTOR]</p>
+                  <p className="text-xl font-bold font-heading">Gabriel Di Tullio</p>
                   <p className="text-primary font-body font-medium text-sm">
                     Gestor de Tráfego · Negócios Locais
                   </p>
@@ -48,13 +41,13 @@ const AboutSection = () => {
               <span className="text-gradient">Sou seu parceiro de crescimento.</span>
             </h2>
             <p className="text-muted-foreground font-body text-lg leading-relaxed">
-              Com [X_ANOS] de experiência e mais de [X_NEGOCIOS] negócios locais atendidos, 
+              Com anos de experiência e mais de 120 negócios locais atendidos, 
               minha missão é simples: transformar o tráfego pago no canal mais lucrativo da sua empresa.
             </p>
             <ul className="space-y-3 font-body">
               {[
                 "Certificado Google Ads & Meta Blueprint",
-                "+R$[X_VALOR] já gerenciados em campanhas",
+                "Milhares já gerenciados em campanhas",
                 "Especialista em negócios locais e regionais",
                 "Relatórios semanais com linguagem simples",
               ].map((item) => (
@@ -71,7 +64,7 @@ const AboutSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-cta-gradient text-primary-foreground font-heading font-bold text-lg shadow-cta hover:shadow-cta-hover hover:scale-105 transition-all duration-300"
             >
-              FALAR COM [NOME_DO_GESTOR]
+              FALAR COM GABRIEL
             </a>
           </div>
         </div>
