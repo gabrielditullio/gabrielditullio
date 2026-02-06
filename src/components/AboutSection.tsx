@@ -5,21 +5,40 @@ const AboutSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section ref={ref} className="py-20">
+    <section ref={ref} className="py-20 bg-secondary/30">
       <div className="container">
         <div className="grid md:grid-cols-2 gap-12 items-center">
+          {/* Photo area */}
           <div className="fade-up">
-            <div className="w-full aspect-square max-w-md mx-auto rounded-2xl bg-card border border-border flex items-center justify-center shadow-card-glow">
-              <div className="text-center p-8">
-                <div className="w-32 h-32 rounded-full bg-primary/20 mx-auto mb-6 flex items-center justify-center">
-                  <span className="text-6xl">👨‍💻</span>
+            <div className="relative w-full max-w-md mx-auto">
+              {/* Glow behind photo */}
+              <div className="absolute inset-0 rounded-2xl bg-primary/10 blur-2xl scale-95" />
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-card border border-border shadow-card-glow">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent z-10" />
+                {/* Replace this div with an <img> tag using your photo */}
+                <div className="w-full h-full flex flex-col items-center justify-center text-center p-8">
+                  <div className="w-32 h-32 rounded-full bg-primary/20 mb-6 flex items-center justify-center">
+                    <span className="text-6xl">👨‍💻</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Sua foto profissional aqui
+                  </p>
+                  <p className="text-xs text-muted-foreground/60 font-body mt-1">
+                    Recomendado: 600×800px
+                  </p>
                 </div>
-                <p className="text-xl font-bold font-heading">[NOME_DO_GESTOR]</p>
-                <p className="text-primary font-body font-medium">Gestor de Tráfego</p>
+                {/* Name overlay at the bottom */}
+                <div className="absolute bottom-0 left-0 right-0 z-20 p-6">
+                  <p className="text-xl font-bold font-heading">[NOME_DO_GESTOR]</p>
+                  <p className="text-primary font-body font-medium text-sm">
+                    Gestor de Tráfego · Negócios Locais
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
+          {/* Text content */}
           <div className="fade-up space-y-6">
             <p className="text-primary font-body text-sm uppercase tracking-widest font-semibold">
               Quem vai cuidar do seu tráfego

@@ -43,25 +43,33 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <div className="relative hidden md:flex justify-center">
-            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-primary/10 blur-3xl absolute" />
-            <div className="relative z-10 bg-card rounded-2xl p-8 shadow-card-glow border border-border">
-              <div className="space-y-6">
-                <div className="text-center">
-                  <p className="text-5xl font-extrabold font-heading text-gradient">+347%</p>
-                  <p className="text-muted-foreground font-body mt-2">Aumento médio em faturamento</p>
-                </div>
-                <div className="h-px bg-border" />
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <p className="text-2xl font-bold font-heading text-foreground">+120</p>
-                    <p className="text-sm text-muted-foreground font-body">Negócios atendidos</p>
+          {/* Photo area - replace src with your actual photo */}
+          <div className="relative hidden md:flex justify-center items-end">
+            <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-primary/10 blur-3xl absolute bottom-10" />
+            <div className="relative z-10 w-full max-w-md">
+              {/* Photo placeholder - replace with your image */}
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-card border border-border shadow-card-glow">
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-10" />
+                <div className="w-full h-full flex flex-col items-center justify-center text-center p-6">
+                  <div className="w-24 h-24 rounded-full bg-primary/20 mb-4 flex items-center justify-center">
+                    <span className="text-5xl">👤</span>
                   </div>
-                  <div>
-                    <p className="text-2xl font-bold font-heading text-foreground">R$2.8M</p>
-                    <p className="text-sm text-muted-foreground font-body">Gerados para clientes</p>
-                  </div>
+                  <p className="text-sm text-muted-foreground font-body">
+                    Substitua por sua foto profissional
+                  </p>
+                  <p className="text-xs text-muted-foreground/60 font-body mt-1">
+                    Recomendado: 600×800px, fundo removido
+                  </p>
                 </div>
+              </div>
+              {/* Floating stats card */}
+              <div className="absolute -left-8 bottom-16 z-20 bg-card rounded-xl p-4 shadow-card-glow border border-border">
+                <p className="text-3xl font-extrabold font-heading text-gradient">+347%</p>
+                <p className="text-xs text-muted-foreground font-body">Aumento médio em faturamento</p>
+              </div>
+              <div className="absolute -right-4 top-16 z-20 bg-card rounded-xl p-4 shadow-card-glow border border-border">
+                <p className="text-2xl font-bold font-heading text-foreground">+120</p>
+                <p className="text-xs text-muted-foreground font-body">Negócios atendidos</p>
               </div>
             </div>
           </div>
