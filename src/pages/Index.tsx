@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import SocialProof from "@/components/SocialProof";
+import BenefitsSection from "@/components/BenefitsSection";
+import SpecialtiesSection from "@/components/SpecialtiesSection";
+import AboutSection from "@/components/AboutSection";
+import CtaSection from "@/components/CtaSection";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <HeroSection />
+      <SocialProof />
+      <BenefitsSection />
+      <SpecialtiesSection />
+      <AboutSection />
+      <CtaSection />
+      <WhatsAppFloat />
+
+      <footer className="py-8 border-t border-border">
+        <div className="container text-center">
+          <p className="text-sm text-muted-foreground font-body">
+            © 2026 [NOME_DO_GESTOR] · Gestão de Tráfego para Negócios Locais
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };
