@@ -1,36 +1,42 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "./motion/MotionWrapper";
 
 const testimonials = [
   {
     name: "[NOME_CLIENTE_1]",
     niche: "[NICHO_1]",
-    quote:
-      "Meu negócio explodiu desde que contratei. Agora já estou preocupado se minha equipe vai dar conta, chegam novos contatos todos os dias.",
+    quote: "Meu negócio explodiu desde que contratei. Agora já estou preocupado se minha equipe vai dar conta, chegam novos contatos todos os dias.",
     result: "+230% faturamento",
   },
   {
     name: "[NOME_CLIENTE_2]",
     niche: "[NICHO_2]",
-    quote:
-      "Pessoa extremamente comprometida com o meu negócio, entra de cabeça e entrega relatórios detalhados. Me sinto completamente no controle.",
+    quote: "Pessoa extremamente comprometida com o meu negócio, entra de cabeça e entrega relatórios detalhados. Me sinto completamente no controle.",
     result: "4x mais clientes",
   },
   {
     name: "[NOME_CLIENTE_3]",
     niche: "[NICHO_3]",
-    quote:
-      "O faturamento do meu negócio dobrou no primeiro mês. Finalmente encontrei alguém que entende de negócio local de verdade.",
+    quote: "O faturamento do meu negócio dobrou no primeiro mês. Finalmente encontrei alguém que entende de negócio local de verdade.",
     result: "2x faturamento",
   },
 ];
 
 const TestimonialsSection = () => {
-  const ref = useScrollReveal();
-
   return (
-    <section ref={ref} className="py-20">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={staggerContainer}
+      className="py-20"
+    >
       <div className="container">
-        <div className="fade-up text-center mb-14 max-w-2xl mx-auto">
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center mb-14 max-w-2xl mx-auto"
+        >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
             Depoimentos
           </p>
@@ -38,14 +44,22 @@ const TestimonialsSection = () => {
             Veja o que nossos clientes{" "}
             <span className="text-gradient">falam de nós</span>
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
-            <div
+        <motion.div
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.15 } } }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-3 gap-6"
+        >
+          {testimonials.map((t) => (
+            <motion.div
               key={t.name}
-              className="fade-up p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow flex flex-col"
-              style={{ transitionDelay: `${i * 100}ms` }}
+              variants={fadeUp}
+              transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              className="p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow flex flex-col"
             >
               <div className="mb-4">
                 <span className="text-primary text-3xl font-heading">"</span>
@@ -64,11 +78,11 @@ const TestimonialsSection = () => {
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

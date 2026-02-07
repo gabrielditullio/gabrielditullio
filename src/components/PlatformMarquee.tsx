@@ -1,3 +1,6 @@
+import { motion } from "framer-motion";
+import { fadeIn } from "./motion/MotionWrapper";
+
 const platforms = [
   "GOOGLE ADS",
   "META ADS",
@@ -11,7 +14,14 @@ const platforms = [
 
 const PlatformMarquee = () => {
   return (
-    <div className="py-4 bg-primary/5 border-y border-border overflow-hidden">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={fadeIn}
+      transition={{ duration: 0.8 }}
+      className="py-4 bg-primary/5 border-y border-border overflow-hidden"
+    >
       <div className="marquee-track flex gap-12 whitespace-nowrap">
         {[...platforms, ...platforms].map((platform, i) => (
           <span
@@ -23,7 +33,7 @@ const PlatformMarquee = () => {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
