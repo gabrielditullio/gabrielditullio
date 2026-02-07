@@ -1,39 +1,44 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "./motion/MotionWrapper";
 
 const steps = [
   {
     num: "01",
     title: "Diagnóstico Inicial",
-    description:
-      "Analisamos seu negócio, público-alvo, concorrência e objetivos. Entendemos onde você está e onde quer chegar.",
+    description: "Analisamos seu negócio, público-alvo, concorrência e objetivos. Entendemos onde você está e onde quer chegar.",
   },
   {
     num: "02",
     title: "Estratégia Personalizada",
-    description:
-      "Criamos um plano de campanhas sob medida para o seu nicho e região. Cada negócio é único e tratamos assim.",
+    description: "Criamos um plano de campanhas sob medida para o seu nicho e região. Cada negócio é único e tratamos assim.",
   },
   {
     num: "03",
     title: "Campanhas no Ar",
-    description:
-      "Em até 48h suas campanhas estão rodando. Anúncios otimizados para atrair clientes que realmente querem comprar.",
+    description: "Em até 48h suas campanhas estão rodando. Anúncios otimizados para atrair clientes que realmente querem comprar.",
   },
   {
     num: "04",
     title: "Otimização Contínua",
-    description:
-      "Relatórios semanais, ajustes constantes e escala. Seu custo por cliente diminui mês a mês.",
+    description: "Relatórios semanais, ajustes constantes e escala. Seu custo por cliente diminui mês a mês.",
   },
 ];
 
 const ProcessSection = () => {
-  const ref = useScrollReveal();
-
   return (
-    <section ref={ref} className="py-20 bg-secondary/30">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={staggerContainer}
+      className="py-20 bg-secondary/30"
+    >
       <div className="container">
-        <div className="fade-up text-center mb-14 max-w-2xl mx-auto">
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center mb-14 max-w-2xl mx-auto"
+        >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
             Como funciona
           </p>
@@ -42,14 +47,22 @@ const ProcessSection = () => {
             <span className="text-gradient">resultados reais</span>{" "}
             em 4 passos
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.15 } } }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
           {steps.map((s, i) => (
-            <div
+            <motion.div
               key={s.num}
-              className="fade-up relative p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow"
-              style={{ transitionDelay: `${i * 100}ms` }}
+              variants={fadeUp}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -6, transition: { duration: 0.25 } }}
+              className="relative p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow"
             >
               <span className="text-5xl font-extrabold font-heading text-primary/20 block mb-2">
                 {s.num}
@@ -63,11 +76,11 @@ const ProcessSection = () => {
                   →
                 </div>
               )}
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

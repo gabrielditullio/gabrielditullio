@@ -1,4 +1,5 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "./motion/MotionWrapper";
 
 const benefits = [
   {
@@ -34,12 +35,20 @@ const benefits = [
 ];
 
 const BenefitsSection = () => {
-  const ref = useScrollReveal();
-
   return (
-    <section ref={ref} className="py-20">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={staggerContainer}
+      className="py-20"
+    >
       <div className="container">
-        <div className="fade-up text-center mb-14 max-w-2xl mx-auto">
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center mb-14 max-w-2xl mx-auto"
+        >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
             Por que funciona
           </p>
@@ -50,23 +59,31 @@ const BenefitsSection = () => {
           <p className="text-muted-foreground font-body text-lg">
             Uma estratégia completa de aquisição de clientes para negócios locais
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((b, i) => (
-            <div
+        <motion.div
+          variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.1 } } }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {benefits.map((b) => (
+            <motion.div
               key={b.title}
-              className="fade-up group p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow"
-              style={{ transitionDelay: `${i * 100}ms` }}
+              variants={fadeUp}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              whileHover={{ y: -8, transition: { duration: 0.25 } }}
+              className="group p-7 rounded-2xl bg-card border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow"
             >
               <span className="text-4xl block mb-4">{b.icon}</span>
               <h3 className="text-xl font-bold font-heading mb-2">{b.title}</h3>
               <p className="text-muted-foreground font-body leading-relaxed">{b.description}</p>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

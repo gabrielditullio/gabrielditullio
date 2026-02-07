@@ -1,4 +1,5 @@
-import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer } from "./motion/MotionWrapper";
 import {
   Accordion,
   AccordionContent,
@@ -34,40 +35,58 @@ const faqs = [
 ];
 
 const FaqSection = () => {
-  const ref = useScrollReveal();
-
   return (
-    <section ref={ref} className="py-20">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.15 }}
+      variants={staggerContainer}
+      className="py-20"
+    >
       <div className="container max-w-3xl">
-        <div className="fade-up text-center mb-14">
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="text-center mb-14"
+        >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
             Perguntas frequentes
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold font-heading mb-4">
             Tire suas <span className="text-gradient">dúvidas</span>
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="fade-up">
+        <motion.div
+          variants={fadeUp}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
           <Accordion type="single" collapsible className="space-y-3">
             {faqs.map((faq, i) => (
-              <AccordionItem
+              <motion.div
                 key={i}
-                value={`faq-${i}`}
-                className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/40 data-[state=open]:shadow-card-glow transition-all"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
               >
-                <AccordionTrigger className="font-heading font-bold text-left hover:no-underline py-5">
-                  {faq.q}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5">
-                  {faq.a}
-                </AccordionContent>
-              </AccordionItem>
+                <AccordionItem
+                  value={`faq-${i}`}
+                  className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-primary/40 data-[state=open]:shadow-card-glow transition-all"
+                >
+                  <AccordionTrigger className="font-heading font-bold text-left hover:no-underline py-5">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              </motion.div>
             ))}
           </Accordion>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
