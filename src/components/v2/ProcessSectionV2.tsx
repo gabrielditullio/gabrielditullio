@@ -31,17 +31,18 @@ const MiniDashboard = () => (
     whileInView={{ opacity: 1 }}
     viewport={{ once: true }}
     transition={{ duration: 0.6, delay: 0.5 }}
-    className="mt-4 bg-background/50 border border-border rounded-lg p-3"
+    className="mt-4 bg-card border border-border rounded-lg p-3 shadow-sm"
   >
     <div className="flex items-center gap-3 text-[10px] text-muted-foreground font-body mb-2">
       <span>Alcance</span><span>Leads</span><span>Cliques</span>
     </div>
     <svg viewBox="0 0 200 60" className="w-full h-12">
+      <line x1="0" y1="55" x2="200" y2="55" stroke="hsl(var(--border))" strokeWidth="0.5" strokeDasharray="4 4" />
       <motion.path
         d="M 0 55 Q 30 50, 50 40 T 100 25 T 150 15 T 200 5"
         fill="none"
         stroke="hsl(86, 100%, 50%)"
-        strokeWidth="2"
+        strokeWidth="2.5"
         initial={{ pathLength: 0 }}
         whileInView={{ pathLength: 1 }}
         viewport={{ once: true }}
