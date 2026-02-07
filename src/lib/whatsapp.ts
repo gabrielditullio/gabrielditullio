@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5511999999999";
+const WHATSAPP_NUMBER = "5511996035995";
 const WHATSAPP_MESSAGE = "Olá! Vi a página sobre gestão de tráfego e quero saber como posso atrair mais clientes para o meu negócio!";
 
 export function getWhatsAppLink() {
