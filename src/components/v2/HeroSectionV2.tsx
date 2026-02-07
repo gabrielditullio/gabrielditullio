@@ -83,7 +83,7 @@ const HeroSectionV2 = () => {
                   key={b.text}
                   variants={fadeUp}
                   transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  className="text-sm text-muted-foreground font-body flex items-center gap-1.5"
+                  className="text-sm text-muted-foreground font-body flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded-full px-3 py-1.5"
                 >
                   {b.icon} {b.text}
                 </motion.span>
