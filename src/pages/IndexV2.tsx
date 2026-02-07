@@ -24,7 +24,7 @@ const IndexV2 = () => {
         <div className="sticky top-0 z-0">
           <WhyTrafficSection />
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 mt-[-1px]">
           <SocialProofV2 />
         </div>
       </div>

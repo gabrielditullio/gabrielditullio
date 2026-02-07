@@ -39,7 +39,7 @@ const SocialProofV2 = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.15 }}
       variants={staggerContainer}
-      className="py-16 bg-secondary/30"
+      className="pt-20 pb-16 bg-background shadow-[0_-20px_60px_rgba(0,0,0,0.3)] relative z-10"
     >
       <div className="container">
         <motion.div variants={fadeUp} transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }} className="text-center mb-10">
