@@ -69,7 +69,7 @@ const WhyTrafficSection = () => {
       whileInView="visible"
       viewport={{ once: true, amount: 0.15 }}
       variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.2 } } }}
-      className="py-20"
+      className="py-20 pb-32"
     >
       <div className="container">
         <motion.h2
