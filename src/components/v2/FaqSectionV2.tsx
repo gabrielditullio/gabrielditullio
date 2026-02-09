@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Qual o valor mínimo de investimento em anúncios?",
-    a: "Recomendamos a partir de R$ 500/mês em anúncios para ter resultados consistentes, mas isso varia conforme seu nicho e região. Na análise gratuita definimos juntos o investimento ideal.",
+    a: "O investimento ideal depende do seu objetivo e da expectativa de faturamento. Na análise gratuita, avaliamos juntos o cenário do seu negócio e definimos um valor que faça sentido pra você.",
   },
   {
     q: "Em quanto tempo vejo resultados?",
