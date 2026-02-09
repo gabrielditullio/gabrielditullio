@@ -3,22 +3,22 @@ import { fadeUp } from "../motion/MotionWrapper";
 
 const testimonials = [
   {
-    name: "Carlos Mendes",
-    niche: "Barbearia Premium",
-    quote: "Meu negócio explodiu desde que contratei. Agora já estou preocupado se minha equipe vai dar conta, chegam novos contatos todos os dias.",
-    result: "+230% faturamento",
+    name: "Marcos Oliveira",
+    niche: "Barbearia Dom Barba",
+    quote: "A gente sempre dependeu de indicação. Depois que começou o tráfego, a agenda lotou em 3 semanas. Tive que contratar mais um barbeiro.",
+    result: "+180% de agendamentos",
   },
   {
-    name: "Ana Paula Silva",
-    niche: "Confeitaria Artesanal",
-    quote: "Pessoa extremamente comprometida com o meu negócio, entra de cabeça e entrega relatórios detalhados. Me sinto completamente no controle.",
-    result: "4x mais clientes",
+    name: "Juliana Reis",
+    niche: "Ju Confeitaria",
+    quote: "Eu postava no Instagram e ficava esperando. Agora o WhatsApp não para. Toda semana tenho encomenda nova de gente que nunca me seguiu.",
+    result: "3x mais encomendas",
   },
   {
-    name: "Dr. Roberto Alves",
-    niche: "Escritório de Advocacia",
-    quote: "O faturamento do meu escritório dobrou no primeiro mês. Finalmente encontrei alguém que entende de negócio local de verdade.",
-    result: "2x faturamento",
+    name: "Dr. Felipe Matos",
+    niche: "Matos & Associados Advocacia",
+    quote: "Em 45 dias já tinha recuperado o investimento. O Gabriel entende como funciona escritório, não fica empurrando estratégia que não faz sentido pra gente.",
+    result: "ROI positivo no 1º mês",
   },
 ];
 

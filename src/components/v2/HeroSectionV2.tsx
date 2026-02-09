@@ -5,8 +5,8 @@ import { fadeUp, scaleIn, slideInRight } from "../motion/MotionWrapper";
 
 const badges = [
   { icon: "⚡", text: "Resultados em 30 dias" },
-  { icon: "💰", text: "A partir de R$500/mês em ads" },
-  { icon: "📍", text: "Para qualquer lugar do mundo" },
+  { icon: "💰", text: "Retorno médio de 5x sobre o investido" },
+  { icon: "📍", text: "Foco total no seu bairro e região" },
 ];
 
 const HeroSectionV2 = () => {
