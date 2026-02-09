@@ -64,6 +64,29 @@ const HeroSection = () => {
                 AGENDAR CONSULTORIA
               </a>
             </motion.div>
+
+            <motion.div
+              variants={{
+                hidden: {},
+                visible: { transition: { staggerChildren: 0.1, delayChildren: 0.3 } },
+              }}
+              className="flex flex-wrap gap-4"
+            >
+              {[
+                { icon: "⚡", text: "Resultados em 30 dias" },
+                { icon: "💰", text: "Retorno médio de 5x sobre o investido" },
+                { icon: "📍", text: "Foco total no seu bairro e região" },
+              ].map((b) => (
+                <motion.span
+                  key={b.text}
+                  variants={fadeUp}
+                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+                  className="text-sm text-muted-foreground font-body flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded-full px-3 py-1.5"
+                >
+                  {b.icon} {b.text}
+                </motion.span>
+              ))}
+            </motion.div>
           </motion.div>
 
           {/* Photo area */}

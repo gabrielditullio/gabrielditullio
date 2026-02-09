@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { fadeUp, scaleIn, staggerContainer } from "./motion/MotionWrapper";
 
 const logos = [
-  "Restaurante Sabor & Arte",
-  "Academia FitMax",
-  "Clínica Bem Estar",
-  "Salão Beleza Pura",
-  "Auto Center Premium",
-  "Pet Shop Amigo Fiel",
+  "Cantina Dona Carmem",
+  "Studio Corpo & Move",
+  "Clínica Viver Bem Saúde",
+  "Espaço Eliane Hair",
+  "Auto Center São Rafael",
+  "Pet House Pituba",
 ];
 
 const SocialProof = () => {
