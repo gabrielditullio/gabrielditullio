@@ -1,22 +1,28 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "../motion/MotionWrapper";
+import marcosPhoto from "@/assets/testimonial-marcos.jpg";
+import julianaPhoto from "@/assets/testimonial-juliana.webp";
+import felipePhoto from "@/assets/testimonial-felipe.jpg";
 
 const testimonials = [
   {
     name: "Marcos Oliveira",
     niche: "Barbearia Dom Barba",
+    photo: marcosPhoto,
     quote: "A gente sempre dependeu de indicação. Depois que começou o tráfego, a agenda lotou em 3 semanas. Tive que contratar mais um barbeiro.",
     result: "+180% de agendamentos",
   },
   {
     name: "Juliana Reis",
     niche: "Ju Confeitaria",
+    photo: julianaPhoto,
     quote: "Eu postava no Instagram e ficava esperando. Agora o WhatsApp não para. Toda semana tenho encomenda nova de gente que nunca me seguiu.",
     result: "3x mais encomendas",
   },
   {
     name: "Dr. Felipe Matos",
     niche: "Matos & Associados Advocacia",
+    photo: felipePhoto,
     quote: "Em 45 dias já tinha recuperado o investimento. O Gabriel entende como funciona escritório, não fica empurrando estratégia que não faz sentido pra gente.",
     result: "ROI positivo no 1º mês",
   },
@@ -61,10 +67,7 @@ const TestimonialsSectionV2 = () => {
                 }}
               >
                 <div className="flex items-center gap-4 mb-5">
-                  {/* Placeholder avatar */}
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-lg font-bold font-heading text-primary">
-                    {t.name.charAt(0)}
-                  </div>
+                  <img src={t.photo} alt={t.name} className="w-12 h-12 rounded-full object-cover" />
                   <div>
                     <p className="font-heading font-bold text-foreground">{t.name}</p>
                     <p className="text-sm text-muted-foreground font-body">{t.niche}</p>
