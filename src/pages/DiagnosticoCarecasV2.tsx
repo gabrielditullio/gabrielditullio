@@ -557,7 +557,7 @@ const Section01 = () => (
 
 const Section02 = () => (
   <Section>
-    <SectionLabel text="02 — Saúde Digital" />
+    <SectionLabel text="02 — Perfil no Google" />
     <SectionTitle>
       O Google sabe que vocês existem.<br />Mas não recomenda vocês.
     </SectionTitle>
@@ -614,9 +614,9 @@ const Section02 = () => (
 
 const Section03 = () => (
   <Section>
-    <SectionLabel text="03 — Gaps Críticos" />
-    <SectionTitle>Três lacunas que custam dinheiro todos os dias.</SectionTitle>
-    <SectionBody>Não é sobre o que vocês fazem de errado. É sobre o que vocês ainda não fazem — e que a concorrência já faz.</SectionBody>
+    <SectionLabel text="03 — O que está faltando" />
+    <SectionTitle>Três coisas que estão custando dinheiro todo dia.</SectionTitle>
+    <SectionBody>Não é sobre o que vocês fazem de errado. É sobre o que ainda não fazem — e que a concorrência já faz.</SectionBody>
 
     <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
       {GAPS_DATA.map((g, i) => (
@@ -649,7 +649,7 @@ const Section03 = () => (
 
 const Section04 = () => (
   <Section>
-    <SectionLabel text="04 — Pressão Competitiva" />
+    <SectionLabel text="04 — A concorrência" />
     <SectionTitle>Enquanto vocês mantêm a tradição, a concorrência avança no digital.</SectionTitle>
 
     <div className="mt-12">
