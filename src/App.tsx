@@ -10,6 +10,7 @@ import DiagnosticoCarecas from "./pages/DiagnosticoCarecas";
 import DiagnosticoCarecasV2 from "./pages/DiagnosticoCarecasV2";
 import FallenMajorPlaybook from "./pages/FallenMajorPlaybook";
 import DiagnosticoCarecasV3 from "./pages/DiagnosticoCarecasV3";
+import ReisDantas from "./pages/ReisDantas";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/diagnostico-os-carecas-da-pizza/v1" element={<DiagnosticoCarecas />} />
           <Route path="/diagnostico-carecas" element={<DiagnosticoCarecasV3 />} />
           <Route path="/fallen_major_playbook" element={<FallenMajorPlaybook />} />
+          <Route path="/reisdantas" element={<ReisDantas />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

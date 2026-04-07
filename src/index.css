@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Sans:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -134,7 +134,40 @@
     --dc3-amber-soft: rgba(245, 166, 35, 0.12);
     --dc3-border: rgba(139, 163, 199, 0.12);
     --dc3-border-light: rgba(139, 163, 199, 0.2);
+
+    /* Reis Dantas page tokens */
+    --rd-bg: #000000;
+    --rd-surface: #111111;
+    --rd-surface-2: #1a1a1a;
+    --rd-text: #f5f5f7;
+    --rd-text-muted: #86868b;
+    --rd-primary: #2997ff;
+    --rd-primary-soft: rgba(41, 151, 255, 0.12);
+    --rd-accent: #bf5af2;
+    --rd-green: #30d158;
+    --rd-border: rgba(255, 255, 255, 0.08);
+    --rd-font-display: 'Instrument Sans', 'DM Sans', sans-serif;
+    --rd-font-body: 'DM Sans', sans-serif;
   }
+}
+
+@keyframes rd-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.rd-shimmer-text {
+  background: linear-gradient(90deg, #f5f5f7 0%, #2997ff 50%, #f5f5f7 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rd-shimmer 4s linear infinite;
+}
+
+@keyframes rd-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }
 
 @layer base {
