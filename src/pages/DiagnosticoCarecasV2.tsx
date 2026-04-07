@@ -218,18 +218,18 @@ const PROJECTION_INSIGHT = {
 };
 
 const TIMELINE_STEPS = [
-  { period: "Semana 1–2", title: "Criar Landing Page + Instalar Pixel", desc: "Página com cardápio, horário, botão WhatsApp. Meta Pixel + Google Analytics instalados para rastreamento." },
-  { period: "Semana 3", title: "Lançar Campanha Meta Ads Piloto", desc: "R$ 50/dia. Raio 3km do Tremembé. Horário: 18h–22h. Teste de 2 semanas para calibrar." },
-  { period: "Semana 4", title: "Monitorar ROI e Otimizar", desc: "Acompanhar conversões, custo por aquisição, volume de pedidos diretos. Ajustar segmentação e criativos." },
-  { period: "Semana 5–6", title: "Expandir para Google Ads Local", desc: "Se Meta Ads funcionar, capturar buscas de alto intento. Sinergia: Meta (awareness) + Google (intenção de compra)." },
-  { period: "Contínuo", title: "Escalar e Reduzir Dependência", desc: "Aumentar pedidos diretos, reduzir dependência do iFood, construir base de dados própria para remarketing e fidelização." },
+  { period: "Semana 1–2", title: "Criar um site simples e bonito", desc: "Uma página com o cardápio, horário, fotos da pizzaria e botão direto pro WhatsApp. Também instalamos um rastreador pra saber quantas pessoas visitam." },
+  { period: "Semana 3", title: "Começar a aparecer no Instagram e Facebook", desc: "Anúncios simples mostrando a pizzaria pra quem mora perto (3km). R$ 50 por dia, só nos horários de fome (18h–22h). Teste de 2 semanas pra ajustar." },
+  { period: "Semana 4", title: "Ver o que está funcionando e ajustar", desc: "Quantos pedidos vieram dos anúncios? Quanto custou cada pedido novo? A gente ajusta pra investir mais no que funciona e cortar o que não funciona." },
+  { period: "Semana 5–6", title: "Aparecer também no Google", desc: "Quando alguém buscar 'pizzaria Tremembé' no Google, vocês aparecem primeiro. Quem busca assim já está com fome — é praticamente pedido garantido." },
+  { period: "Contínuo", title: "Escalar e depender menos do iFood", desc: "Mais pedidos diretos = mais margem no bolso. Com o tempo, vocês constroem uma base de clientes própria e não precisam mais dar 27% pro iFood." },
 ];
 
 const CTA_DATA = {
   badge: "Próximo Passo",
   titleLine1: "Isso aqui não é uma proposta.",
-  titleLine2: "É um convite para conversar.",
-  subtitle: "Esse diagnóstico foi montado com dados reais da operação de vocês. Se fez sentido, o próximo passo é uma conversa de 20 minutos — sem compromisso — para entender se a gente consegue ajudar.",
+  titleLine2: "É um convite pra conversar.",
+  subtitle: "Esse relatório foi feito com dados reais do negócio de vocês. Se fez sentido, o próximo passo é uma conversa de 20 minutos — sem compromisso, sem enrolação — pra ver se a gente consegue ajudar.",
   ctaText: "Agendar Conversa",
   ctaLink: "https://wa.me/5511945590265?text=Oi%2C%20recebi%20o%20diagn%C3%B3stico%20digital%20e%20gostaria%20de%20conversar.",
   footerText: "20 minutos. Sem compromisso. Sem enrolação.",
