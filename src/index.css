@@ -134,7 +134,40 @@
     --dc3-amber-soft: rgba(245, 166, 35, 0.12);
     --dc3-border: rgba(139, 163, 199, 0.12);
     --dc3-border-light: rgba(139, 163, 199, 0.2);
+
+    /* Reis Dantas page tokens */
+    --rd-bg: #000000;
+    --rd-surface: #111111;
+    --rd-surface-2: #1a1a1a;
+    --rd-text: #f5f5f7;
+    --rd-text-muted: #86868b;
+    --rd-primary: #2997ff;
+    --rd-primary-soft: rgba(41, 151, 255, 0.12);
+    --rd-accent: #bf5af2;
+    --rd-green: #30d158;
+    --rd-border: rgba(255, 255, 255, 0.08);
+    --rd-font-display: 'Instrument Sans', 'DM Sans', sans-serif;
+    --rd-font-body: 'DM Sans', sans-serif;
   }
+}
+
+@keyframes rd-float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.rd-shimmer-text {
+  background: linear-gradient(90deg, #f5f5f7 0%, #2997ff 50%, #f5f5f7 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rd-shimmer 4s linear infinite;
+}
+
+@keyframes rd-shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
 }
 
 @layer base {
