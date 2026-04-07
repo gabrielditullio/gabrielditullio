@@ -122,7 +122,7 @@ export const Reveal = ({
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
-  const dirs: Record<string, { hidden: object; visible: object }> = {
+  const dirs: Record<string, Variants> = {
     up: { hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } },
     down: { hidden: { opacity: 0, y: -40 }, visible: { opacity: 1, y: 0 } },
     left: { hidden: { opacity: 0, x: -40 }, visible: { opacity: 1, x: 0 } },
@@ -300,7 +300,6 @@ export const Counter = ({
 }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref as any, { once: true });
-  const [count, setCount] = useState(0);
 
   return (
     <span ref={ref}>
