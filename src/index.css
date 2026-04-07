@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -96,6 +96,28 @@
     --dv2-red-border: rgba(240, 78, 48, 0.25);
     --dv2-border: rgba(255, 255, 255, 0.07);
     --dv2-border-subtle: rgba(255, 255, 255, 0.05);
+
+    /* FalleN Major Playbook tokens */
+    --fm-bg: #060B12;
+    --fm-surface: #0D1522;
+    --fm-card: #111C2E;
+    --fm-card2: #172237;
+    --fm-border: rgba(96, 165, 250, 0.10);
+    --fm-border2: rgba(96, 165, 250, 0.25);
+    --fm-ct: #60A5FA;
+    --fm-ct-dim: rgba(96, 165, 250, 0.15);
+    --fm-ct-glow: rgba(96, 165, 250, 0.08);
+    --fm-t: #F59E0B;
+    --fm-t-dim: rgba(245, 158, 11, 0.15);
+    --fm-green: #34D399;
+    --fm-green-dim: rgba(52, 211, 153, 0.15);
+    --fm-red: #F87171;
+    --fm-red-dim: rgba(248, 113, 113, 0.15);
+    --fm-gold: #D4A017;
+    --fm-gold-dim: rgba(212, 160, 23, 0.15);
+    --fm-txt: #CBD5E1;
+    --fm-txt2: #E2E8F0;
+    --fm-muted: #64748B;
   }
 }
 
