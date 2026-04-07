@@ -8,7 +8,7 @@ import {
 } from "framer-motion";
 import {
   MapPin, TrendingUp, AlertTriangle, Store, Search,
-  ArrowRight, ArrowUpRight, DollarSign, Percent, Building2,
+  ArrowRight, ArrowUpRight, Percent, Building2,
   Calendar, ChevronDown, MonitorX, Megaphone, PackageX,
   Instagram, MessageSquare, Camera, Star, ThumbsUp,
   HelpCircle, Utensils, Gauge, Wallet,
@@ -149,17 +149,6 @@ const GrainOverlay = () => (
   </svg>
 );
 
-const ScrollProgress = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, { stiffness: 200, damping: 30 });
-  return (
-    <motion.div
-      style={{ scaleX, transformOrigin: "left" }}
-      className="fixed top-0 left-0 w-full h-[3px] z-[9999]"
-      css={{ background: T.primary }}
-    />
-  );
-};
 
 const Reveal = ({
   children,
@@ -214,7 +203,7 @@ const GlassIcon = ({ icon: Icon, color, size = 18 }: { icon: any; color: string;
   </div>
 );
 
-const Counter = ({ target, suffix = "", prefix = "" }: { target: string; suffix?: string; prefix?: string }) => {
+const _Counter = ({ target, suffix = "", prefix = "" }: { target: string; suffix?: string; prefix?: string }) => {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
   const [count, setCount] = useState(0);
