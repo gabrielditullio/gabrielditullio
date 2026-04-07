@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import {
   Reveal,
@@ -6,9 +5,6 @@ import {
   TextReveal,
   Counter,
   GrainOverlay,
-  SPRING,
-  DURATION,
-  STAGGER,
   staggerChild,
   cardHover,
   buttonHover,
@@ -23,7 +19,6 @@ import {
   Store,
   Timer,
   Crosshair,
-  CircleDollarSign,
   Smartphone,
   MapPin,
   BarChart3,
@@ -33,11 +28,7 @@ import {
   ArrowRight,
   Locate,
   Activity,
-  Layers,
-  Briefcase,
-  PieChart,
   HandCoins,
-  Gauge,
 } from "lucide-react";
 
 // ============================================
