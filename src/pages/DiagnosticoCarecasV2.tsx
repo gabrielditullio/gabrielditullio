@@ -689,8 +689,8 @@ const Section04 = () => (
 
 const Section05 = () => (
   <Section>
-    <SectionLabel text="05 — Mapa de Presença" />
-    <SectionTitle>Onde vocês estão — e onde não estão.</SectionTitle>
+    <SectionLabel text="05 — Onde vocês estão" />
+    <SectionTitle>O que vocês já têm — e o que está faltando.</SectionTitle>
 
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
       <Reveal>
@@ -740,9 +740,9 @@ const Section05 = () => (
 
 const Section06 = () => (
   <Section>
-    <SectionLabel text="06 — Oportunidades Concretas" />
-    <SectionTitle>O que muda quando vocês ativam o digital.</SectionTitle>
-    <SectionBody>Não é teoria. São três movimentos práticos com retorno mensurável.</SectionBody>
+    <SectionLabel text="06 — O que fazer" />
+    <SectionTitle>O que muda quando vocês começam a aparecer.</SectionTitle>
+    <SectionBody>Não é teoria. São três passos práticos com retorno que dá pra medir.</SectionBody>
 
     <div className="flex flex-col gap-8 mt-12">
       {OPPORTUNITIES.map((opp, i) => (
@@ -781,8 +781,8 @@ const Section06 = () => (
 
 const Section07 = () => (
   <Section>
-    <SectionLabel text="07 — Projeção de Resultados" />
-    <SectionTitle>Os números quando tudo se conecta.</SectionTitle>
+    <SectionLabel text="07 — Os números" />
+    <SectionTitle>Quanto entra, quanto sai, quanto sobra.</SectionTitle>
 
     <StaggerContainer className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
       {PROJECTION_STATS.map((s, i) => (
@@ -811,7 +811,7 @@ const Section07 = () => (
 
 const Section08 = () => (
   <Section>
-    <SectionLabel text="08 — Plano de Ação Sugerido" />
+    <SectionLabel text="08 — Como funciona" />
     <SectionTitle>Passo a passo, sem complicação.</SectionTitle>
 
     <div className="mt-12 flex flex-col gap-8 max-w-[700px]">
