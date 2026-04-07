@@ -2,6 +2,7 @@ import { getWhatsAppLink } from "@/lib/whatsapp";
 import heroPhoto from "@/assets/hero-photo.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import { Timer, Banknote, MapPin, Sparkles } from "lucide-react";
 import {
   fadeUp,
   cinematic,
@@ -14,9 +15,9 @@ import {
 } from "./MotionSystemV3";
 
 const badges = [
-  { icon: "⚡", text: "Resultados em 30 dias" },
-  { icon: "💰", text: "Retorno médio de 5x sobre o investido" },
-  { icon: "📍", text: "Foco total no seu bairro e região" },
+  { icon: Timer, text: "Resultados em 30 dias" },
+  { icon: Banknote, text: "Retorno médio de 5x sobre o investido" },
+  { icon: MapPin, text: "Foco total no seu bairro e região" },
 ];
 
 const HeroSectionV3 = () => {
@@ -84,10 +85,11 @@ const HeroSectionV3 = () => {
             {/* Badge */}
             <motion.div
               variants={fadeUp}
-              className="inline-block px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm"
+              className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm"
             >
+              <Sparkles size={14} strokeWidth={2} className="text-primary" />
               <span className="text-sm font-medium text-primary font-body">
-                🚀 Especialista em Negócios Locais
+                Especialista em Negócios Locais
               </span>
             </motion.div>
 
@@ -146,7 +148,7 @@ const HeroSectionV3 = () => {
               </motion.a>
             </motion.div>
 
-            {/* Badge chips */}
+            {/* Badge chips with lucide icons */}
             <motion.div
               variants={{
                 hidden: {},
@@ -163,9 +165,10 @@ const HeroSectionV3 = () => {
                 <motion.span
                   key={b.text}
                   variants={fadeUp}
-                  className="text-sm text-muted-foreground font-body flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded-full px-3 py-1.5 backdrop-blur-sm"
+                  className="text-sm text-muted-foreground font-body flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-3 py-1.5 backdrop-blur-sm"
                 >
-                  {b.icon} {b.text}
+                  <b.icon size={14} strokeWidth={1.75} className="text-primary" />
+                  {b.text}
                 </motion.span>
               ))}
             </motion.div>

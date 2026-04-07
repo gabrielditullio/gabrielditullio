@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import {
   fadeUp,
+  fadeLeft,
   scaleUp,
   StaggerContainer,
   staggerChild,
@@ -67,8 +68,9 @@ const ProcessSectionV3 = () => {
   return (
     <StaggerContainer staggerDelay={0.15} className="py-20 bg-secondary/30 relative z-20">
       <div className="container">
+        {/* scaleUp for rhythm — alternating from fadeLeft used in Benefits */}
         <motion.div
-          variants={fadeUp}
+          variants={scaleUp}
           className="text-center mb-14 max-w-2xl mx-auto"
         >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
@@ -82,7 +84,6 @@ const ProcessSectionV3 = () => {
 
         {/* Desktop: horizontal with animated timeline */}
         <div className="hidden lg:block relative">
-          {/* Animated timeline line */}
           <motion.div
             className="absolute top-12 left-[10%] right-[10%] h-[2px] bg-border/30 z-0"
             initial={{ scaleX: 0, transformOrigin: "left" }}

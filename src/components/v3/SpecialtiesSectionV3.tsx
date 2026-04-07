@@ -1,19 +1,30 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Scale, Scissors, Cake, UtensilsCrossed } from "lucide-react";
 import {
   fadeUp,
-  scaleUp,
+  fadeRight,
   StaggerContainer,
   staggerChild,
   SPRING,
 } from "./MotionSystemV3";
 import { useIsMobile } from "@/hooks/use-mobile";
 
+/** Filled container icon — consistent Style 2 */
+const IconBox = ({ icon: Icon, size = 24 }: { icon: React.ElementType; size?: number }) => (
+  <div
+    className="w-14 h-14 rounded-xl flex items-center justify-center mb-3 mx-auto"
+    style={{ background: "hsla(86, 100%, 50%, 0.12)" }}
+  >
+    <Icon size={size} strokeWidth={1.75} className="text-primary" />
+  </div>
+);
+
 const niches = [
-  { emoji: "⚖️", name: "Escritórios de Advocacia", result: "+75 consultas/mês" },
-  { emoji: "💈", name: "Barbearias", result: "+120 agendamentos/mês" },
-  { emoji: "🎂", name: "Confeitarias", result: "+200% em encomendas" },
-  { emoji: "🍕", name: "Pizzarias", result: "+150 pedidos/mês" },
+  { icon: Scale, name: "Escritórios de Advocacia", result: "+75 consultas/mês" },
+  { icon: Scissors, name: "Barbearias", result: "+120 agendamentos/mês" },
+  { icon: Cake, name: "Confeitarias", result: "+200% em encomendas" },
+  { icon: UtensilsCrossed, name: "Pizzarias", result: "+150 pedidos/mês" },
 ];
 
 const NicheCard = ({ n, isMobile }: { n: typeof niches[0]; isMobile: boolean }) => {
@@ -33,13 +44,12 @@ const NicheCard = ({ n, isMobile }: { n: typeof niches[0]; isMobile: boolean }) 
       }}
       className="p-6 rounded-2xl bg-card/80 backdrop-blur-sm border border-border text-center cursor-pointer"
     >
-      <motion.span
-        className="text-5xl block mb-3"
-        animate={hovered ? { scale: 1.15, rotate: 5 } : { scale: 1, rotate: 0 }}
+      <motion.div
+        animate={hovered ? { scale: 1.1, rotate: 5 } : { scale: 1, rotate: 0 }}
         transition={SPRING.playful}
       >
-        {n.emoji}
-      </motion.span>
+        <IconBox icon={n.icon} size={26} />
+      </motion.div>
       <h3 className="font-bold font-heading text-lg mb-1">{n.name}</h3>
       <motion.div
         initial={false}
@@ -62,8 +72,9 @@ const SpecialtiesSectionV3 = () => {
   return (
     <StaggerContainer staggerDelay={0.1} className="py-20 bg-secondary/20">
       <div className="container">
+        {/* fadeRight for rhythm — previous section used fadeUp */}
         <motion.div
-          variants={fadeUp}
+          variants={fadeRight}
           className="mb-14 max-w-2xl"
         >
           <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">

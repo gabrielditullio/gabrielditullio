@@ -1,8 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import { Search, Repeat, Clock } from "lucide-react";
 import {
   fadeUp,
-  fadeLeft,
+  fadeRight,
   SPRING,
   DURATION,
   StaggerContainer,
@@ -36,6 +37,16 @@ const useCounter = (end: number, duration: number = 1500) => {
   return { ref, value };
 };
 
+/** Filled container icon — Style 2 from skill */
+const IconBox = ({ icon: Icon }: { icon: React.ElementType }) => (
+  <div
+    className="w-11 h-11 rounded-xl flex items-center justify-center mb-3"
+    style={{ background: "hsla(86, 100%, 50%, 0.1)" }}
+  >
+    <Icon size={20} strokeWidth={1.75} className="text-primary" />
+  </div>
+);
+
 const PhoneMockup = () => (
   <motion.div
     initial={{ opacity: 0, y: 30, rotateY: -10 }}
@@ -49,8 +60,8 @@ const PhoneMockup = () => (
       <div className="bg-background rounded-[1.5rem] overflow-hidden">
         <div className="flex items-center justify-between px-4 py-1.5 text-[10px] text-muted-foreground">
           <span>9:41</span>
-          <div className="flex gap-1">
-            <span>📶</span><span>🔋</span>
+          <div className="flex gap-1 text-[10px]">
+            <span>●●●</span>
           </div>
         </div>
         <div className="px-3 py-2 space-y-2">
@@ -63,7 +74,7 @@ const PhoneMockup = () => (
           >
             <p className="text-[10px] text-muted-foreground font-body">Google Maps</p>
             <p className="text-xs font-body font-medium text-foreground mt-1">
-              📍 Seu negócio recebeu <span className="text-primary font-bold">12 novas visualizações</span> hoje
+              Seu negócio recebeu <span className="text-primary font-bold">12 novas visualizações</span> hoje
             </p>
           </motion.div>
           <motion.div
@@ -84,7 +95,13 @@ const PhoneMockup = () => (
   </motion.div>
 );
 
-const CounterBlock = ({ end, suffix, label }: { end: number; suffix: string; label: string }) => {
+const counters = [
+  { end: 73, suffix: "%", label: "dos consumidores pesquisam no Google antes de ir a um negócio local", icon: Search },
+  { end: 5, suffix: "x", label: "mais barato que panfleto por cliente conquistado", icon: Repeat },
+  { end: 48, suffix: "h", label: "para seus primeiros leads começarem a chegar", icon: Clock },
+];
+
+const CounterBlock = ({ end, suffix, label, icon }: { end: number; suffix: string; label: string; icon: React.ElementType }) => {
   const { ref, value } = useCounter(end);
   return (
     <motion.div
@@ -92,6 +109,7 @@ const CounterBlock = ({ end, suffix, label }: { end: number; suffix: string; lab
       variants={staggerChild}
       className="text-center md:text-left"
     >
+      <IconBox icon={icon} />
       <p className="text-5xl font-bold font-heading text-primary">
         {value}{suffix}
       </p>
@@ -105,7 +123,7 @@ const WhyTrafficSectionV3 = () => {
     <StaggerContainer staggerDelay={0.15} className="py-20 pb-32">
       <div className="container">
         <motion.h2
-          variants={fadeUp}
+          variants={fadeRight}
           className="text-3xl md:text-4xl font-extrabold font-heading mb-14 text-center md:text-left max-w-3xl"
         >
           Por que negócios locais que investem em tráfego pago{" "}
@@ -114,15 +132,15 @@ const WhyTrafficSectionV3 = () => {
 
         <div className="grid lg:grid-cols-[1fr_auto] gap-12 items-center">
           <StaggerContainer staggerDelay={0.2} className="grid sm:grid-cols-3 gap-8">
-            <CounterBlock end={73} suffix="%" label="dos consumidores pesquisam no Google antes de ir a um negócio local" />
-            <CounterBlock end={5} suffix="x" label="mais barato que panfleto por cliente conquistado" />
-            <CounterBlock end={48} suffix="h" label="para seus primeiros leads começarem a chegar" />
+            {counters.map((c) => (
+              <CounterBlock key={c.label} {...c} />
+            ))}
           </StaggerContainer>
           <PhoneMockup />
         </div>
 
         <motion.p
-          variants={fadeLeft}
+          variants={fadeUp}
           className="text-muted-foreground font-body text-lg leading-relaxed max-w-2xl mt-12 text-left md:mx-auto"
         >
           Enquanto seu concorrente espera o boca a boca funcionar, você aparece na tela do celular de quem já está procurando exatamente o que você vende.
