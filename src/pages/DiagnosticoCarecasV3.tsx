@@ -302,8 +302,8 @@ const StatsSection = () => (
             style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "1.75rem" }}
           >
             <div className="absolute top-0 left-0 w-[3px] h-full" style={{ background: i === 2 ? T.primary : i === 3 ? T.amber : T.green }} />
-            <GlassIcon icon={stat.icon} color={i === 2 ? T.primary : i === 3 ? T.amber : T.green} size={18} />
-            <div className="mt-4 mb-2" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 800, color: T.text, letterSpacing: "-0.02em" }}>
+            <stat.icon size={18} strokeWidth={1.5} style={{ color: T.muted, marginBottom: "1rem" }} />
+            <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontWeight: 800, color: T.text, marginBottom: "0.5rem", letterSpacing: "-0.02em" }}>
               {stat.value}
             </div>
             <div style={{ fontFamily: "'Lora', serif", fontSize: "0.85rem", color: T.muted, lineHeight: 1.6 }}>
@@ -338,8 +338,8 @@ const InstagramSection = () => (
         ].map((item, i) => (
           <Reveal key={i} delay={i * 0.08} direction="scale">
             <div className="text-center" style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "1.5rem" }}>
-              <div className="mx-auto mb-3">
-                <GlassIcon icon={item.icon} color={item.color} />
+              <div className="flex items-center justify-center mx-auto mb-3" style={{ width: 40, height: 40, background: `color-mix(in srgb, ${item.color} 12%, transparent)`, border: `1px solid color-mix(in srgb, ${item.color} 20%, transparent)` }}>
+                <item.icon size={18} strokeWidth={1.5} style={{ color: item.color }} />
               </div>
               <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1.5rem", fontWeight: 800, color: T.text }}>{item.value}</div>
               <div style={{ fontFamily: "'Lora', serif", fontSize: "0.8rem", color: T.muted, marginTop: "0.25rem" }}>{item.label}</div>
@@ -349,8 +349,8 @@ const InstagramSection = () => (
       </div>
 
       <Reveal delay={0.4}>
-        <div className="mt-8 flex items-start gap-4" style={{ background: T.primarySoft, border: `1px solid ${T.primary}33`, padding: "1.25rem 1.5rem" }}>
-          <GlassIcon icon={AlertTriangle} color={T.primary} size={20} />
+        <div className="mt-8 flex items-start gap-4" style={{ background: T.primarySoft, border: `1px solid rgba(231,29,54,0.2)`, padding: "1.25rem 1.5rem" }}>
+          <AlertTriangle size={20} strokeWidth={1.75} style={{ color: T.primary, flexShrink: 0, marginTop: 2 }} />
           <div style={{ fontFamily: "'Lora', serif", fontSize: "0.9rem", color: T.text, lineHeight: 1.7 }}>
             <strong style={{ fontFamily: "'Montserrat', sans-serif", fontWeight: 700 }}>O ponto cego:</strong> Todo esse engajamento orgânico é excelente, mas não tem nenhuma amplificação. Os Reels alcançam quem já segue — mas e as milhares de famílias da região que ainda não conhecem vocês?
           </div>
@@ -379,8 +379,8 @@ const GoogleSection = () => (
             <div className="relative" style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "1.5rem" }}>
               <div className="flex items-center justify-between mb-4">
                 <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.75rem", fontWeight: 600, color: T.muted }}>{score.label}</span>
+                <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.7rem", fontWeight: 700, color: T.primary, background: T.primarySoft, padding: "2px 8px" }}>CRÍTICO</span>
               </div>
-              <span className="inline-block mb-3" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.7rem", fontWeight: 700, color: T.primary, background: T.primarySoft, padding: "2px 8px" }}>CRÍTICO</span>
               <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "2.5rem", fontWeight: 900, color: T.primary }}>0%</div>
               <div className="mt-3 relative h-[3px]" style={{ background: T.border }}>
                 <div className="absolute left-0 top-0 h-full w-0" style={{ background: T.primary }} />
@@ -399,8 +399,8 @@ const GoogleSection = () => (
             { icon: HelpCircle, label: "Perguntas", desc: "Nenhuma resposta na seção de dúvidas. Clientes indecisos vão para o concorrente." },
           ].map((item, i) => (
             <Reveal key={i} delay={0.6 + i * 0.08}>
-              <div className="flex items-start gap-3" style={{ padding: "1rem", background: `${T.primary}08`, border: `1px solid ${T.primary}18` }}>
-                <GlassIcon icon={item.icon} color={T.primary} size={16} />
+              <div className="flex items-start gap-3" style={{ padding: "1rem", background: "rgba(231,29,54,0.04)", border: "1px solid rgba(231,29,54,0.1)" }}>
+                <item.icon size={16} strokeWidth={1.5} style={{ color: T.primary, flexShrink: 0, marginTop: 2 }} />
                 <div>
                   <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.75rem", fontWeight: 700, color: T.text, marginBottom: "0.25rem" }}>{item.label}</div>
                   <div style={{ fontFamily: "'Lora', serif", fontSize: "0.8rem", color: T.muted, lineHeight: 1.6 }}>{item.desc}</div>
@@ -472,11 +472,13 @@ const GapsSection = () => (
             <motion.div
               whileHover={{ x: 4, borderColor: `${gap.color}33` }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="flex gap-4 items-start relative overflow-hidden"
+              className="flex gap-5 items-start relative overflow-hidden"
               style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "clamp(1.25rem, 3vw, 2rem)" }}
             >
               <div className="absolute top-0 left-0 w-1 h-full" style={{ background: gap.color }} />
-              <GlassIcon icon={gap.icon} color={gap.color} size={20} />
+              <div className="flex items-center justify-center shrink-0" style={{ width: 44, height: 44, background: `${gap.color}15`, border: `1px solid ${gap.color}25` }}>
+                <gap.icon size={20} strokeWidth={1.5} style={{ color: gap.color }} />
+              </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1rem, 2vw, 1.15rem)", fontWeight: 700, color: T.text }}>{gap.label}</h3>
@@ -510,7 +512,9 @@ const CompetitorsSection = () => (
           <Reveal key={i} delay={i * 0.15} direction="right">
             <div style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "clamp(1.25rem, 3vw, 2rem)" }}>
               <div className="flex items-center gap-3 mb-4">
-                <GlassIcon icon={Store} color={T.amber} size={16} />
+                <div className="flex items-center justify-center" style={{ width: 36, height: 36, background: T.amberSoft, border: "1px solid rgba(245,166,35,0.2)" }}>
+                  <Store size={16} strokeWidth={1.5} style={{ color: T.amber }} />
+                </div>
                 <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1rem", fontWeight: 700, color: T.text }}>{comp.name}</h3>
               </div>
               <p className="mb-3" style={{ fontFamily: "'Lora', serif", fontSize: "0.9rem", color: T.muted, lineHeight: 1.7 }}>
@@ -606,8 +610,8 @@ const ProjectionSection = () => (
               style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "2rem" }}
             >
               <div className="absolute top-0 left-0 right-0 h-[3px]" style={{ background: item.color }} />
-              <div className="mx-auto mb-4">
-                <GlassIcon icon={item.icon} color={item.color} size={22} />
+              <div className="flex items-center justify-center mx-auto mb-4" style={{ width: 48, height: 48, background: `color-mix(in srgb, ${item.color} 10%, transparent)`, border: `1px solid color-mix(in srgb, ${item.color} 18%, transparent)` }}>
+                <item.icon size={22} strokeWidth={1.5} style={{ color: item.color }} />
               </div>
               <div className="mb-2" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "0.7rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.15em", color: T.muted }}>{item.label}</div>
               <div className="mb-3" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.75rem, 4vw, 2.25rem)", fontWeight: 900, color: item.color }}>{item.value}</div>
@@ -627,8 +631,8 @@ const CTASection = () => (
     </div>
     <div className="max-w-[700px] mx-auto text-center relative z-10">
       <Reveal>
-        <div className="mx-auto mb-6">
-          <GlassIcon icon={Utensils} color={T.green} size={24} />
+        <div className="flex items-center justify-center mx-auto mb-6" style={{ width: 56, height: 56, background: T.greenSoft, border: "1px solid rgba(46,204,113,0.2)" }}>
+          <Utensils size={24} strokeWidth={1.5} style={{ color: T.green }} />
         </div>
         <h2 className="mb-5" style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1.75rem, 5vw, 3rem)", fontWeight: 900, color: T.text, lineHeight: 1.1, letterSpacing: "-0.03em" }}>
           Vamos aprofundar esse diagnóstico?
