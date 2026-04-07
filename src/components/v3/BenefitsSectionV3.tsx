@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useRef, useState, useCallback } from "react";
+import { Crosshair, BarChart3, Rabbit } from "lucide-react";
 import {
   fadeUp,
   fadeLeft,
@@ -8,21 +9,31 @@ import {
   SPRING,
 } from "./MotionSystemV3";
 
+/** Filled container icon — consistent Style 2 */
+const IconBox = ({ icon: Icon }: { icon: React.ElementType }) => (
+  <div
+    className="w-12 h-12 rounded-xl flex items-center justify-center mb-4"
+    style={{ background: "hsla(86, 100%, 50%, 0.12)" }}
+  >
+    <Icon size={22} strokeWidth={1.75} className="text-primary" />
+  </div>
+);
+
 const benefits = [
   {
-    icon: "🎯",
+    icon: Crosshair,
     title: "Clientes Qualificados",
     description:
       "Atraia pessoas que realmente querem comprar de você, não apenas curiosos. Tráfego segmentado para o seu negócio local.",
   },
   {
-    icon: "📊",
+    icon: BarChart3,
     title: "Resultados Mensuráveis",
     description:
       "Cada real investido é rastreado. Relatórios claros mostrando quantos clientes e quanto faturamento cada campanha gerou.",
   },
   {
-    icon: "⚡",
+    icon: Rabbit,
     title: "Velocidade de Resultado",
     description:
       "Sem esperar meses. Suas primeiras campanhas rodam em 48h e os leads começam a chegar na primeira semana.",
@@ -30,7 +41,7 @@ const benefits = [
 ];
 
 /** 3D tilt card with glassmorphism */
-const BenefitCard = ({ b, i }: { b: typeof benefits[0]; i: number }) => {
+const BenefitCard = ({ b }: { b: typeof benefits[0] }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [rotateX, setRotateX] = useState(0);
   const [rotateY, setRotateY] = useState(0);
@@ -64,12 +75,7 @@ const BenefitCard = ({ b, i }: { b: typeof benefits[0]; i: number }) => {
       }}
       className="group p-7 rounded-2xl bg-card/80 backdrop-blur-md border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-card-glow"
     >
-      <motion.span
-        className="text-4xl block mb-4"
-        whileHover={{ scale: 1.2, rotate: 8, transition: SPRING.playful }}
-      >
-        {b.icon}
-      </motion.span>
+      <IconBox icon={b.icon} />
       <h3 className="text-xl font-bold font-heading mb-2">{b.title}</h3>
       <p className="text-muted-foreground font-body leading-relaxed">
         {b.description}
@@ -82,6 +88,7 @@ const BenefitsSectionV3 = () => {
   return (
     <section className="py-20 relative z-10 bg-background shadow-2xl">
       <div className="container">
+        {/* fadeLeft for rhythm — previous section used fadeRight */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -102,8 +109,8 @@ const BenefitsSectionV3 = () => {
         </motion.div>
 
         <StaggerContainer staggerDelay={0.12} className="grid md:grid-cols-3 gap-6">
-          {benefits.map((b, i) => (
-            <BenefitCard key={b.title} b={b} i={i} />
+          {benefits.map((b) => (
+            <BenefitCard key={b.title} b={b} />
           ))}
         </StaggerContainer>
       </div>

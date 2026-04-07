@@ -1,13 +1,14 @@
 import { useRef } from "react";
 import { getWhatsAppLink } from "@/lib/whatsapp";
 import { motion } from "framer-motion";
+import { Timer, Lock, BadgeCheck, Smartphone } from "lucide-react";
 import {
   fadeUp,
   scaleUp,
+  fadeLeft,
   StaggerContainer,
   staggerChild,
   SPRING,
-  DURATION,
 } from "./MotionSystemV3";
 
 const CtaSectionV3 = () => {
@@ -22,7 +23,6 @@ const CtaSectionV3 = () => {
         transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px]"
       />
-      {/* Secondary blob */}
       <motion.div
         initial={{ scale: 0.3, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 0.5 }}
@@ -33,12 +33,11 @@ const CtaSectionV3 = () => {
 
       <div id="cta-final" className="container relative z-10">
         <div className="max-w-3xl mx-auto text-center space-y-8">
-          <motion.p
-            variants={fadeUp}
-            className="text-sm text-primary font-medium font-body animate-urgency-pulse"
-          >
-            ⚡ Vagas limitadas para análise personalizada este mês
-          </motion.p>
+          {/* fadeLeft for rhythm variation */}
+          <motion.div variants={fadeLeft} className="flex items-center justify-center gap-2 text-sm text-primary font-medium font-body animate-urgency-pulse">
+            <Timer size={14} strokeWidth={2} className="text-primary" />
+            Vagas limitadas para análise personalizada este mês
+          </motion.div>
 
           <motion.h2
             variants={fadeUp}
@@ -70,7 +69,8 @@ const CtaSectionV3 = () => {
               whileTap={{ scale: 0.97 }}
               transition={SPRING.snappy}
             >
-              📱 AGENDAR MINHA ANÁLISE GRATUITA
+              <Smartphone size={22} strokeWidth={2} />
+              AGENDAR MINHA ANÁLISE GRATUITA
             </motion.a>
           </motion.div>
 
@@ -79,19 +79,20 @@ const CtaSectionV3 = () => {
               hidden: {},
               visible: { transition: { staggerChildren: 0.15 } },
             }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-6"
           >
             {[
-              "⚡ Resposta em até 2 horas",
-              "🔒 Seus dados estão seguros",
-              "✅ 100% gratuito",
+              { icon: Timer, text: "Resposta em até 2 horas" },
+              { icon: Lock, text: "Seus dados estão seguros" },
+              { icon: BadgeCheck, text: "100% gratuito" },
             ].map((badge) => (
               <motion.span
-                key={badge}
+                key={badge.text}
                 variants={staggerChild}
-                className="text-sm text-muted-foreground font-body"
+                className="flex items-center gap-2 text-sm text-muted-foreground font-body"
               >
-                {badge}
+                <badge.icon size={14} strokeWidth={1.75} className="text-primary/70" />
+                {badge.text}
               </motion.span>
             ))}
           </motion.div>
