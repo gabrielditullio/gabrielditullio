@@ -55,6 +55,27 @@
     --sidebar-accent-foreground: 0 0% 95%;
     --sidebar-border: 210 30% 22%;
     --sidebar-ring: 86 100% 50%;
+
+    /* Diagnóstico page tokens */
+    --diag-bg: #0C1117;
+    --diag-surface: #161C27;
+    --diag-surface-alt: #1E2738;
+    --diag-text: #F0EDE8;
+    --diag-text-muted: #8A8F9E;
+    --diag-gold: #C9A96E;
+    --diag-gold-soft: rgba(201, 169, 110, 0.18);
+    --diag-gold-border: rgba(201, 169, 110, 0.25);
+    --diag-green: #2ECC71;
+    --diag-green-soft: rgba(46, 204, 113, 0.12);
+    --diag-green-border: rgba(46, 204, 113, 0.3);
+    --diag-red: #FF6B6B;
+    --diag-red-soft: rgba(255, 107, 107, 0.12);
+    --diag-red-border: rgba(255, 107, 107, 0.25);
+    --diag-amber: #F39C12;
+    --diag-amber-soft: rgba(243, 156, 18, 0.12);
+    --diag-amber-border: rgba(243, 156, 18, 0.25);
+    --diag-border: rgba(255, 255, 255, 0.06);
+    --diag-border-subtle: rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -174,4 +195,12 @@
 
 .animate-cta-glow-pulse {
   animation: cta-glow-pulse 2s ease-in-out infinite;
+}
+
+/* Accessibility: reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
