@@ -1,0 +1,80 @@
+import { motion } from "framer-motion";
+import { fadeUp, StaggerContainer, staggerChild, SPRING } from "./MotionSystemV3";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+const faqs = [
+  {
+    q: "Funciona para o meu tipo de negócio?",
+    a: "Sim! Já atendemos restaurantes, clínicas, academias, salões, lojas de roupas, pet shops e dezenas de outros negócios locais. A estratégia é personalizada para cada nicho.",
+  },
+  {
+    q: "Qual o valor mínimo de investimento em anúncios?",
+    a: "O investimento ideal depende do seu objetivo e da expectativa de faturamento. Na análise gratuita, avaliamos juntos o cenário do seu negócio e definimos um valor que faça sentido pra você.",
+  },
+  {
+    q: "Em quanto tempo vejo resultados?",
+    a: "Os primeiros leads costumam chegar na primeira semana. Resultados consistentes e previsíveis a partir do segundo mês, quando já temos dados para otimizar.",
+  },
+  {
+    q: "Tem contrato de fidelidade?",
+    a: "Não! Trabalhamos sem fidelidade forçada. Você fica porque quer, não porque é obrigado. Nossos resultados falam por si.",
+  },
+  {
+    q: "Como acompanho os resultados?",
+    a: "Você recebe relatórios semanais com linguagem simples, sem jargões técnicos. Mostramos quantos clientes vieram, quanto custou cada um e quanto você faturou.",
+  },
+  {
+    q: "Vocês cuidam dos criativos (imagens e vídeos)?",
+    a: "Sim! Orientamos e enviamos ideias de anúncios. Também podemos produzir os criativos ou trabalhar com materiais que você já tem.",
+  },
+];
+
+const FaqSectionV3 = () => {
+  return (
+    <StaggerContainer staggerDelay={0.08} className="py-20">
+      <div className="container max-w-3xl">
+        <motion.div variants={fadeUp} className="text-center mb-14">
+          <p className="text-primary font-body text-sm uppercase tracking-widest mb-3 font-semibold">
+            Perguntas frequentes
+          </p>
+          <h2 className="text-3xl md:text-4xl font-extrabold font-heading mb-4">
+            Tire suas <span className="text-gradient">dúvidas</span>
+          </h2>
+        </motion.div>
+
+        <motion.div variants={fadeUp}>
+          <Accordion type="single" collapsible defaultValue="faq-0" className="space-y-3">
+            {faqs.map((faq, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: i * 0.08, ...SPRING.standard }}
+              >
+                <AccordionItem
+                  value={`faq-${i}`}
+                  className="bg-card/80 backdrop-blur-sm border border-border rounded-xl px-6 data-[state=open]:border-primary/40 data-[state=open]:shadow-card-glow transition-all"
+                >
+                  <AccordionTrigger className="font-heading font-bold text-left hover:no-underline py-5">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground font-body leading-relaxed pb-5">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              </motion.div>
+            ))}
+          </Accordion>
+        </motion.div>
+      </div>
+    </StaggerContainer>
+  );
+};
+
+export default FaqSectionV3;
