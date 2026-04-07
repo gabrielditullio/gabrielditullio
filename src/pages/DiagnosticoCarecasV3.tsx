@@ -598,15 +598,15 @@ const ProjectionSection = () => (
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {[
-          { label: "Receita Adicional Estimada", value: "R$ 4–6K/mês", desc: "Em pedidos diretos pelo WhatsApp e Goomer, sem pagar taxa do iFood", icon: TrendingUp, color: T.green },
-          { label: "Investimento Mensal", value: "R$ 1.5–2K/mês", desc: "Anúncios geolocalizados + gestão do perfil no Google", icon: Wallet, color: T.amber },
-          { label: "Retorno Esperado", value: "300–400%", desc: "Para cada R$ 1 investido, volta R$ 3 a R$ 4 em pedidos diretos", icon: ArrowUpRight, color: T.green },
+          { label: "Receita Adicional Estimada", value: "R$ 4 – 6K/mês", desc: "Em pedidos diretos pelo WhatsApp e Goomer, sem pagar taxa do iFood", icon: TrendingUp, color: T.green },
+          { label: "Investimento Mensal", value: "R$ 1.5 – 2K/mês", desc: "Anúncios geolocalizados + gestão do perfil no Google", icon: Wallet, color: T.amber },
+          { label: "Retorno Esperado", value: "300 – 400%", desc: "Para cada R$ 1 investido, volta R$ 3 a R$ 4 em pedidos diretos", icon: ArrowUpRight, color: T.green },
         ].map((item, i) => (
           <Reveal key={i} delay={i * 0.15} direction="scale">
             <motion.div
               whileHover={{ y: -4 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="text-center relative overflow-hidden"
+              className="text-center relative overflow-hidden h-full flex flex-col items-center justify-start"
               style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "2rem" }}
             >
               <div className="absolute top-0 left-0 right-0 h-[3px]" style={{ background: item.color }} />
