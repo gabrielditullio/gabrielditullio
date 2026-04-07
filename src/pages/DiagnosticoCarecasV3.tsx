@@ -472,11 +472,13 @@ const GapsSection = () => (
             <motion.div
               whileHover={{ x: 4, borderColor: `${gap.color}33` }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              className="flex gap-4 items-start relative overflow-hidden"
+              className="flex gap-5 items-start relative overflow-hidden"
               style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "clamp(1.25rem, 3vw, 2rem)" }}
             >
               <div className="absolute top-0 left-0 w-1 h-full" style={{ background: gap.color }} />
-              <GlassIcon icon={gap.icon} color={gap.color} size={20} />
+              <div className="flex items-center justify-center shrink-0" style={{ width: 44, height: 44, background: `${gap.color}15`, border: `1px solid ${gap.color}25` }}>
+                <gap.icon size={20} strokeWidth={1.5} style={{ color: gap.color }} />
+              </div>
               <div className="flex-1">
                 <div className="flex items-center gap-3 mb-2 flex-wrap">
                   <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "clamp(1rem, 2vw, 1.15rem)", fontWeight: 700, color: T.text }}>{gap.label}</h3>
@@ -510,7 +512,9 @@ const CompetitorsSection = () => (
           <Reveal key={i} delay={i * 0.15} direction="right">
             <div style={{ background: T.surface, border: `1px solid ${T.border}`, padding: "clamp(1.25rem, 3vw, 2rem)" }}>
               <div className="flex items-center gap-3 mb-4">
-                <GlassIcon icon={Store} color={T.amber} size={16} />
+                <div className="flex items-center justify-center" style={{ width: 36, height: 36, background: T.amberSoft, border: "1px solid rgba(245,166,35,0.2)" }}>
+                  <Store size={16} strokeWidth={1.5} style={{ color: T.amber }} />
+                </div>
                 <h3 style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "1rem", fontWeight: 700, color: T.text }}>{comp.name}</h3>
               </div>
               <p className="mb-3" style={{ fontFamily: "'Lora', serif", fontSize: "0.9rem", color: T.muted, lineHeight: 1.7 }}>
