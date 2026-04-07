@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -56,7 +56,7 @@
     --sidebar-border: 210 30% 22%;
     --sidebar-ring: 86 100% 50%;
 
-    /* Diagnóstico page tokens */
+    /* Diagnóstico V1 page tokens */
     --diag-bg: #0C1117;
     --diag-surface: #161C27;
     --diag-surface-alt: #1E2738;
@@ -76,6 +76,26 @@
     --diag-amber-border: rgba(243, 156, 18, 0.25);
     --diag-border: rgba(255, 255, 255, 0.06);
     --diag-border-subtle: rgba(255, 255, 255, 0.05);
+
+    /* Diagnóstico V2 page tokens */
+    --dv2-bg: #08090c;
+    --dv2-surface: #111318;
+    --dv2-surface-2: #181b22;
+    --dv2-text: #f0ece4;
+    --dv2-text-muted: #8a8d97;
+    --dv2-primary: #e8a838;
+    --dv2-primary-soft: rgba(232, 168, 56, 0.12);
+    --dv2-primary-border: rgba(232, 168, 56, 0.25);
+    --dv2-accent: #f04e30;
+    --dv2-accent-soft: rgba(240, 78, 48, 0.12);
+    --dv2-green: #34d399;
+    --dv2-green-soft: rgba(52, 211, 153, 0.1);
+    --dv2-green-border: rgba(52, 211, 153, 0.25);
+    --dv2-red: #f04e30;
+    --dv2-red-soft: rgba(240, 78, 48, 0.1);
+    --dv2-red-border: rgba(240, 78, 48, 0.25);
+    --dv2-border: rgba(255, 255, 255, 0.07);
+    --dv2-border-subtle: rgba(255, 255, 255, 0.05);
   }
 }
 
