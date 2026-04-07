@@ -420,11 +420,10 @@ const HeroSection = () => (
         </Tag>
       </Reveal>
 
-      <h1 className="mt-5 mb-2">
+      <h1 className="mt-5 mb-2" style={{ background: `linear-gradient(to bottom right, var(--diag-gold), var(--diag-text), var(--diag-gold))`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
         <TextReveal
           text={HERO_DATA.title}
           className="font-display text-[clamp(44px,8vw,96px)] font-extrabold leading-none tracking-tight"
-          style={{ background: `linear-gradient(to bottom right, var(--diag-gold), var(--diag-text), var(--diag-gold))`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}
         />
       </h1>
 
