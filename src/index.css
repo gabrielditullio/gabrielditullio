@@ -118,6 +118,22 @@
     --fm-txt: #CBD5E1;
     --fm-txt2: #E2E8F0;
     --fm-muted: #64748B;
+
+    /* Diagnóstico Carecas V3 tokens */
+    --dc3-bg: #0A1931;
+    --dc3-bg-deep: #060F20;
+    --dc3-surface: #0F2342;
+    --dc3-surface-light: #142D54;
+    --dc3-text: #F4F4F4;
+    --dc3-muted: #8BA3C7;
+    --dc3-primary: #E71D36;
+    --dc3-primary-soft: rgba(231, 29, 54, 0.12);
+    --dc3-green: #2ECC71;
+    --dc3-green-soft: rgba(46, 204, 113, 0.12);
+    --dc3-amber: #F5A623;
+    --dc3-amber-soft: rgba(245, 166, 35, 0.12);
+    --dc3-border: rgba(139, 163, 199, 0.12);
+    --dc3-border-light: rgba(139, 163, 199, 0.2);
   }
 }
 
