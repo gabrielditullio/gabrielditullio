@@ -7,6 +7,7 @@ import aboutPhoto from "@/assets/about-photo.png";
 const ProactiveChatBubble = () => {
   const [show, setShow] = useState(false);
   const [dismissed, setDismissed] = useState(false);
+  const [stickyBarVisible, setStickyBarVisible] = useState(false);
 
   useEffect(() => {
     if (dismissed) return;
@@ -16,6 +17,8 @@ const ProactiveChatBubble = () => {
       if (scrollPercent > 0.6) {
         setShow(true);
       }
+      // Track sticky bar visibility (appears after 500px scroll)
+      setStickyBarVisible(window.scrollY > 500);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -27,6 +30,9 @@ const ProactiveChatBubble = () => {
     setShow(false);
   };
 
+  // Shift up when sticky bar is visible (sticky bar ~56px height)
+  const bottomOffset = stickyBarVisible ? "bottom-[140px]" : "bottom-[100px]";
+
   return (
     <AnimatePresence>
       {show && !dismissed && (
@@ -35,7 +41,7 @@ const ProactiveChatBubble = () => {
           animate={{ y: 0, opacity: 1, scale: 1 }}
           exit={{ y: 20, opacity: 0, scale: 0.95 }}
           transition={{ type: "spring", stiffness: 300, damping: 25 }}
-          className="fixed bottom-24 right-6 z-40 max-w-sm bg-card border border-border rounded-2xl shadow-lg p-5"
+          className={`fixed ${bottomOffset} right-6 z-40 max-w-sm bg-card border border-border rounded-2xl shadow-lg p-5`}
         >
           <button
             onClick={handleClose}
