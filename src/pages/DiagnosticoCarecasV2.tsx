@@ -657,7 +657,7 @@ const Section04 = () => (
         {/* Table header */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr_2fr] gap-4 pb-3 mb-2" style={{ borderBottom: `2px solid ${DV2.border}` }}>
           <span className="text-[0.7rem] tracking-[0.06em] uppercase hidden md:block" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>Concorrente</span>
-          <span className="text-[0.7rem] tracking-[0.06em] uppercase hidden md:block" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>Estratégia</span>
+          <span className="text-[0.7rem] tracking-[0.06em] uppercase hidden md:block" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>O que fazem</span>
           <span className="text-[0.7rem] tracking-[0.06em] uppercase hidden md:block" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>Por que isso importa</span>
         </div>
 
