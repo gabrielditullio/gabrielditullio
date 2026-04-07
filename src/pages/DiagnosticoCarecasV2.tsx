@@ -574,14 +574,14 @@ const Section02 = () => (
           <div className="text-[2.5rem] font-extrabold leading-none" style={{ fontFamily: "'Syne', sans-serif", color: DV2.primary }}>
             <Counter target={70} />
           </div>
-          <div className="text-[0.65rem] uppercase tracking-[0.08em] mt-1" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>Score GMB</div>
+          <div className="text-[0.65rem] uppercase tracking-[0.08em] mt-1" style={{ fontFamily: "'JetBrains Mono', monospace", color: DV2.muted }}>Nota do perfil</div>
         </div>
       </Reveal>
 
       <div className="flex-1 min-w-[280px]">
         <Reveal>
           <p className="text-[clamp(1.05rem,1.8vw,1.25rem)] leading-[1.75] mb-6" style={{ color: DV2.muted }}>
-            O perfil do Google Meu Negócio tem as fundações corretas — nome, endereço, telefone, horário. Mas os 4 indicadores que alimentam o algoritmo de recomendação estão todos em <strong style={{ color: DV2.red }}>0%</strong>.
+            O perfil de vocês no Google tem o básico certo — nome, endereço, telefone, horário. Mas as 4 coisas que fazem o Google recomendar vocês pra quem busca por perto estão todas em <strong style={{ color: DV2.red }}>0%</strong>.
           </p>
         </Reveal>
 
