@@ -76,7 +76,7 @@ const HERO_DATA = {
   badge: "Relatório Exclusivo — Abril 2026",
   titleLine1: "Os Carecas da Pizza",
   titleLine2: "estão deixando dinheiro na mesa.",
-  subtitle: "Uma análise de presença digital que revela oportunidades concretas de crescimento para a operação no Tremembé — baseada em dados reais, não em achismo.",
+  subtitle: "Uma análise simples e direta que mostra onde vocês estão perdendo clientes — e o que fazer para resolver. Baseada em dados reais, não em achismo.",
   meta: [
     { icon: "mappin", text: "Tremembé, Zona Norte — SP" },
     { icon: "building", text: "CNPJ 50.821.216/0001-96" },
@@ -85,50 +85,50 @@ const HERO_DATA = {
 };
 
 const SECTION_01_STATS = [
-  { target: 12600, suffix: "", label: "Seguidores no Instagram", desc: "Engajamento real, não bots", color: DV2.primary },
+  { target: 12600, suffix: "", label: "Seguidores no Instagram", desc: "Gente real que acompanha vocês", color: DV2.primary },
   { target: 314, suffix: "", label: "Posts publicados", desc: "Consistência que gera confiança", color: DV2.text },
   { display: "R$ 990K", label: "Capital social", desc: "Estrutura sólida de investimento", color: DV2.green },
-  { target: 100, suffix: "+", label: "Curtidas reais por Reel", desc: "Comunidade local ativa", color: DV2.text },
+  { target: 100, suffix: "+", label: "Curtidas reais por Reel", desc: "Comunidade do bairro engajada", color: DV2.text },
 ];
 
 const SECTION_01_INSIGHT = {
-  title: "Resumo: a base orgânica é forte.",
-  text: "Massa de longa fermentação, espaço kids, acessibilidade, drinks autorais, UGC de clientes — vocês têm diferenciação real. O problema não é o produto. O problema é quem ainda não sabe que vocês existem.",
+  title: "Resumo: vocês já têm o mais difícil.",
+  text: "Massa de longa fermentação, espaço kids, acessibilidade, drinks autorais, clientes que postam por conta própria — vocês têm um produto que as pessoas amam. O problema não é a pizza. O problema é que muita gente no bairro ainda não sabe que vocês existem.",
 };
 
 const GOOGLE_BARS = [
-  { label: "Publicações (Google Posts)", value: 0, color: DV2.red },
-  { label: "Fotos do Proprietário", value: 0, color: DV2.red },
-  { label: "Respostas a Avaliações", value: 0, color: DV2.red },
-  { label: "Perguntas e Respostas", value: 0, color: DV2.red },
-  { label: "Dados Estruturais (NAP)", value: 100, color: DV2.green },
+  { label: "Novidades e ofertas no Google", value: 0, color: DV2.red },
+  { label: "Fotos do dono/equipe", value: 0, color: DV2.red },
+  { label: "Respostas a avaliações", value: 0, color: DV2.red },
+  { label: "Perguntas respondidas", value: 0, color: DV2.red },
+  { label: "Dados básicos (endereço, telefone)", value: 100, color: DV2.green },
 ];
 
 const GOOGLE_INSIGHT = {
   title: "O que isso significa na prática?",
-  text: 'Quando alguém a 500 metros busca "pizzaria aberta agora" no celular, o Google vai recomendar a Serrana ou a Pizza Mil — não vocês. Não porque a pizza deles é melhor, mas porque o algoritmo recompensa quem interage. Vocês existem no mapa, mas são invisíveis na busca.',
+  text: 'Quando alguém a 500 metros busca "pizzaria aberta agora" no celular, o Google vai recomendar a Serrana ou a Pizza Mil — não vocês. Não porque a pizza deles é melhor, mas porque o Google prioriza quem interage mais com o perfil. Vocês estão no mapa, mas quase ninguém encontra vocês nas buscas.',
 };
 
 const GAPS_DATA = [
   {
     icon: "network",
-    title: "Sem Website",
-    desc: "Impossível instalar Meta Pixel. Sem remarketing. Sem lookalike audiences. Sem captura de dados próprios. 100% dependente de plataformas de terceiros.",
+    title: "Sem site próprio",
+    desc: "Sem uma página na internet, não dá pra saber quem visitou, quem se interessou e quem poderia virar cliente. Vocês ficam 100% dependentes do Instagram e do iFood, sem controle nenhum.",
     impactLabel: "Impacto estimado",
-    impactValue: "20-30% de conversões perdidas",
+    impactValue: "20-30% dos pedidos que poderiam vir, não vêm",
   },
   {
     icon: "megaphone",
-    title: "Zero Tráfego Pago",
-    desc: "Sem Meta Ads. Sem Google Ads. Entre 18h e 22h, quando o público busca pizzarias, vocês não aparecem em nenhum anúncio. Dinheiro na mesa, literalmente.",
-    impactLabel: "Oportunidade perdida",
-    impactValue: "R$ 1.500–3.000/mês",
+    title: "Nenhum anúncio rodando",
+    desc: "Sem anúncio no Instagram, Facebook ou Google. Entre 18h e 22h, quando as pessoas decidem o que vão jantar, vocês simplesmente não aparecem. A concorrência aparece.",
+    impactLabel: "Pedidos perdidos por mês",
+    impactValue: "R$ 1.500–3.000",
   },
   {
     icon: "store",
     title: "Dependência do iFood",
-    desc: "Taxas de até 27% corroem a margem. Goomer existe, mas sem tráfego pago direcionado, a maioria dos clientes novos ainda vem pelo marketplace.",
-    impactLabel: "Custo mensal em taxas",
+    desc: "O iFood cobra até 27% de comissão. Cada R$ 100 que entra pelo iFood, quase R$ 30 ficam com eles. O Goomer existe, mas sem divulgação, a maioria dos clientes novos ainda vem pelo marketplace.",
+    impactLabel: "Dinheiro que vai pro iFood todo mês",
     impactValue: "R$ 2.000–5.000",
   },
 ];
@@ -138,83 +138,83 @@ const COMPETITORS = [
     name: "Pizza Mil",
     badge: "Agressivo",
     badgeColor: DV2.red,
-    strategy: "Cardápio modular com Prato Kids (R$ 42), pizzas doces (R$ 60), combos de esfihas (R$ 56). Cross-selling extremo — monopoliza a refeição familiar inteira.",
-    why: "Captura famílias de alta renda do bairro com pratos infantis premium. Centraliza todo o pedido (pais + crianças + sobremesa) em um só lugar via canais digitais.",
+    strategy: "Cardápio completo com opções pra família inteira: prato kids (R$ 42), pizzas doces (R$ 60), combos de esfihas (R$ 56). A família senta e pede tudo num lugar só.",
+    why: "Quando uma família do bairro quer jantar fora, a Pizza Mil aparece com opção pra todo mundo — pai, mãe, criança, sobremesa. Tudo num pedido só, pelo celular.",
   },
   {
     name: "Pizzaria Serrana",
     badge: "Premium",
     badgeColor: DV2.primary,
-    strategy: "Posicionamento premium. Calzones a R$ 85+, pizzas doces grandes a R$ 60+. Ticket médio facilmente ultrapassa R$ 150–200 por pedido.",
-    why: "Domina o iFood na região. Visibilidade algorítmica constante. Cada novo morador do Tremembé descobre a Serrana antes de vocês — pelo app, não pela rua.",
+    strategy: "Preço alto, mas posicionamento forte. Calzones a R$ 85+, pizzas doces a R$ 60+. O pedido médio passa fácil de R$ 150–200.",
+    why: "Domina o iFood na região. Quando alguém novo se muda pro Tremembé e abre o app pra pedir pizza, a Serrana aparece primeiro — antes de vocês.",
   },
 ];
 
 const COMPETITOR_INSIGHT = {
-  title: "O Efeito Tesoura",
-  text: "De um lado, a Pizza Mil captura famílias com conveniência e variedade. Do outro, a Serrana captura quem busca indulgência via algoritmo. Vocês ficam no meio — sem resposta digital para nenhum dos dois movimentos. Não porque falta qualidade, mas porque falta visibilidade.",
+  title: "O efeito tesoura",
+  text: "De um lado, a Pizza Mil conquista as famílias com variedade e praticidade. Do outro, a Serrana conquista quem quer algo mais premium — e aparece primeiro no app. Vocês ficam no meio, sem resposta pra nenhum dos dois. Não porque falta qualidade — mas porque falta aparecer.",
 };
 
 const PRESENCE_ACTIVE = [
   { icon: "camera", label: "Instagram", detail: "@oscarecasdapizza — 12.6K seguidores, 314 posts" },
-  { icon: "clipboard", label: "Goomer", detail: "Cardápio digital, pedidos diretos, sem taxas altas" },
-  { icon: "bike", label: "iFood", detail: "Presença ativa, mas com taxas de até 27%" },
-  { icon: "mappin", label: "Google Business Profile", detail: "Perfil reivindicado, dados estruturais 100%" },
+  { icon: "clipboard", label: "Goomer", detail: "Cardápio digital onde o cliente pede direto, sem pagar taxa alta" },
+  { icon: "bike", label: "iFood", detail: "Presença ativa, mas cada pedido custa até 27% de comissão" },
+  { icon: "mappin", label: "Google (perfil do negócio)", detail: "Perfil ativo com endereço, telefone e horário corretos" },
 ];
 
 const PRESENCE_ABSENT = [
-  { icon: "globe", label: "Website / Landing Page", detail: "Impossibilita Pixel, remarketing e lookalike" },
-  { icon: "megaphone", label: "Meta Ads", detail: "Zero tráfego pago — oportunidade gigante" },
-  { icon: "search", label: "Google Ads", detail: "Não captura buscas de alto intento local" },
-  { icon: "mail", label: "Email Marketing", detail: "Sem captura de emails de clientes" },
+  { icon: "globe", label: "Site próprio", detail: "Sem site, não dá pra rastrear visitantes ou receber pedidos diretos" },
+  { icon: "megaphone", label: "Anúncios no Instagram/Facebook", detail: "Nenhum anúncio rodando — quem não anuncia, não aparece" },
+  { icon: "search", label: "Anúncios no Google", detail: "Quando alguém busca 'pizzaria Tremembé', vocês não aparecem" },
+  { icon: "mail", label: "Lista de clientes", detail: "Sem forma de avisar clientes sobre promoções e novidades" },
 ];
 
 const OPPORTUNITIES = [
   {
     icon: "monitor",
     badge: "Oportunidade #1",
-    title: "Landing Page + Meta Pixel",
-    desc: "Página simples com cardápio, horário, reserva e botão WhatsApp. Instalar Meta Pixel para rastrear visitantes e criar públicos semelhantes baseados em clientes reais.",
+    title: "Site simples + rastreamento",
+    desc: "Uma página bonita com o cardápio, horário de funcionamento, fotos e um botão direto pro WhatsApp. Com essa página, dá pra saber quantas pessoas visitam e criar anúncios mais certeiros depois.",
     metrics: [
-      { value: "20-30%", label: "Aumento em conversões", color: DV2.green },
+      { value: "20-30%", label: "Mais pedidos diretos", color: DV2.green },
       { value: "R$ 500–1K", label: "Investimento único", color: DV2.text },
-      { value: "1–2 sem", label: "Prazo de implementação", color: DV2.text },
+      { value: "1–2 sem", label: "Prazo pra ficar pronto", color: DV2.text },
     ],
   },
   {
     icon: "radar",
     badge: "Oportunidade #2",
-    title: "Meta Ads Geolocalizado",
-    desc: "Campanhas direcionadas para Tremembé + região (raio 3km), nos horários de pico (18h–22h), com CTA para WhatsApp e Goomer. Pedidos diretos, sem taxa de marketplace.",
+    title: "Anúncios focados no bairro",
+    desc: "Anúncios no Instagram e Facebook que aparecem só pra quem mora perto (raio de 3km do Tremembé), nos horários de fome (18h–22h). O cliente clica e pede direto pelo WhatsApp ou Goomer — sem pagar comissão pro iFood.",
     metrics: [
-      { value: "2–3x", label: "Pedidos diretos", color: DV2.green },
-      { value: "30-40%", label: "Menos iFood", color: DV2.green },
-      { value: "R$ 1.5K", label: "Investimento/mês", color: DV2.text },
-      { value: "300-400%", label: "ROI esperado", color: DV2.green },
+      { value: "2–3x", label: "Mais pedidos diretos", color: DV2.green },
+      { value: "30-40%", label: "Menos dependência do iFood", color: DV2.green },
+      { value: "R$ 1.5K", label: "Investimento por mês", color: DV2.text },
+      { value: "3–4x", label: "Retorno sobre o investido", color: DV2.green },
     ],
   },
   {
     icon: "search",
     badge: "Oportunidade #3",
-    title: "Google Ads Local",
-    desc: 'Capturar buscas de alto intento: "pizzaria Tremembé", "pizza artesanal SP", "delivery pizza zona norte". Quem busca isso está pronto para comprar — agora.',
+    title: "Aparecer no Google quando alguém busca",
+    desc: 'Quando alguém digita "pizzaria Tremembé", "pizza artesanal SP" ou "delivery pizza zona norte" no Google, vocês aparecem primeiro. Essa pessoa já está com fome e quer pedir — é só facilitar.',
     metrics: [
-      { value: "R$ 1–3", label: "Custo por clique", color: DV2.text },
-      { value: "15-25%", label: "Taxa de conversão", color: DV2.green },
-      { value: "R$ 900–1.5K", label: "Investimento/mês", color: DV2.text },
+      { value: "R$ 1–3", label: "Custo por pessoa que clica", color: DV2.text },
+      { value: "15-25%", label: "De quem clica, pede", color: DV2.green },
+      { value: "R$ 900–1.5K", label: "Investimento por mês", color: DV2.text },
     ],
   },
 ];
 
 const PROJECTION_STATS = [
-  { value: "R$ 4–6K", label: "Receita adicional/mês", desc: "Pedidos diretos via WhatsApp e Goomer, sem taxas de marketplace", color: DV2.green, borderColor: DV2.green },
-  { value: "R$ 1.5–2K", label: "Investimento mensal", desc: "Meta Ads + Google Ads + manutenção da landing page", color: DV2.primary, borderColor: DV2.primary },
-  { value: "300–400%", label: "ROI esperado", desc: "Retorno sobre investimento nos primeiros 60 dias de operação", color: DV2.green, borderColor: DV2.green },
+  { value: "R$ 4–6K", label: "Receita extra por mês", desc: "Pedidos que vêm direto pelo WhatsApp e Goomer — sem pagar comissão", color: DV2.green, borderColor: DV2.green },
+  { value: "R$ 1.5–2K", label: "Investimento mensal", desc: "Anúncios no Instagram, Google e manutenção do site", color: DV2.primary, borderColor: DV2.primary },
+  { value: "3–4x", label: "Retorno sobre o investido", desc: "Pra cada R$ 1 investido, volta entre R$ 3 e R$ 4 em pedidos", color: DV2.green, borderColor: DV2.green },
 ];
 
 const PROJECTION_INSIGHT = {
-  title: "Perspectiva",
-  text: "Vocês já têm a base orgânica, o produto diferenciado e o capital. O que falta é o motor de aquisição digital. Cada dia sem ele é um dia em que novos moradores do Tremembé pedem da Serrana ou da Pizza Mil — não porque preferem, mas porque encontraram primeiro.",
+  title: "Colocando em perspectiva",
+  text: "Vocês já têm seguidores, produto bom e capital. O que falta é fazer as pessoas do bairro saberem que vocês existem — na hora que elas estão com fome e decidindo onde pedir. Cada dia sem isso é um dia em que novos moradores do Tremembé pedem da Serrana ou da Pizza Mil. Não porque preferem — mas porque encontraram primeiro.",
 };
 
 const TIMELINE_STEPS = [
