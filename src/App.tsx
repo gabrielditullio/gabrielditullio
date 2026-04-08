@@ -11,6 +11,7 @@ import DiagnosticoCarecasV2 from "./pages/DiagnosticoCarecasV2";
 import FallenMajorPlaybook from "./pages/FallenMajorPlaybook";
 import DiagnosticoCarecasV3 from "./pages/DiagnosticoCarecasV3";
 import ReisDantas from "./pages/ReisDantas";
+import Nova from "./pages/Nova";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
