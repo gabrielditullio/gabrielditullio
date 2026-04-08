@@ -2,7 +2,7 @@
   display: none !important;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=JetBrains+Mono:wght@400;500&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Instrument+Sans:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -148,6 +148,17 @@
     --rd-border: rgba(255, 255, 255, 0.08);
     --rd-font-display: 'Instrument Sans', 'DM Sans', sans-serif;
     --rd-font-body: 'DM Sans', sans-serif;
+
+    /* Nova page tokens */
+    --nova-bg: #0a0a0a;
+    --nova-surface: #111111;
+    --nova-text: #fafaf9;
+    --nova-text-muted: #a3a3a3;
+    --nova-gold: #c9a96e;
+    --nova-gold-light: #dfc08a;
+    --nova-border: rgba(255, 255, 255, 0.06);
+    --nova-font-display: 'Cormorant Garamond', serif;
+    --nova-font-body: 'DM Sans', sans-serif;
   }
 }
 
@@ -294,4 +305,10 @@
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Nova page marquee */
+@keyframes nova-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
 }
