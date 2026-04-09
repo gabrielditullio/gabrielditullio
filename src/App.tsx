@@ -12,6 +12,7 @@ import FallenMajorPlaybook from "./pages/FallenMajorPlaybook";
 import DiagnosticoCarecasV3 from "./pages/DiagnosticoCarecasV3";
 import ReisDantas from "./pages/ReisDantas";
 import Nova from "./pages/Nova";
+import DamasDaLampada from "./pages/DamasDaLampada";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
