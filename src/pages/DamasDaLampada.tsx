@@ -160,7 +160,7 @@ const TEAM_STRUCTURE = [
 
 const fadeUp = { hidden: { opacity: 0, y: 40 }, visible: { opacity: 1, y: 0 } };
 
-function Section({ children, className = "", delay = 0 }) {
+function Section({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
   return (
@@ -170,7 +170,7 @@ function Section({ children, className = "", delay = 0 }) {
   );
 }
 
-function Counter({ value, suffix = "" }) {
+function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const [count, setCount] = useState(0);
