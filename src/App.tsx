@@ -13,6 +13,8 @@ import DiagnosticoCarecasV3 from "./pages/DiagnosticoCarecasV3";
 import ReisDantas from "./pages/ReisDantas";
 import Nova from "./pages/Nova";
 import DamasDaLampada from "./pages/DamasDaLampada";
+import TioFiisVSL from "./pages/TioFiisVSL";
+import TioFiisVSL2 from "./pages/TioFiisVSL2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +36,8 @@ const App = () => (
           <Route path="/reisdantas" element={<ReisDantas />} />
           <Route path="/nova" element={<Nova />} />
           <Route path="/damas-da-lampada" element={<DamasDaLampada />} />
+          <Route path="/tiofiis_vsl" element={<TioFiisVSL />} />
+          <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
