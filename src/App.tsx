@@ -41,6 +41,7 @@ const App = () => (
           <Route path="/tiofiis_vsl" element={<TioFiisVSL />} />
           <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
           <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
+          <Route path="/tiofiis_apresentacao" element={<TioFiisApresentacao />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
