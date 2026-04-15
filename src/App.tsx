@@ -15,6 +15,7 @@ import Nova from "./pages/Nova";
 import DamasDaLampada from "./pages/DamasDaLampada";
 import TioFiisVSL from "./pages/TioFiisVSL";
 import TioFiisVSL2 from "./pages/TioFiisVSL2";
+import TioFiisFunis from "./pages/TioFiisFunis";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
           <Route path="/damas-da-lampada" element={<DamasDaLampada />} />
           <Route path="/tiofiis_vsl" element={<TioFiisVSL />} />
           <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
+          <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
