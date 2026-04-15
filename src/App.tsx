@@ -16,6 +16,7 @@ import DamasDaLampada from "./pages/DamasDaLampada";
 import TioFiisVSL from "./pages/TioFiisVSL";
 import TioFiisVSL2 from "./pages/TioFiisVSL2";
 import TioFiisFunis from "./pages/TioFiisFunis";
+import TioFiisApresentacao from "./pages/TioFiisApresentacao";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
