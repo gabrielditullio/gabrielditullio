@@ -13,6 +13,8 @@ import DiagnosticoCarecasV3 from "./pages/DiagnosticoCarecasV3";
 import ReisDantas from "./pages/ReisDantas";
 import Nova from "./pages/Nova";
 import DamasDaLampada from "./pages/DamasDaLampada";
+import TioFiisVSL from "./pages/TioFiisVSL";
+import TioFiisVSL2 from "./pages/TioFiisVSL2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
