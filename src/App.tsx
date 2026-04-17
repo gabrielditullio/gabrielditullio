@@ -17,6 +17,7 @@ import TioFiisVSL from "./pages/TioFiisVSL";
 import TioFiisVSL2 from "./pages/TioFiisVSL2";
 import TioFiisFunis from "./pages/TioFiisFunis";
 import TioFiisApresentacao from "./pages/TioFiisApresentacao";
+import MvpEducation from "./pages/MvpEducation";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
           <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
           <Route path="/tiofiis_apresentacao" element={<TioFiisApresentacao />} />
+          <Route path="/mvp_education" element={<MvpEducation />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
