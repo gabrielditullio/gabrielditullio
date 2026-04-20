@@ -230,7 +230,6 @@ function Section({ id, children, dark = false }) {
     >
       {/* Parallax ambient orb */}
       <motion.div
-        style={{ y: bgY }}
         aria-hidden="true"
         className="absolute pointer-events-none"
         style={{ top: "15%", left: "-8%", width: "35%", height: "35%", y: bgY, background: "radial-gradient(circle, rgba(201,168,76,0.025) 0%, transparent 70%)", borderRadius: "50%" }}
