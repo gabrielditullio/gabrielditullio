@@ -18,6 +18,8 @@ import TioFiisVSL2 from "./pages/TioFiisVSL2";
 import TioFiisFunis from "./pages/TioFiisFunis";
 import TioFiisApresentacao from "./pages/TioFiisApresentacao";
 import MvpEducation from "./pages/MvpEducation";
+import BioconversionPitchDeckV1 from "./pages/BioconversionPitchDeckV1";
+import BioconversionPitchDeckV2 from "./pages/BioconversionPitchDeckV2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +46,8 @@ const App = () => (
           <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
           <Route path="/tiofiis_apresentacao" element={<TioFiisApresentacao />} />
           <Route path="/mvp_education" element={<MvpEducation />} />
+          <Route path="/Bioconversionv1" element={<BioconversionPitchDeckV1 />} />
+          <Route path="/Bioconversionv2" element={<BioconversionPitchDeckV2 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
