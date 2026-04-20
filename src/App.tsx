@@ -20,6 +20,7 @@ import TioFiisApresentacao from "./pages/TioFiisApresentacao";
 import MvpEducation from "./pages/MvpEducation";
 import BioconversionPitchDeckV1 from "./pages/BioconversionPitchDeckV1";
 import BioconversionPitchDeckV2 from "./pages/BioconversionPitchDeckV2";
+import BioconversionPitchDeckV3 from "./pages/BioconversionPitchDeckV3";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/mvp_education" element={<MvpEducation />} />
           <Route path="/Bioconversionv1" element={<BioconversionPitchDeckV1 />} />
           <Route path="/Bioconversionv2" element={<BioconversionPitchDeckV2 />} />
+          <Route path="/Bioconversionv3" element={<BioconversionPitchDeckV3 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
