@@ -1843,3 +1843,36 @@ table { min-width: 32rem; }
     max-width: 100% !important;
   }
 }
+
+/* === FIXES (round 2) === */
+/* Manter números em uma linha onde couber */
+.summary-card-value,
+.stat-value,
+.hero-meta-item-value {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+@media (max-width: 520px) {
+  .summary-card-value,
+  .stat-value {
+    white-space: normal;
+  }
+}
+
+/* Hero meta cards: manter exatamente a aparência atual no hover
+   (sem mudança de fundo/cor — apenas um leve realce de borda) */
+.hero-meta-item {
+  transition: border-color 0.25s var(--ease-out, ease);
+}
+.hero-meta-item:hover,
+.hero-meta-item:focus-within {
+  background: inherit !important;
+  color: inherit !important;
+  transform: none !important;
+  border-color: var(--color-primary) !important;
+}
+.hero-meta-item:hover .hero-meta-item-label,
+.hero-meta-item:hover .hero-meta-item-value {
+  color: inherit !important;
+}
