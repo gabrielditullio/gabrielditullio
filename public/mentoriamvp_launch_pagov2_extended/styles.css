@@ -911,3 +911,56 @@ table { min-width: 32rem; }
     max-width: 100% !important;
   }
 }
+
+/* === DIAGRAMMING FIXES (round 2) === */
+
+/* 1) Empty grid cells in summary/stat grids — remove the gridline-background trick.
+   The "background: var(--line); gap: 1px" technique creates visible empty squares
+   when a row is not fully filled. Use real borders instead. */
+.summary-grid,
+.stat-grid {
+  background: transparent !important;
+  gap: var(--space-md) !important;
+}
+.summary-card,
+.stat {
+  border: 1px solid var(--line) !important;
+  border-radius: var(--radius) !important;
+}
+
+/* 2) Tables: remove sticky headers (they overlap content while scrolling and create
+   the floating orange-band-over-cards artifact). Add proper row separation. */
+th {
+  position: static !important;
+  top: auto !important;
+}
+.table-wrap { isolation: isolate; }
+table { font-size: 0.92rem; }
+th, td {
+  border-bottom: 1px solid var(--line);
+}
+
+/* 3) Keep numeric ranges on a single line where it fits.
+   Apply non-breaking behavior to value cells. */
+.summary-card-value,
+.stat-value,
+.hero-meta-item-value {
+  white-space: nowrap;
+  overflow-wrap: normal;
+  word-break: keep-all;
+}
+@media (max-width: 520px) {
+  .summary-card-value,
+  .stat-value {
+    white-space: normal;
+    font-size: clamp(1.6rem, 7vw, 2.1rem);
+  }
+}
+
+/* 4) Timeline: 90px first column was forcing dates to break vertically.
+   Give them enough room and prevent wrapping of the date itself. */
+@media (min-width: 720px) {
+  .timeline::before { left: 140px; }
+  .timeline-item { grid-template-columns: 140px minmax(0, 1fr) !important; }
+  .timeline-marker { white-space: nowrap; }
+}
