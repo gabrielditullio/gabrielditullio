@@ -1120,3 +1120,9 @@ td:last-child { border-right: 0; }
   .summary-grid,
   .stat-grid { padding: 0.85rem !important; }
 }
+
+@media (min-width: 861px) {
+  .hero-meta-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
