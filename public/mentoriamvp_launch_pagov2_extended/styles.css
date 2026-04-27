@@ -1070,3 +1070,20 @@ td:last-child { border-right: 0; }
   }
   .timeline-content { min-width: 0; }
 }
+
+@media (max-width: 720px) {
+  .timeline-item > .timeline-date,
+  .timeline-item > .timeline-title,
+  .timeline-item > .timeline-desc {
+    grid-column: 2 !important;
+  }
+  .timeline-item > .timeline-date {
+    grid-row: 1;
+    margin-bottom: 0.2rem;
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item > .timeline-date::after { right: -22px; }
+  .timeline-item > .timeline-title { grid-row: 2; }
+  .timeline-item > .timeline-desc { grid-row: 3; }
+}
