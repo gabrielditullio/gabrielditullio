@@ -61,7 +61,7 @@ const App = () => (
           <Route path="/Bioconversionv4" element={<PropostaComercialBioconversionAcademy />} />
           <Route
             path="/mentoriamvp_launch_pago"
-            element={<StaticRedirect to="/mentoriamvp_launch_pago/index.html" />}
+            element={<StaticRedirect to="/mentoriamvp_launch_pago/" />}
           />
           <Route
             path="/mentoriamvp_launch_pagov2"
