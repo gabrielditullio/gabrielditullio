@@ -2015,41 +2015,35 @@ td { padding: 1rem !important; }
   }
 }
 
-/* === BOX BREATHING ROOM === */
+/* === BOX GROUP BREATHING ROOM === */
+.hero-meta-grid,
+.summary-grid,
+.stat-grid {
+  padding: clamp(1rem, 2.1vw, 1.75rem) !important;
+  border: 1px solid var(--color-border-faint) !important;
+  border-top: 1.5px solid var(--color-primary) !important;
+  background: color-mix(in oklch, var(--color-surface) 42%, transparent) !important;
+}
+
 .hero-meta-item,
 .summary-card,
-.stat,
+.stat {
+  padding: clamp(1rem, 1.45vw, 1.35rem) !important;
+}
+
 .card,
 .callout,
 .quote,
-.badge,
 .table-wrap th,
 .table-wrap td,
 .timeline-content,
 .timeline-item > .timeline-title,
 .timeline-item > .timeline-desc {
-  padding-inline: clamp(1.35rem, 2.2vw, 2rem) !important;
-}
-
-.hero-meta-item,
-.summary-card,
-.stat,
-.card,
-.callout,
-.quote {
-  padding-block: clamp(1.25rem, 2vw, 1.85rem) !important;
+  padding-inline: clamp(1.15rem, 1.8vw, 1.65rem) !important;
 }
 
 @media (max-width: 640px) {
-  .hero-meta-item,
-  .summary-card,
-  .stat,
-  .card,
-  .callout,
-  .quote,
-  .timeline-content,
-  .timeline-item > .timeline-title,
-  .timeline-item > .timeline-desc {
-    padding-inline: 1.15rem !important;
-  }
+  .hero-meta-grid,
+  .summary-grid,
+  .stat-grid { padding: 0.85rem !important; }
 }
