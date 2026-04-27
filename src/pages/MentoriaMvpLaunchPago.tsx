@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import briefingHtml from "../content/mentoriamvp-launch-pago.html?raw";
 
-const CACHE_BUST = "20260427-title-fix";
+const CACHE_BUST = "20260427-title-maxw";
 const scriptSrc = `/mentoriamvp_launch_pago/script.js?v=${CACHE_BUST}`;
 const styleHref = `/mentoriamvp_launch_pago/styles.css?v=${CACHE_BUST}`;
 
