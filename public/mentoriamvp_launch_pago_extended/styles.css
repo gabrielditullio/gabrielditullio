@@ -1447,6 +1447,24 @@ td strong { color: var(--color-text); font-weight: 700; }
   font-family: var(--font-body);
 }
 
+.timeline-item > .timeline-date {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.timeline-item > .timeline-title {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  margin-bottom: 0.35rem;
+}
+
+.timeline-item > .timeline-desc {
+  grid-column: 2;
+  grid-row: 2;
+  max-width: 76ch;
+}
+
 .timeline-item.key .timeline-marker,
 .timeline-item.key .timeline-date {
   color: var(--color-text);
