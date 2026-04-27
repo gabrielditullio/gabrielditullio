@@ -610,43 +610,6 @@ td.mono { color: var(--paper); font-family: var(--font-mono); font-size: 0.86rem
 .timeline-title { color: var(--paper); font-family: var(--font-display); font-size: 1.32rem; font-weight: 700; line-height: 1.1; margin-bottom: var(--space-xs); text-transform: uppercase; }
 .timeline-text,
 .timeline-desc { color: var(--soft); font-size: 0.94rem; line-height: 1.6; }
-
-.timeline-item > .timeline-date {
-  position: relative;
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  color: var(--signal);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  padding-right: var(--space-lg);
-  padding-top: 0.35rem;
-  text-align: right;
-  text-transform: uppercase;
-}
-.timeline-item > .timeline-date::after {
-  content: '';
-  position: absolute;
-  right: -6px;
-  top: 0.75rem;
-  width: 11px;
-  height: 11px;
-  border: 2px solid var(--ink);
-  background: var(--signal);
-  box-shadow: 0 0 0 1px var(--signal);
-  transform: rotate(45deg);
-}
-.timeline-item > .timeline-title {
-  grid-column: 2;
-  grid-row: 1;
-  align-self: end;
-  margin-bottom: var(--space-xs);
-}
-.timeline-item > .timeline-desc {
-  grid-column: 2;
-  grid-row: 2;
-  max-width: 76ch;
-}
 .bar-chart { display: grid; gap: var(--space-md); margin: var(--space-xl) 0; }
 .bar-row { display: grid; grid-template-columns: 13rem minmax(10rem, 1fr) 5rem; gap: var(--space-lg); align-items: center; }
 .bar-label { color: var(--soft); font-size: 0.88rem; }
