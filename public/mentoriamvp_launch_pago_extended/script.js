@@ -47,7 +47,8 @@
      3 · Hero title — split into chars + spring stagger
      ========================================================= */
   const heroTitle = document.querySelector('.hero-title');
-  if (heroTitle && !reduce) {
+  const canSplitHeroTitle = false;
+  if (heroTitle && !reduce && canSplitHeroTitle) {
     // Walk text nodes, wrap each non-space char in a span. Preserve <em>.
     const wrap = (node) => {
       [...node.childNodes].forEach((n) => {
