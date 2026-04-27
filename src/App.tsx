@@ -26,6 +26,13 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const StaticRedirect = ({ to }: { to: string }) => {
+  if (typeof window !== "undefined") {
+    window.location.replace(to);
+  }
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
