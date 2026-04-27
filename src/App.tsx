@@ -26,6 +26,13 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const StaticRedirect = ({ to }: { to: string }) => {
+  if (typeof window !== "undefined") {
+    window.location.replace(to);
+  }
+  return null;
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -52,6 +59,10 @@ const App = () => (
           <Route path="/Bioconversionv2" element={<BioconversionPitchDeckV2 />} />
           <Route path="/Bioconversionv3" element={<BioconversionPitchDeckV3 />} />
           <Route path="/Bioconversionv4" element={<PropostaComercialBioconversionAcademy />} />
+          <Route
+            path="/mentoriamvp_launch_pago"
+            element={<StaticRedirect to="/mentoriamvp_launch_pago/index.html" />}
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
