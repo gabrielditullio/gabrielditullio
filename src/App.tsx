@@ -63,6 +63,10 @@ const App = () => (
             path="/mentoriamvp_launch_pago"
             element={<StaticRedirect to="/mentoriamvp_launch_pago/index.html" />}
           />
+          <Route
+            path="/mentoriamvp_launch_pagov2"
+            element={<StaticRedirect to="/mentoriamvp_launch_pagov2/index.html" />}
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
