@@ -753,6 +753,7 @@ h1, h2, h3, h4, p, span, a, li, td, th,
   font-size: clamp(2rem, 7vw, 5.5rem) !important;
   line-height: 1.05 !important;
   hyphens: manual;
+  max-width: none !important;
 }
 
 /* Container do hero — espaço para sidebar/rail à direita */
