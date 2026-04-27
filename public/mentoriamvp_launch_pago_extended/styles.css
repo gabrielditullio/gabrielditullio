@@ -794,3 +794,104 @@ h1, h2, h3, h4, p, span, a, li, td, th,
 
 /* Imagens / mídia nunca estouram */
 img, video, canvas, svg { max-width: 100%; height: auto; }
+
+/* ========================================================
+   === EXTENDED LAYOUT REFINEMENT                       ===
+   Refinamentos amplos: ritmo tipográfico, densidade,
+   container max-width, cards e tabelas mais arejados.
+   ======================================================== */
+
+/* Conteúdo principal com largura de leitura confortável */
+.container {
+  max-width: min(72rem, 100% - 3rem) !important;
+  margin-inline: auto;
+}
+
+/* Hero — proporções refinadas */
+.hero { padding-block: clamp(5rem, 10vh, 9rem) !important; }
+.hero-title {
+  font-size: clamp(2.25rem, 5.6vw, 4.75rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.015em !important;
+  max-width: 22ch;
+  margin-bottom: 1.75rem;
+}
+.hero-subtitle {
+  font-size: clamp(1rem, 1.25vw, 1.15rem) !important;
+  line-height: 1.65 !important;
+  max-width: 58ch;
+  color: var(--soft, var(--color-text-soft, #cfc8bd));
+  margin-bottom: 2.5rem;
+}
+.hero-document-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.hero-meta-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)) !important;
+  gap: 1.25rem !important;
+  margin-top: 2rem;
+}
+.hero-meta-item {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line, rgba(255,255,255,0.08));
+  border-radius: 0.25rem;
+  background: rgba(255,255,255,0.015);
+}
+.hero-meta-item-label {
+  font-size: 0.7rem; letter-spacing: 0.16em; text-transform: uppercase;
+  opacity: 0.65; margin-bottom: 0.4rem;
+}
+.hero-meta-item-value { font-size: 1.05rem; font-weight: 500; }
+
+/* Seções — ritmo vertical generoso */
+section {
+  padding-block: clamp(4rem, 8vh, 7rem) !important;
+  border-top: 1px solid var(--line, rgba(255,255,255,0.06));
+}
+.section-title, h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem) !important;
+  line-height: 1.15 !important;
+  margin-bottom: 1.25rem;
+  max-width: 24ch;
+}
+h3 { font-size: clamp(1.2rem, 1.8vw, 1.5rem) !important; line-height: 1.25 !important; margin-bottom: 0.75rem; }
+p { line-height: 1.7 !important; margin-bottom: 1rem; }
+p + p { margin-top: 0; }
+
+/* Cards mais arejados */
+.card, .summary-card, .callout, .quote {
+  padding: clamp(1.25rem, 2.2vw, 2rem) !important;
+  border-radius: 0.3rem;
+}
+.card + .card { margin-top: 1rem; }
+
+/* Grids — auto-fit limpo */
+[class*="grid-"], .grid {
+  display: grid;
+  gap: clamp(1rem, 1.6vw, 1.5rem);
+}
+
+/* Tabelas — sempre com scroll horizontal em telas pequenas */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 0.25rem;
+}
+table { min-width: 32rem; }
+
+/* Mobile extended */
+@media (max-width: 640px) {
+  .container { max-width: 100% !important; padding-inline: 1.25rem !important; }
+  .hero { padding-block: 4.5rem 3rem !important; }
+  .hero-title { font-size: clamp(1.85rem, 8vw, 2.5rem) !important; line-height: 1.15 !important; }
+  .hero-subtitle { font-size: 0.98rem !important; }
+  .hero-meta-grid { grid-template-columns: 1fr 1fr !important; gap: 0.75rem !important; }
+  .hero-meta-item { padding: 0.85rem 1rem; }
+  section { padding-block: 3rem !important; }
+  .section-title, h2 { font-size: clamp(1.45rem, 6.5vw, 1.9rem) !important; }
+  .card, .summary-card, .callout { padding: 1.1rem !important; }
+}
