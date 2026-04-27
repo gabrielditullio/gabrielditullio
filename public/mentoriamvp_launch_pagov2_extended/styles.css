@@ -933,17 +933,6 @@ td:last-child { border-right: 0; }
   padding: clamp(1rem, 1.45vw, 1.35rem) !important;
 }
 
-.card,
-.callout,
-.quote,
-.table-wrap th,
-.table-wrap td,
-.timeline-content,
-.timeline-item > .timeline-title,
-.timeline-item > .timeline-desc {
-  padding-inline: clamp(1.15rem, 1.8vw, 1.65rem) !important;
-}
-
 @media (max-width: 640px) {
   .hero-meta-grid,
   .summary-grid,
