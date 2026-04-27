@@ -2014,3 +2014,42 @@ td { padding: 1rem !important; }
     grid-template-columns: 1fr !important;
   }
 }
+
+/* === BOX BREATHING ROOM === */
+.hero-meta-item,
+.summary-card,
+.stat,
+.card,
+.callout,
+.quote,
+.badge,
+.table-wrap th,
+.table-wrap td,
+.timeline-content,
+.timeline-item > .timeline-title,
+.timeline-item > .timeline-desc {
+  padding-inline: clamp(1.35rem, 2.2vw, 2rem) !important;
+}
+
+.hero-meta-item,
+.summary-card,
+.stat,
+.card,
+.callout,
+.quote {
+  padding-block: clamp(1.25rem, 2vw, 1.85rem) !important;
+}
+
+@media (max-width: 640px) {
+  .hero-meta-item,
+  .summary-card,
+  .stat,
+  .card,
+  .callout,
+  .quote,
+  .timeline-content,
+  .timeline-item > .timeline-title,
+  .timeline-item > .timeline-desc {
+    padding-inline: 1.15rem !important;
+  }
+}
