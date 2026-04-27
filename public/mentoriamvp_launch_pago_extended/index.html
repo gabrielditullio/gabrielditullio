@@ -3,28 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Briefing — Lançamento Mentoria MVP · Workshop MVP de Junho/2026 · v2</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="theme-color" content="#1a1612">
+<meta name="description" content="Briefing estratégico do Lançamento Pago da Mentoria MVP — Workshop MVP de junho de 2026.">
+<title>Briefing — Lançamento Mentoria MVP · Workshop de Junho/2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./styles.css">
 </head>
-<body class="briefing-v2">
+<body>
 
-
-<canvas class="atmosphere" id="atmosphere" aria-hidden="true"></canvas>
 <div class="progress-bar" id="progressBar"></div>
-<a class="skip-link" href="#sumario">Ir para o briefing</a>
 
-<nav class="nav" aria-label="Navegação principal">
+<nav class="nav">
   <div class="nav-brand">
     <span class="nav-brand-mark"></span>
     <span>MVP · Lançamento Pago Junho/2026</span>
   </div>
   <div class="nav-meta">Briefing v1.0 · Confidencial</div>
-<div class="nav-actions"><button class="focus-toggle" type="button" aria-pressed="false">Modo foco</button></div></nav>
+</nav>
+
+<aside class="toc" aria-label="Sumário do briefing">
+  <a href="#sumario">00 · Sumário</a>
+  <a href="#contexto">01 · Contexto</a>
+  <a href="#estrategia">02 · Estratégia</a>
+  <a href="#calendario">03 · Calendário</a>
+  <a href="#produtos">04 · Produtos</a>
+  <a href="#midia">05 · Mídia</a>
+  <a href="#comercial">06 · Comercial</a>
+  <a href="#pagina">07 · Página</a>
+  <a href="#metricas">08 · Métricas</a>
+  <a href="#anexos">A → G · Anexos</a>
+</aside>
 
 <!-- ============ HERO ============ -->
 <section class="hero">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-bg-gradient"></div>
   <div class="hero-bg-gradient-2"></div>
   <div class="container">
@@ -470,7 +483,7 @@
       A headline final, validada empiricamente contra a voz dos 138 alunos atuais e contra os sonhos declarados de 12 meses:
     </p>
 
-    <div class="quote reveal" style="font-size: 1.85rem; padding: 1.5rem 2.5rem;">
+    <div class="quote quote--feature reveal">
       Dois dias construindo a máquina de vendas que fará sua barbearia faturar R$ 60 mil por mês <em>sem depender de você</em>.
     </div>
 
@@ -1251,7 +1264,7 @@
       </ul>
     </div>
 
-    <div class="card reveal reveal-delay-1" style="border-color: color-mix(in oklch, var(--color-warning) 45%, transparent);">
+    <div class="card card--warning reveal reveal-delay-1">
       <span class="card-eyebrow">Gatilhos para PAUSAR e ajustar antes de continuar</span>
       <div class="card-title">Qualquer um dos 3 critérios aciona</div>
       <ul class="styled-list">
@@ -1552,7 +1565,7 @@
 
     <h3 class="reveal" style="margin-top: 5rem;">Headline final da página</h3>
 
-    <div class="quote reveal" style="font-size: 1.85rem; padding: 1.5rem 2.5rem;">
+    <div class="quote quote--feature reveal">
       Dois dias construindo a máquina de vendas que fará sua barbearia faturar R$ 60 mil por mês <em>sem depender de você</em>.
     </div>
 
@@ -1842,7 +1855,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo A</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Plano de contingência · Cenário A (15–16 jun)</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Plano de contingência · Cenário A (15–16 jun)</h3>
 
     <p class="reveal">
       Caso o Toledo + Leonardo decidam manter o Workshop em <strong>15 e 16 de junho</strong> em vez do Cenário B (7–8 jun) recomendado, este é o que muda no plano. Não vou refazer 50 páginas — vou listar os deltas.
@@ -1962,7 +1975,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo B</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Manual completo do Campeonato UGC.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Manual completo do Campeonato UGC.</h3>
 
     <p class="reveal">
       Estrutura adaptada do Pedro Sobral (Comunidade Subido de Tráfego, abril 2026) e calibrada para a base de 100 alunos da Mentoria MVP. <strong>Esse manual vai virar PDF de 9 slides</strong>, distribuído junto com o vídeo de convocação do Toledo no grupo fechado dos alunos.
@@ -2105,7 +2118,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo C</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Scripts dos três pitches.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Scripts dos três pitches.</h3>
 
     <p class="reveal">
       Estrutura narrativa de cada um dos 3 pitches do Workshop. Toledo adapta na voz dele — não decora. O importante é que cada pitch cumpra sua função estrutural no método, com o ritmo certo de pressão.
@@ -2114,7 +2127,7 @@
     <h4 class="reveal" style="margin-top: 3rem; font-family: var(--font-display); color: var(--color-primary); font-size: 1.4rem;">Pitch 1 · Domingo 7/jun · ~15h40 · Pré-coffee Dia 1</h4>
     <p class="reveal" style="font-style: italic; color: var(--color-text-soft);">Função: ancorar produto e preço cheio · gerar curiosidade sem fechar venda · aquecer para Pitch 2</p>
 
-    <div class="card reveal" style="margin-top: 1.5rem; border-color: var(--color-border);">
+    <div class="card reveal" style="margin-top: 1.5rem;">
       <h5 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1rem; font-size: 1.1rem;">Estrutura — 15 a 20 minutos</h5>
 
       <p><strong>1. Abertura honesta (2 min)</strong> — "Pessoal, vocês me viram falar 6 horas de gestão. Agora eu vou falar 15 minutos do que eu faço pra ajudar dono de barbearia a aplicar tudo isso no dia a dia. Não é venda agressiva, é só pra vocês entenderem o que existe pra além desse Workshop."</p>
@@ -2133,7 +2146,7 @@
     <h4 class="reveal" style="margin-top: 4rem; font-family: var(--font-display); color: var(--color-primary); font-size: 1.4rem;">Pitch 2 · Segunda 8/jun · ~12h40 · Pré-almoço Dia 2</h4>
     <p class="reveal" style="font-style: italic; color: var(--color-text-soft);">Função: apresentar oferta da turma + bônus universais · começar a mexer no bolso · plantar urgência sem abrir carrinho ainda</p>
 
-    <div class="card reveal" style="margin-top: 1.5rem; border-color: var(--color-border);">
+    <div class="card reveal" style="margin-top: 1.5rem;">
       <h5 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1rem; font-size: 1.1rem;">Estrutura — 20 a 25 minutos</h5>
 
       <p><strong>1. Recapitulação dos 2 dias (3 min)</strong> — "Pessoal, ontem a gente diagnosticou. Hoje a gente construiu Serviço Coringa, Plano de Assinaturas, McDonaldização. Vocês saem daqui com 3 processos prontos pra implementar. Mas implementar sozinho é diferente de implementar com acompanhamento."</p>
@@ -2154,7 +2167,7 @@
     <h4 class="reveal" style="margin-top: 4rem; font-family: var(--font-display); color: var(--color-primary); font-size: 1.4rem;">Pitch 3 · Segunda 8/jun · ~15h40 · Pré-coffee Dia 2 · TSUNAMI</h4>
     <p class="reveal" style="font-style: italic; color: var(--color-text-soft);">Função: empilhamento máximo de pressão · abertura do carrinho · QR-code para sinal de R$ 2K · bônus de escassez Onda 3</p>
 
-    <div class="card reveal" style="margin-top: 1.5rem; border-color: var(--color-border); background: var(--color-surface-2);">
+    <div class="card reveal" style="margin-top: 1.5rem; background: var(--color-surface-2);">
       <h5 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1rem; font-size: 1.1rem;">Estrutura — 35 a 45 minutos</h5>
 
       <p><strong>1. Abertura emocional (3 min)</strong> — "Olha pra mim. Vocês passaram dois dias aqui. Vocês saíram da operação por dois dias. E vocês estão aqui porque vocês querem mais. Eu olho pra vocês e vejo o que eu era 5 anos atrás."</p>
@@ -2201,7 +2214,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo D</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Calendário de produção de criativos.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Calendário de produção de criativos.</h3>
 
     <p class="reveal">
       Plano de produção semanal dos criativos. <strong>Refresh constante combate fadiga de criativo</strong> — método W mostra que cada criativo dura em média 7 a 10 dias antes do CTR cair 30%+. A produção tem que estar sempre 1 semana à frente do consumo.
@@ -2309,7 +2322,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo E</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Briefing da página de vendas para Mychel.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Briefing da página de vendas para Mychel.</h3>
 
     <p class="reveal">
       Documento operacional para o Mychel construir a página em Framer. Estrutura de 12 dobras, copy direcionada, requisitos técnicos. <strong>Página tem que estar no ar até 1 de maio</strong> para começar testes de criativo dia 4 sem afobamento.
@@ -2409,7 +2422,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo F</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Dashboard de métricas para acompanhamento diário.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Dashboard de métricas para acompanhamento diário.</h3>
 
     <p class="reveal">
       O painel de métricas que vamos olhar todo dia no stand-up de 15 minutos. <strong>Bianca + Brunno + Gabriel + Leonardo</strong> em chamada rápida. Métricas em planilha compartilhada (Google Sheets) com atualização manual diária às 9h. Sem dashboard de BI sofisticado nesse primeiro lançamento — simplicidade vence.
@@ -2680,7 +2693,7 @@
       <span style="font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.2em; color: var(--color-primary); text-transform: uppercase;">Anexo G</span>
       <span style="height: 1px; flex: 1; background: var(--color-primary-soft);"></span>
     </div>
-    <h3 class="reveal" style="font-size: 2.35rem; margin-bottom: 1rem;">Reconstrução vs Guia · as incongruências documentadas.</h3>
+    <h3 class="reveal" style="font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin-bottom: 1rem;">Reconstrução vs Guia · as incongruências documentadas.</h3>
 
     <p class="reveal">
       Para construir esse plano, eu absorvi duas fontes do Método W de Lançamento Pago: a <strong>Reconstrução</strong> (transcrições de aulas que fui mapeando com Will Baldan ao longo de meses) e o <strong>Guia Consolidado</strong> (síntese final do método). As duas fontes <em>não são idênticas</em>. Tem incongruências numéricas e conceituais.
@@ -2745,7 +2758,7 @@
 
     <h4 class="reveal" style="margin-top: 4rem; font-family: var(--font-display); color: var(--color-primary); font-size: 1.3rem;">A incongruência conceitual mais importante</h4>
 
-    <div class="card reveal" style="margin-top: 1.5rem; border-color: var(--color-border);">
+    <div class="card reveal" style="margin-top: 1.5rem;">
       <h5 style="font-family: var(--font-display); color: var(--color-primary); margin-bottom: 1rem; font-size: 1.1rem;">"O ingresso paga o tráfego" vs "O ingresso paga o compromisso"</h5>
 
       <p><strong>Reconstrução (aulas):</strong> <em>"A gente começa o lançamento com ROAS, a gente faz o lead pagar o tráfego, é quase como se o lead pagasse o tráfego."</em></p>
@@ -2793,7 +2806,7 @@
     </div>
 
     <div style="text-align: center; margin-bottom: 4rem;">
-      <h3 style="font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1.05; margin-bottom: 1.5rem;">
+      <h3 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 400; line-height: 1.2; margin-bottom: 1.5rem;">
         Esse documento <em style="color: var(--color-primary);">não é</em> o plano.<br>
         É o <em style="color: var(--color-primary);">acordo</em> sobre o plano.
       </h3>
@@ -2855,6 +2868,6 @@
 </footer>
 
 
-<script src="script.js"></script>
+<script src="./script.js" defer></script>
 </body>
 </html>
