@@ -895,3 +895,19 @@ table { min-width: 32rem; }
   .section-title, h2 { font-size: clamp(1.45rem, 6.5vw, 1.9rem) !important; }
   .card, .summary-card, .callout { padding: 1.1rem !important; }
 }
+
+/* === FIX FINAL HERO TITLE === */
+.hero-title {
+  max-width: min(64rem, 100%) !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  font-size: clamp(2rem, 4.4vw, 3.75rem) !important;
+}
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: clamp(1.7rem, 7.5vw, 2.3rem) !important;
+    max-width: 100% !important;
+  }
+}
