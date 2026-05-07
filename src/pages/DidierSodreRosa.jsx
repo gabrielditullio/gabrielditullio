@@ -786,22 +786,23 @@ const WhoIAm = () => {
                 position: "relative",
                 width: "100%",
                 aspectRatio: "3 / 4",
-                background:
-                  "linear-gradient(180deg, var(--color-light-gray) 0%, #E5E5E0 100%)",
                 border: "1px solid rgba(168, 139, 77, 0.3)",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                fontFamily: "var(--font-body)",
-                fontSize: "0.7rem",
-                letterSpacing: "0.25em",
-                textTransform: "uppercase",
-                color: "var(--color-graphite)",
-                opacity: 0.5,
-                position: "relative",
+                overflow: "hidden",
               }}
             >
+              <img
+                src={aboutPhoto}
+                alt="Gabriel Di Tullio"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  objectPosition: "top",
+                  filter: "grayscale(100%)",
+                }}
+              />
               <div
                 style={{
                   position: "absolute",
@@ -811,6 +812,7 @@ const WhoIAm = () => {
                   height: "20px",
                   borderTop: "1px solid var(--color-gold)",
                   borderLeft: "1px solid var(--color-gold)",
+                  zIndex: 2,
                 }}
               />
               <div
@@ -822,6 +824,7 @@ const WhoIAm = () => {
                   height: "20px",
                   borderTop: "1px solid var(--color-gold)",
                   borderRight: "1px solid var(--color-gold)",
+                  zIndex: 2,
                 }}
               />
               <div
@@ -833,6 +836,7 @@ const WhoIAm = () => {
                   height: "20px",
                   borderBottom: "1px solid var(--color-gold)",
                   borderLeft: "1px solid var(--color-gold)",
+                  zIndex: 2,
                 }}
               />
               <div
@@ -844,11 +848,9 @@ const WhoIAm = () => {
                   height: "20px",
                   borderBottom: "1px solid var(--color-gold)",
                   borderRight: "1px solid var(--color-gold)",
+                  zIndex: 2,
                 }}
               />
-              <span style={{ marginBottom: "0.5rem" }}>Foto</span>
-              <span>Profissional</span>
-              <span style={{ marginTop: "0.5rem", opacity: 0.7 }}>Preto e Branco</span>
             </div>
           </Reveal>
 
