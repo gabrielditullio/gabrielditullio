@@ -2846,20 +2846,24 @@ const NextStepsSection = () => {
               }}
             >
               {[
-                { Icon: Phone, label: "Telefone", value: "[telefone]" },
-                { Icon: Mail, label: "E-mail", value: "[e-mail]" },
-                { Icon: Instagram, label: "Instagram", value: "[Instagram]" },
-                { Icon: Linkedin, label: "LinkedIn", value: "[LinkedIn]" },
-              ].map(({ Icon, label, value }, i) => (
-                <motion.div
+                { Icon: Phone, label: "Telefone", value: "+55 71 99996-5995", href: "https://wa.me/5571999965995" },
+                { Icon: Mail, label: "E-mail", value: "gabriel@gabrielditullio.com.br", href: "mailto:gabriel@gabrielditullio.com.br" },
+                { Icon: Instagram, label: "Instagram", value: "@gabditullio", href: "https://instagram.com/gabditullio" },
+                { Icon: Linkedin, label: "LinkedIn", value: "gabditullio", href: "https://linkedin.com/in/gabditullio" },
+              ].map(({ Icon, label, value, href }, i) => (
+                <motion.a
                   key={i}
+                  href={href}
+                  target={href?.startsWith("http") ? "_blank" : undefined}
+                  rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
                   whileHover={{ x: 3, transition: { type: "spring", stiffness: 300, damping: 25 } }}
                   style={{
                     display: "flex",
                     alignItems: "flex-start",
                     gap: "0.875rem",
                     padding: "0.75rem 0",
-                    cursor: "default",
+                    cursor: "pointer",
+                    textDecoration: "none",
                   }}
                 >
                   <Icon
@@ -2894,7 +2898,7 @@ const NextStepsSection = () => {
                       {value}
                     </div>
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </div>
           </div>
