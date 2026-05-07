@@ -31,6 +31,7 @@ import {
   CircleDot,
   Minus,
 } from "lucide-react";
+import aboutPhoto from "@/assets/about-photo.png";
 
 // ============================================================
 // DATA — todo o conteúdo vive aqui no topo
