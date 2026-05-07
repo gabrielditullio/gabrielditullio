@@ -19,6 +19,7 @@ import BioconversionPitchDeckV3 from "./pages/BioconversionPitchDeckV3";
 import PropostaComercialBioconversionAcademy from "./pages/PropostaComercialBioconversionAcademy";
 import MentoriaMvpLaunchPago from "./pages/MentoriaMvpLaunchPago";
 import MentoriaMvpLaunchPagoV2 from "./pages/MentoriaMvpLaunchPagoV2";
+import DidierSodreRosa from "./pages/DidierSodreRosa";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/Bioconversionv4" element={<PropostaComercialBioconversionAcademy />} />
           <Route path="/mentoriamvp_launch_pago" element={<MentoriaMvpLaunchPago />} />
           <Route path="/mentoriamvp_launch_pago_v2" element={<MentoriaMvpLaunchPagoV2 />} />
+          <Route path="/pp_didiersodre&rosa" element={<DidierSodreRosa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
