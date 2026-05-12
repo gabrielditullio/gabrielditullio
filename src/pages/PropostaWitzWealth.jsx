@@ -779,7 +779,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ EQUIPE ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="equipe">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
