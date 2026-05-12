@@ -379,14 +379,14 @@ const PropostaWitz = () => {
           transition={{ delay: 1.5, duration: 0.8 }}
           style={{
             position: "absolute", bottom: "3rem", left: 0, right: 0, width: "100%",
-            display: "flex", alignItems: "center", justifyContent: "center", gap: "0.9rem",
-            fontFamily: "var(--font-mono)", fontSize: "0.7rem",
+            display: "grid", justifyItems: "center", gap: "0.55rem",
+            fontFamily: "var(--font-mono)", fontSize: "0.68rem",
             color: "var(--color-text-muted)", textTransform: "uppercase", zIndex: 2,
           }}
         >
-          <span style={{ letterSpacing: "0.3em" }}>Validade</span>
-          <span style={{ color: "var(--color-gold)", opacity: 0.65 }}>·</span>
-          <span style={{ letterSpacing: "0.3em" }}>7 dias</span>
+          <span style={{ letterSpacing: "0.32em", paddingLeft: "0.32em" }}>Validade</span>
+          <span style={{ width: "28px", height: "1px", background: "var(--color-gold)", opacity: 0.35 }} />
+          <span style={{ letterSpacing: "0.32em", paddingLeft: "0.32em" }}>7 dias</span>
         </motion.div>
       </section>
 
