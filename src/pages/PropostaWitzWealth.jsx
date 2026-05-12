@@ -162,7 +162,7 @@ const GlobalStyles = () => (
 // ============================================
 // REUSABLE COMPONENTS
 // ============================================
-const Section = ({ children, style = {}, maxWidth = "1100px", padding = "clamp(4rem, 10vw, 8rem) 1.5rem", ...props }) => (
+const Section = ({ children, style = {}, maxWidth = "1100px", padding = "clamp(3rem, 8vw, 8rem) 1.5rem", ...props }) => (
   <section
     style={{
       padding,
@@ -376,7 +376,7 @@ const PropostaWitz = () => {
         >
           Validade · 7 dias
         </motion.div>
-      </section>
+      </Section>
 
       {/* ============ QUEM SOMOS ============ */}
       <Section id="quem-somos">
