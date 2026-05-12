@@ -1176,7 +1176,9 @@ const PropostaWitz = () => {
 
           <Reveal delay={0.5}>
             <motion.a
-              href="#agendar"
+              href="https://wa.me/5511996035995"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03, boxShadow: "0 20px 60px rgba(201, 169, 110, 0.3)" }}
               whileTap={{ scale: 0.98 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
