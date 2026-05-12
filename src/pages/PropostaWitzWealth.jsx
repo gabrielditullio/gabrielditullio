@@ -472,7 +472,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", marginBottom: "3rem" }}>
+        <div className="proposal-balanced-grid" style={{ marginBottom: "3rem" }}>
           {[
             { num: "1 ano 10m", label: "de operação consolidada" },
             { num: "550", label: "clientes ativos" },
@@ -608,7 +608,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {METODO.map((pilar, i) => {
             const Icon = pilar.icon;
             return (
