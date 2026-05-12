@@ -376,7 +376,7 @@ const PropostaWitz = () => {
         >
           Validade · 7 dias
         </motion.div>
-      </Section>
+      </section>
 
       {/* ============ QUEM SOMOS ============ */}
       <Section id="quem-somos">
@@ -436,7 +436,7 @@ const PropostaWitz = () => {
             </div>
           </div>
         </Reveal>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -513,7 +513,7 @@ const PropostaWitz = () => {
             </div>
           </div>
         </Reveal>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -639,7 +639,7 @@ const PropostaWitz = () => {
             );
           })}
         </div>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -715,7 +715,7 @@ const PropostaWitz = () => {
             </div>
           </Reveal>
         </div>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -783,7 +783,7 @@ const PropostaWitz = () => {
             ))}
           </div>
         </div>
-      </section>
+      </Section>
 
       {/* ============ EQUIPE ============ */}
       <Section id="equipe">
@@ -839,7 +839,7 @@ const PropostaWitz = () => {
             </Reveal>
           ))}
         </div>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -1011,7 +1011,7 @@ const PropostaWitz = () => {
             </div>
           </Reveal>
         </div>
-      </section>
+      </Section>
 
       {/* ============ CLÁUSULA DE EXPANSÃO ============ */}
       <Section id="clausulas">
@@ -1084,7 +1084,7 @@ const PropostaWitz = () => {
             );
           })}
         </div>
-      </section>
+      </Section>
 
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
@@ -1104,7 +1104,7 @@ const PropostaWitz = () => {
             </div>
           </Reveal>
         </div>
-      </section>
+      </Section>
 
       {/* ============ QUEBRA DE OBJEÇÕES ============ */}
       <Section id="perguntas" maxWidth="1000px">
@@ -1155,7 +1155,7 @@ const PropostaWitz = () => {
             </Reveal>
           ))}
         </div>
-      </section>
+      </Section>
 
       {/* ============ CTA FINAL ============ */}
       <Section id="cta-final" style={{ background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #060912 100%)", textAlign: "center", overflow: "hidden" }} maxWidth="900px">
@@ -1227,7 +1227,7 @@ const PropostaWitz = () => {
             </div>
           </Reveal>
         </div>
-      </section>
+      </Section>
 
       {/* ============ FOOTER ============ */}
       <footer style={{
