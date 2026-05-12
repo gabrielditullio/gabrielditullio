@@ -989,8 +989,20 @@ const PropostaWitz = () => {
               }}>
                 Simulação · 6 clientes fechados no mês
               </div>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 500 }}>
-                R$ 6.000 <span style={{ color: "var(--color-text-muted)" }}>+</span> R$ 6.000 <span style={{ color: "var(--color-text-muted)" }}>=</span> <span className="gold-text">R$ 12.000</span>
+              <div style={{ 
+                fontFamily: "var(--font-display)", 
+                fontSize: "clamp(1.8rem, 5vw, 2.5rem)", 
+                fontWeight: 500,
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "0.5rem"
+              }}>
+                <span>R$ 6.000</span>
+                <span style={{ color: "var(--color-text-muted)", fontSize: "0.8em" }}>+</span>
+                <span>R$ 6.000</span>
+                <span style={{ color: "var(--color-text-muted)", fontSize: "0.8em" }}>=</span>
+                <span className="gold-text">R$ 12.000</span>
               </div>
               <p style={{ marginTop: "1rem", color: "var(--color-text-muted)", fontSize: "0.95rem" }}>
                 Modelo desenhado para <strong style={{ color: "var(--color-text)" }}>recompensar resultado</strong>.
