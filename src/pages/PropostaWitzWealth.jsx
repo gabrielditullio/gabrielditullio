@@ -155,6 +155,21 @@ const GlobalStyles = () => (
 // ============================================
 // REUSABLE COMPONENTS
 // ============================================
+const Section = ({ children, style = {}, maxWidth = "1100px", padding = "clamp(4rem, 10vw, 8rem) 1.5rem", ...props }) => (
+  <section
+    style={{
+      padding,
+      maxWidth,
+      margin: "0 auto",
+      position: "relative",
+      ...style
+    }}
+    {...props}
+  >
+    {children}
+  </section>
+);
+
 const Reveal = ({ children, delay = 0, direction = "up", className = "", style = {} }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
