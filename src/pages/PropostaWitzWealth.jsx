@@ -837,12 +837,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ INVESTIMENTO ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative", overflow: "hidden",
-        background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #0a1428 100%)",
-      }}>
+      <Section id="investimento" style={{ background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #0a1428 100%)", overflow: "hidden" }} maxWidth="1000px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
