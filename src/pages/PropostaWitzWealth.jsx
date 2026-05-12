@@ -376,7 +376,7 @@ const PropostaWitz = () => {
         >
           Validade · 7 dias
         </motion.div>
-      </Section>
+      </section>
 
       {/* ============ QUEM SOMOS ============ */}
       <Section id="quem-somos">
