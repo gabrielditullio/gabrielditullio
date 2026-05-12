@@ -741,25 +741,25 @@ const PropostaWitz = () => {
             </h2>
           </Reveal>
 
-          <div style={{ position: "relative" }}>
+          <div style={{ position: "relative" }} className="timeline-container">
             <div style={{
               position: "absolute", left: "120px", top: "0", bottom: "0", width: "1px",
               background: "linear-gradient(180deg, var(--color-gold) 0%, transparent 100%)",
               opacity: 0.3,
-            }} />
+            }} className="timeline-line" />
 
             {TIMELINE.map((item, i) => (
               <Reveal key={i} delay={0.1 + i * 0.08} direction="left">
                 <div style={{
                   display: "flex", gap: "2rem", padding: "1.5rem 0",
                   alignItems: "flex-start",
-                }}>
+                }} className="timeline-item">
                   <div style={{
                     width: "120px", flexShrink: 0,
                     fontFamily: "var(--font-mono)", fontSize: "0.75rem",
                     color: "var(--color-gold)", letterSpacing: "0.1em",
                     paddingTop: "4px", textAlign: "right",
-                  }}>
+                  }} className="timeline-date">
                     {item.dia}
                   </div>
                   <div style={{
