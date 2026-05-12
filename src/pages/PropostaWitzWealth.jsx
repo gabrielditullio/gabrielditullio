@@ -379,12 +379,14 @@ const PropostaWitz = () => {
           transition={{ delay: 1.5, duration: 0.8 }}
           style={{
             position: "absolute", bottom: "3rem", left: 0, right: 0, width: "100%",
-            textAlign: "center", paddingLeft: "0.3em",
-            fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.3em",
+            display: "flex", alignItems: "center", justifyContent: "center", gap: "0.9rem",
+            fontFamily: "var(--font-mono)", fontSize: "0.7rem",
             color: "var(--color-text-muted)", textTransform: "uppercase", zIndex: 2,
           }}
         >
-          Validade · 7 dias
+          <span style={{ letterSpacing: "0.3em" }}>Validade</span>
+          <span style={{ color: "var(--color-gold)", opacity: 0.65 }}>·</span>
+          <span style={{ letterSpacing: "0.3em" }}>7 dias</span>
         </motion.div>
       </section>
 
@@ -551,7 +553,7 @@ const PropostaWitz = () => {
             </h2>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem" }}>
+          <div className="proposal-balanced-grid" style={{ gap: "1rem" }}>
             {[
               "Comparecimento e conversão dependem do ritmo orgânico do TioFIIs (key-person risk)",
               "Sem máquina de tráfego pago dedicada ao webinário com mensuração ponta-a-ponta",
