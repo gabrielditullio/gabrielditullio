@@ -372,7 +372,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ QUEM SOMOS ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="quem-somos">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -434,7 +434,7 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ CONTEXTO / SITUAÇÃO ATUAL ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="onde-estamos">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -511,12 +511,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ COMO PODEMOS AJUDAR ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
+      <Section id="como-podemos-ajudar" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)" }}>
         <GradientMesh />
-        <div style={{ maxWidth: "1100px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -569,11 +566,10 @@ const PropostaWitz = () => {
               Foco no <strong style={{ color: "var(--color-gold)" }}>ICP fee-based</strong>, não no varejo de curso.
             </p>
           </Reveal>
-        </div>
-      </section>
+      </Section>
 
       {/* ============ MÉTODO DT — 4 PILARES ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1200px", margin: "0 auto", position: "relative" }}>
+      <Section id="metodo" maxWidth="1200px">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
