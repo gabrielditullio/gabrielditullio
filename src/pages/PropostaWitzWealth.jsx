@@ -713,11 +713,8 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ TIMELINE ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative" }}>
+      <Section id="timeline" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)" }} maxWidth="1000px">
+        <div style={{ position: "relative" }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
