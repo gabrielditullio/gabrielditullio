@@ -1070,12 +1070,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ FRASE DE IMPACTO ============ */}
-      <section style={{
-        padding: "10rem 2rem", textAlign: "center", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
+      <Section id="quote" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)", textAlign: "center" }} maxWidth="900px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-display)", fontStyle: "italic",
@@ -1091,7 +1088,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ QUEBRA DE OBJEÇÕES ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1000px", margin: "0 auto" }}>
+      <Section id="perguntas" maxWidth="1000px">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -1142,13 +1139,9 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ CTA FINAL ============ */}
-      <section style={{
-        padding: "10rem 2rem", textAlign: "center", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #060912 100%)",
-        overflow: "hidden",
-      }}>
+      <Section id="cta-final" style={{ background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #060912 100%)", textAlign: "center", overflow: "hidden" }} maxWidth="900px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
