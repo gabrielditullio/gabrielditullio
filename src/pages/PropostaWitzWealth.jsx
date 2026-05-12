@@ -995,7 +995,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ CLÁUSULA DE EXPANSÃO ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto" }}>
+      <Section id="clausulas">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
