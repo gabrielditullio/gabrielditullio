@@ -135,6 +135,13 @@ const GlobalStyles = () => (
       50% { opacity: 0.8; }
     }
 
+    @media (max-width: 768px) {
+      .timeline-container { padding-left: 20px !important; }
+      .timeline-line { left: 0 !important; }
+      .timeline-item { flex-direction: column !important; gap: 0.5rem !important; }
+      .timeline-date { width: auto !important; text-align: left !important; }
+    }
+
     .gold-text {
       background: linear-gradient(120deg, #c9a96e, #e0c088, #c9a96e);
       background-size: 200% 100%;
