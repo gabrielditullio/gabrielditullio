@@ -135,6 +135,13 @@ const GlobalStyles = () => (
       50% { opacity: 0.8; }
     }
 
+    @media (max-width: 768px) {
+      .timeline-container { padding-left: 20px !important; }
+      .timeline-line { left: 0 !important; }
+      .timeline-item { flex-direction: column !important; gap: 0.5rem !important; }
+      .timeline-date { width: auto !important; text-align: left !important; }
+    }
+
     .gold-text {
       background: linear-gradient(120deg, #c9a96e, #e0c088, #c9a96e);
       background-size: 200% 100%;
@@ -155,6 +162,21 @@ const GlobalStyles = () => (
 // ============================================
 // REUSABLE COMPONENTS
 // ============================================
+const Section = ({ children, style = {}, maxWidth = "1100px", padding = "clamp(3rem, 8vw, 8rem) 1.5rem", ...props }) => (
+  <section
+    style={{
+      padding,
+      maxWidth,
+      margin: "0 auto",
+      position: "relative",
+      ...style
+    }}
+    {...props}
+  >
+    {children}
+  </section>
+);
+
 const Reveal = ({ children, delay = 0, direction = "up", className = "", style = {} }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
@@ -354,10 +376,10 @@ const PropostaWitz = () => {
         >
           Validade · 7 dias
         </motion.div>
-      </section>
+      </Section>
 
       {/* ============ QUEM SOMOS ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="quem-somos">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -419,7 +441,7 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ CONTEXTO / SITUAÇÃO ATUAL ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="onde-estamos">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -496,12 +518,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ COMO PODEMOS AJUDAR ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
+      <Section id="como-podemos-ajudar" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)" }}>
         <GradientMesh />
-        <div style={{ maxWidth: "1100px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -554,11 +573,10 @@ const PropostaWitz = () => {
               Foco no <strong style={{ color: "var(--color-gold)" }}>ICP fee-based</strong>, não no varejo de curso.
             </p>
           </Reveal>
-        </div>
-      </section>
+      </Section>
 
       {/* ============ MÉTODO DT — 4 PILARES ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1200px", margin: "0 auto", position: "relative" }}>
+      <Section id="metodo" maxWidth="1200px">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -626,7 +644,7 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ ESCOPO DETALHADO ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="escopo">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -702,11 +720,8 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ TIMELINE ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative" }}>
+      <Section id="timeline" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)" }} maxWidth="1000px">
+        <div style={{ position: "relative" }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -726,25 +741,25 @@ const PropostaWitz = () => {
             </h2>
           </Reveal>
 
-          <div style={{ position: "relative" }}>
+          <div style={{ position: "relative" }} className="timeline-container">
             <div style={{
               position: "absolute", left: "120px", top: "0", bottom: "0", width: "1px",
               background: "linear-gradient(180deg, var(--color-gold) 0%, transparent 100%)",
               opacity: 0.3,
-            }} />
+            }} className="timeline-line" />
 
             {TIMELINE.map((item, i) => (
               <Reveal key={i} delay={0.1 + i * 0.08} direction="left">
                 <div style={{
                   display: "flex", gap: "2rem", padding: "1.5rem 0",
                   alignItems: "flex-start",
-                }}>
+                }} className="timeline-item">
                   <div style={{
                     width: "120px", flexShrink: 0,
                     fontFamily: "var(--font-mono)", fontSize: "0.75rem",
                     color: "var(--color-gold)", letterSpacing: "0.1em",
                     paddingTop: "4px", textAlign: "right",
-                  }}>
+                  }} className="timeline-date">
                     {item.dia}
                   </div>
                   <div style={{
@@ -771,7 +786,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ EQUIPE ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto", position: "relative" }}>
+      <Section id="equipe">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -829,12 +844,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ INVESTIMENTO ============ */}
-      <section style={{
-        padding: "8rem 2rem", position: "relative", overflow: "hidden",
-        background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #0a1428 100%)",
-      }}>
+      <Section id="investimento" style={{ background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #0a1428 100%)", overflow: "hidden" }} maxWidth="1000px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "1000px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -977,8 +989,20 @@ const PropostaWitz = () => {
               }}>
                 Simulação · 6 clientes fechados no mês
               </div>
-              <div style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 500 }}>
-                R$ 6.000 <span style={{ color: "var(--color-text-muted)" }}>+</span> R$ 6.000 <span style={{ color: "var(--color-text-muted)" }}>=</span> <span className="gold-text">R$ 12.000</span>
+              <div style={{ 
+                fontFamily: "var(--font-display)", 
+                fontSize: "clamp(1.8rem, 5vw, 2.5rem)", 
+                fontWeight: 500,
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                gap: "0.5rem"
+              }}>
+                <span>R$ 6.000</span>
+                <span style={{ color: "var(--color-text-muted)", fontSize: "0.8em" }}>+</span>
+                <span>R$ 6.000</span>
+                <span style={{ color: "var(--color-text-muted)", fontSize: "0.8em" }}>=</span>
+                <span className="gold-text">R$ 12.000</span>
               </div>
               <p style={{ marginTop: "1rem", color: "var(--color-text-muted)", fontSize: "0.95rem" }}>
                 Modelo desenhado para <strong style={{ color: "var(--color-text)" }}>recompensar resultado</strong>.
@@ -990,7 +1014,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ CLÁUSULA DE EXPANSÃO ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1100px", margin: "0 auto" }}>
+      <Section id="clausulas">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -1065,12 +1089,9 @@ const PropostaWitz = () => {
       <div className="premium-divider" style={{ maxWidth: "200px", margin: "0 auto" }} />
 
       {/* ============ FRASE DE IMPACTO ============ */}
-      <section style={{
-        padding: "10rem 2rem", textAlign: "center", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)",
-      }}>
+      <Section id="quote" style={{ background: "linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-deep) 100%)", textAlign: "center" }} maxWidth="900px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-display)", fontStyle: "italic",
@@ -1086,7 +1107,7 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ QUEBRA DE OBJEÇÕES ============ */}
-      <section style={{ padding: "8rem 2rem", maxWidth: "1000px", margin: "0 auto" }}>
+      <Section id="perguntas" maxWidth="1000px">
         <Reveal>
           <div style={{
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
@@ -1137,13 +1158,9 @@ const PropostaWitz = () => {
       </section>
 
       {/* ============ CTA FINAL ============ */}
-      <section style={{
-        padding: "10rem 2rem", textAlign: "center", position: "relative",
-        background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #060912 100%)",
-        overflow: "hidden",
-      }}>
+      <Section id="cta-final" style={{ background: "linear-gradient(180deg, var(--color-bg-deep) 0%, #060912 100%)", textAlign: "center", overflow: "hidden" }} maxWidth="900px">
         <GradientMesh variant="intense" />
-        <div style={{ maxWidth: "900px", margin: "0 auto", position: "relative", zIndex: 1 }}>
+        <div style={{ position: "relative", zIndex: 1 }}>
           <Reveal>
             <div style={{
               fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.4em",
