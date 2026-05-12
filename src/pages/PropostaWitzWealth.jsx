@@ -819,7 +819,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {EQUIPE.map((membro, i) => (
             <Reveal key={i} delay={0.15 + i * 0.08}>
               <motion.div
@@ -1047,7 +1047,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {[
             {
               icon: TrendingUp,
