@@ -20,6 +20,7 @@ import PropostaComercialBioconversionAcademy from "./pages/PropostaComercialBioc
 import MentoriaMvpLaunchPago from "./pages/MentoriaMvpLaunchPago";
 import MentoriaMvpLaunchPagoV2 from "./pages/MentoriaMvpLaunchPagoV2";
 import DidierSodreRosa from "./pages/DidierSodreRosa";
+import PropostaWitzWealth from "./pages/PropostaWitzWealth";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/mentoriamvp_launch_pago" element={<MentoriaMvpLaunchPago />} />
           <Route path="/mentoriamvp_launch_pago_v2" element={<MentoriaMvpLaunchPagoV2 />} />
           <Route path="/pp_didiersodre&rosa" element={<DidierSodreRosa />} />
+          <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
