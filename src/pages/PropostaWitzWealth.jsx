@@ -573,6 +573,7 @@ const PropostaWitz = () => {
               Foco no <strong style={{ color: "var(--color-gold)" }}>ICP fee-based</strong>, não no varejo de curso.
             </p>
           </Reveal>
+        </div>
       </Section>
 
       {/* ============ MÉTODO DT — 4 PILARES ============ */}
