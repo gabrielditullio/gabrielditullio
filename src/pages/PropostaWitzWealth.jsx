@@ -140,7 +140,16 @@ const GlobalStyles = () => (
       .timeline-line { left: 0 !important; }
       .timeline-item { flex-direction: column !important; gap: 0.5rem !important; }
       .timeline-date { width: auto !important; text-align: left !important; }
+      .proposal-balanced-grid { grid-template-columns: 1fr !important; }
     }
+
+    .proposal-balanced-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .proposal-balanced-grid > div { height: 100%; }
 
     .gold-text {
       background: linear-gradient(120deg, #c9a96e, #e0c088, #c9a96e);
@@ -369,7 +378,8 @@ const PropostaWitz = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.8 }}
           style={{
-            position: "absolute", bottom: "3rem", left: "50%", transform: "translateX(-50%)",
+            position: "absolute", bottom: "3rem", left: 0, right: 0, width: "100%",
+            textAlign: "center", paddingLeft: "0.3em",
             fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.3em",
             color: "var(--color-text-muted)", textTransform: "uppercase", zIndex: 2,
           }}
