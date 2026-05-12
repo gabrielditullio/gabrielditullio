@@ -140,7 +140,16 @@ const GlobalStyles = () => (
       .timeline-line { left: 0 !important; }
       .timeline-item { flex-direction: column !important; gap: 0.5rem !important; }
       .timeline-date { width: auto !important; text-align: left !important; }
+      .proposal-balanced-grid { grid-template-columns: 1fr !important; }
     }
+
+    .proposal-balanced-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .proposal-balanced-grid > div { height: 100%; }
 
     .gold-text {
       background: linear-gradient(120deg, #c9a96e, #e0c088, #c9a96e);
@@ -369,12 +378,15 @@ const PropostaWitz = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.5, duration: 0.8 }}
           style={{
-            position: "absolute", bottom: "3rem", left: "50%", transform: "translateX(-50%)",
-            fontFamily: "var(--font-mono)", fontSize: "0.7rem", letterSpacing: "0.3em",
+            position: "absolute", bottom: "3rem", left: 0, right: 0, width: "100%",
+            display: "grid", justifyItems: "center", gap: "0.55rem",
+            fontFamily: "var(--font-mono)", fontSize: "0.68rem",
             color: "var(--color-text-muted)", textTransform: "uppercase", zIndex: 2,
           }}
         >
-          Validade · 7 dias
+          <span style={{ letterSpacing: "0.32em", paddingLeft: "0.32em" }}>Validade</span>
+          <span style={{ width: "28px", height: "1px", background: "var(--color-gold)", opacity: 0.35 }} />
+          <span style={{ letterSpacing: "0.32em", paddingLeft: "0.32em" }}>7 dias</span>
         </motion.div>
       </section>
 
@@ -462,7 +474,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem", marginBottom: "3rem" }}>
+        <div className="proposal-balanced-grid" style={{ marginBottom: "3rem" }}>
           {[
             { num: "1 ano 10m", label: "de operação consolidada" },
             { num: "550", label: "clientes ativos" },
@@ -541,7 +553,7 @@ const PropostaWitz = () => {
             </h2>
           </Reveal>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1rem" }}>
+          <div className="proposal-balanced-grid" style={{ gap: "1rem" }}>
             {[
               "Comparecimento e conversão dependem do ritmo orgânico do TioFIIs (key-person risk)",
               "Sem máquina de tráfego pago dedicada ao webinário com mensuração ponta-a-ponta",
@@ -598,7 +610,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {METODO.map((pilar, i) => {
             const Icon = pilar.icon;
             return (
@@ -807,7 +819,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {EQUIPE.map((membro, i) => (
             <Reveal key={i} delay={0.15 + i * 0.08}>
               <motion.div
@@ -1035,7 +1047,7 @@ const PropostaWitz = () => {
           </h2>
         </Reveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "1.5rem" }}>
+        <div className="proposal-balanced-grid">
           {[
             {
               icon: TrendingUp,
