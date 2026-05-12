@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useScroll, useSpring, useInView, useTransform } from "framer-motion";
 import { ArrowRight, Check, X, TrendingUp, Target, Zap, BarChart3, Calendar, Users, Shield, Sparkles } from "lucide-react";
+import aboutPhoto from "@/assets/about-photo.png";
 
 // ============================================
 // DATA & CONTENT
@@ -394,15 +395,15 @@ const PropostaWitz = () => {
             padding: "2rem", background: "rgba(201, 169, 110, 0.04)",
             border: "1px solid rgba(201, 169, 110, 0.2)", borderRadius: "8px",
           }}>
-            <div style={{
-              width: "60px", height: "60px", borderRadius: "50%",
-              background: "linear-gradient(135deg, var(--color-gold), var(--color-gold-bright))",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontFamily: "var(--font-display)", fontSize: "1.8rem", fontWeight: 600,
-              color: "var(--color-bg-deep)", flexShrink: 0,
-            }}>
-              GD
-            </div>
+            <img
+              src={aboutPhoto}
+              alt="Gabriel di Tullio"
+              style={{
+                width: "72px", height: "72px", borderRadius: "50%",
+                objectFit: "cover", objectPosition: "top",
+                border: "2px solid var(--color-gold)", flexShrink: 0,
+              }}
+            />
             <div>
               <div style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 500 }}>
                 Gabriel di Tullio
