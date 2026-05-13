@@ -1373,15 +1373,15 @@ export default function MentoriaMvpLaunchPagoV4() {
           </h2>
           <div className="v4-stats-row">
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">234+</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="234+" /></div>
               <div className="v4-stat-cell-label">Donos aplicando o método dentro do MVP</div>
             </div>
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">67%</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="67%" /></div>
               <div className="v4-stat-cell-label">Aumento médio de faturamento em 90 dias</div>
             </div>
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">5 anos</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="5 anos" /></div>
               <div className="v4-stat-cell-label">De método testado em barbearia real</div>
             </div>
           </div>
