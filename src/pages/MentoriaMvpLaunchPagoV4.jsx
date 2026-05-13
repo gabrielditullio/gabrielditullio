@@ -1,5 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useSpring,
+  useTransform,
+  useInView,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
 import {
   ChevronDown,
   ShieldCheck,
@@ -559,6 +568,92 @@ const STYLES = `
   .v4-stick-info { display: none; }
   .v4-stick .v4-btn { width: 100%; }
 }
+
+/* ===== MOTION SYSTEM (Orbyka-grade) ===== */
+/* scroll progress bar */
+.v4-scroll-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 2px;
+  background: var(--red); transform-origin: 0 50%;
+  z-index: 70; mix-blend-mode: screen;
+}
+/* film grain */
+.v4-grain {
+  position: fixed; inset: 0; pointer-events: none; z-index: 65;
+  opacity: 0.06; mix-blend-mode: overlay;
+}
+/* magnetic cursor (desktop only) */
+.v4-cursor {
+  position: fixed; top: 0; left: 0; width: 14px; height: 14px;
+  border-radius: 50%; background: var(--red);
+  pointer-events: none; z-index: 80; mix-blend-mode: difference;
+  transform: translate(-50%, -50%); transition: width .25s ease, height .25s ease, background .2s ease;
+}
+.v4-cursor.is-hot { width: 56px; height: 56px; background: var(--rose); }
+@media (hover: none), (max-width: 900px) { .v4-cursor { display: none; } }
+/* hide native cursor over CTAs when magnetic is on */
+@media (hover: hover) and (min-width: 901px) {
+  .v4 .v4-btn { cursor: none; }
+}
+
+/* line-mask reveal for word-stacks */
+.v4-line-mask { display: block; overflow: hidden; padding-bottom: 0.04em; }
+.v4-line-mask > span { display: inline-block; will-change: transform, opacity; }
+
+/* big marquee ticker between sections */
+.v4-ticker {
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  overflow: hidden; padding: 26px 0;
+  background: linear-gradient(180deg, rgba(214,18,0,0.05), transparent);
+}
+.v4-ticker-track {
+  display: inline-flex; gap: 64px; white-space: nowrap;
+  animation: v4-marquee 38s linear infinite;
+  font-family: 'Inter Tight', sans-serif; font-weight: 800;
+  font-size: clamp(34px, 5vw, 64px); letter-spacing: -0.03em;
+  text-transform: uppercase; color: var(--cream);
+}
+.v4-ticker-track .dot { color: var(--red); }
+.v4-ticker-track .ghost { -webkit-text-stroke: 1px var(--cream); color: transparent; }
+@keyframes v4-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* CTA: magnetic + sweep */
+.v4-btn { position: relative; overflow: hidden; isolation: isolate; }
+.v4-btn::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: var(--red-hot);
+  transform: translateY(101%); transition: transform .45s cubic-bezier(.7,0,.2,1);
+}
+.v4-btn:hover::before { transform: translateY(0); }
+.v4-btn-ghost::before { background: var(--cream); }
+.v4-btn-ghost:hover { color: var(--ink); border-color: var(--cream); }
+
+/* hero number tilt-in */
+.v4-hero-stat-num, .v4-stat-cell-num { display: inline-block; }
+
+/* arch col stagger items */
+.v4-arch-list li { opacity: 0; transform: translateY(8px); transition: opacity .5s ease, transform .5s ease; }
+.v4-arch-col.is-in .v4-arch-list li { opacity: 1; transform: none; }
+.v4-arch-col.is-in .v4-arch-list li:nth-child(1) { transition-delay: .05s; }
+.v4-arch-col.is-in .v4-arch-list li:nth-child(2) { transition-delay: .12s; }
+.v4-arch-col.is-in .v4-arch-list li:nth-child(3) { transition-delay: .19s; }
+.v4-arch-col.is-in .v4-arch-list li:nth-child(4) { transition-delay: .26s; }
+
+/* sticky pinned tagline */
+.v4-pin {
+  position: relative; height: 220vh;
+}
+.v4-pin-inner {
+  position: sticky; top: 0; height: 100vh;
+  display: flex; align-items: center; overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v4-ticker-track { animation: none; }
+  .v4-line-mask > span { transform: none !important; opacity: 1 !important; }
+}
 `;
 
 const PLAYERS = [
@@ -677,6 +772,195 @@ function scrollToPrice(e) {
   if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+/* =====================================================
+   MOTION HELPERS (Orbyka-grade)
+   ===================================================== */
+
+/** Top scroll progress bar */
+function ScrollProgress() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, { stiffness: 220, damping: 30, mass: 0.4 });
+  return <motion.div className="v4-scroll-progress" style={{ scaleX }} />;
+}
+
+/** Static SVG film grain */
+function GrainOverlay() {
+  return (
+    <svg className="v4-grain" aria-hidden>
+      <filter id="v4-noise">
+        <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch" />
+        <feColorMatrix type="saturate" values="0" />
+      </filter>
+      <rect width="100%" height="100%" filter="url(#v4-noise)" />
+    </svg>
+  );
+}
+
+/** Magnetic cursor that grows over CTAs */
+function MagneticCursor() {
+  const x = useMotionValue(-100);
+  const y = useMotionValue(-100);
+  const sx = useSpring(x, { stiffness: 350, damping: 28, mass: 0.4 });
+  const sy = useSpring(y, { stiffness: 350, damping: 28, mass: 0.4 });
+  const [hot, setHot] = useState(false);
+  useEffect(() => {
+    const move = (e) => { x.set(e.clientX); y.set(e.clientY); };
+    const over = (e) => {
+      const t = e.target;
+      setHot(!!(t && t.closest && t.closest(".v4-btn, .v4-faq-q, a[href]")));
+    };
+    window.addEventListener("mousemove", move, { passive: true });
+    window.addEventListener("mouseover", over, { passive: true });
+    return () => {
+      window.removeEventListener("mousemove", move);
+      window.removeEventListener("mouseover", over);
+    };
+  }, [x, y]);
+  return <motion.div className={`v4-cursor ${hot ? "is-hot" : ""}`} style={{ x: sx, y: sy }} />;
+}
+
+/** Word-stack heading with line-by-line mask reveal.
+ *  Pass children as React nodes split by <br/> — each top-level node becomes a masked line. */
+function MaskHeading({ children, className = "v4-stack", as: Tag = "h2", style }) {
+  // normalize children into array of "line" nodes split on <br/>
+  const arr = Array.isArray(children) ? children : [children];
+  const lines = [];
+  let buf = [];
+  arr.forEach((node, i) => {
+    if (node && node.type === "br") {
+      lines.push(buf); buf = [];
+    } else {
+      buf.push(<span key={`n-${i}`}>{node}</span>);
+    }
+  });
+  if (buf.length) lines.push(buf);
+  return (
+    <Tag className={className} style={style}>
+      {lines.map((line, i) => (
+        <span key={i} className="v4-line-mask">
+          <motion.span
+            initial={{ y: "110%", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true, margin: "-80px" }}
+            transition={{ duration: 0.8, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
+          >
+            {line}
+          </motion.span>
+        </span>
+      ))}
+    </Tag>
+  );
+}
+
+/** Animated counter — parses number out of a label like "234+", "3,8x", "R$70K", "67%" */
+function AnimatedNumber({ value, duration = 1600, className }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-40px" });
+  const match = String(value).match(/(-?\d+(?:[.,]\d+)?)/);
+  const target = match ? parseFloat(match[1].replace(",", ".")) : 0;
+  const decimals = match && match[1].includes(",") ? 1 : 0;
+  const prefix = match ? value.slice(0, match.index) : value;
+  const suffix = match ? value.slice(match.index + match[1].length) : "";
+  const [display, setDisplay] = useState(0);
+  useEffect(() => {
+    if (!inView) return;
+    let raf, start;
+    const step = (t) => {
+      if (!start) start = t;
+      const p = Math.min((t - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 4);
+      setDisplay(eased * target);
+      if (p < 1) raf = requestAnimationFrame(step);
+    };
+    raf = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(raf);
+  }, [inView, target, duration]);
+  const formatted = decimals
+    ? display.toFixed(1).replace(".", ",")
+    : Math.round(display).toLocaleString("pt-BR");
+  return (
+    <span ref={ref} className={className}>
+      {prefix}{formatted}{suffix}
+    </span>
+  );
+}
+
+/** Marquee ticker between sections */
+function Ticker({ items }) {
+  const row = (
+    <span className="v4-ticker-track">
+      {items.map((it, i) => (
+        <span key={i}>
+          <span className={i % 2 ? "ghost" : ""}>{it}</span>
+          <span className="dot"> · </span>
+        </span>
+      ))}
+    </span>
+  );
+  return (
+    <div className="v4-ticker" aria-hidden>
+      <div style={{ display: "flex", whiteSpace: "nowrap" }}>
+        {row}{row}
+      </div>
+    </div>
+  );
+}
+
+/** Wraps an arch column and toggles is-in when in view (CSS handles staggered list reveal) */
+function ArchCol({ data, index }) {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-80px" });
+  return (
+    <motion.div
+      ref={ref}
+      className={`v4-arch-col ${inView ? "is-in" : ""}`}
+      initial={{ opacity: 0, y: 30 }}
+      animate={inView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+    >
+      <div className="v4-arch-num">0{index + 1}</div>
+      <div className="v4-arch-title">{data.t}</div>
+      <ul className="v4-arch-list">
+        {data.items.map((x) => <li key={x}>{x}</li>)}
+      </ul>
+    </motion.div>
+  );
+}
+
+/** Pinned tagline section: stays sticky and scales/fades on scroll */
+function PinnedTagline() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
+  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.92, 1, 1.08]);
+  const opacity = useTransform(scrollYProgress, [0, 0.15, 0.85, 1], [0, 1, 1, 0]);
+  const y = useTransform(scrollYProgress, [0, 1], [40, -40]);
+  return (
+    <section className="v4-section v4-pin" ref={ref} style={{ padding: 0 }}>
+      <div className="v4-pin-inner">
+        <div className="v4-container">
+          <motion.div style={{ scale, opacity, y }}>
+            <MaskHeading style={{ fontSize: "clamp(48px, 9vw, 140px)" }}>
+              {"Esse será o"}<br/>
+              {<>workshop mais <span className="red">prático,</span></>}<br/>
+              {<><span className="rose">técnico</span> e direto</>}<br/>
+              {"que você já fez."}
+            </MaskHeading>
+            <motion.p
+              initial={{ opacity: 0, y: 14 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              style={{ marginTop: 36, fontSize: 17, color: "var(--cream-mute)", maxWidth: 600 }}
+            >
+              Não recomendado para quem ainda não abriu a barbearia ou fatura abaixo de R$10 mil/mês.
+            </motion.p>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function MentoriaMvpLaunchPagoV4() {
   const [openFaq, setOpenFaq] = useState(0);
   const [progress, setProgress] = useState(99);
@@ -705,6 +989,9 @@ export default function MentoriaMvpLaunchPagoV4() {
   return (
     <div className="v4">
       <style>{STYLES}</style>
+      <ScrollProgress />
+      <GrainOverlay />
+      <MagneticCursor />
 
       {/* Top bar */}
       <div className="v4-topbar">
@@ -764,15 +1051,15 @@ export default function MentoriaMvpLaunchPagoV4() {
 
           <div className="v4-hero-stats">
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">234+</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="234+" /></div>
               <div className="v4-hero-stat-label">Donos aplicando o método</div>
             </div>
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">3,8x</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="3,8x" /></div>
               <div className="v4-hero-stat-label">Crescimento médio · Toledos</div>
             </div>
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">16h</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="16h" /></div>
               <div className="v4-hero-stat-label">Ao vivo construindo seu plano</div>
             </div>
           </div>
@@ -798,14 +1085,29 @@ export default function MentoriaMvpLaunchPagoV4() {
         </div>
       </section>
 
+      {/* ===== TICKER ===== */}
+      <Ticker
+        items={[
+          "Sair do balcão",
+          "R$60K/mês",
+          "Mesma equipe",
+          "Plano de 90 dias",
+          "POPs prontos",
+          "Sem novo cliente",
+          "Liderar sem desgaste",
+          "Toledos · 3,8x",
+        ]}
+      />
+
       {/* ===== STACK INTRO + 4 COL ARCH ===== */}
       <section className="v4-section">
         <div className="v4-container">
           <span className="v4-eyebrow">A virada</span>
-          <h2 className="v4-stack">
-            Toda barbearia <span className="red">trava</span> nos<br />
-            R$30 mil/mês. <span className="light">Por quê?</span>
-          </h2>
+          <MaskHeading>
+            <>Toda barbearia <span className="red">trava</span> nos</>
+            <br />
+            <>R$30 mil/mês. <span className="light">Por quê?</span></>
+          </MaskHeading>
 
           <div className="v4-arch">
             {[
@@ -846,13 +1148,7 @@ export default function MentoriaMvpLaunchPagoV4() {
                 ],
               },
             ].map((c, i) => (
-              <div className="v4-arch-col" key={c.t}>
-                <div className="v4-arch-num">0{i + 1}</div>
-                <div className="v4-arch-title">{c.t}</div>
-                <ul className="v4-arch-list">
-                  {c.items.map((x) => <li key={x}>{x}</li>)}
-                </ul>
-              </div>
+              <ArchCol key={c.t} data={c} index={i} />
             ))}
           </div>
         </div>
@@ -944,19 +1240,7 @@ export default function MentoriaMvpLaunchPagoV4() {
       </section>
 
       {/* ===== TAGLINE ===== */}
-      <section className="v4-section" style={{ padding: "160px 0" }}>
-        <div className="v4-container">
-          <h2 className="v4-stack" style={{ fontSize: "clamp(48px, 9vw, 140px)" }}>
-            Esse será o<br />
-            workshop mais <span className="red">prático,</span><br />
-            <span className="rose">técnico</span> e direto<br />
-            que você já fez.
-          </h2>
-          <p style={{ marginTop: 36, fontSize: 17, color: "var(--cream-mute)", maxWidth: 600 }}>
-            Não recomendado para quem ainda não abriu a barbearia ou fatura abaixo de R$10 mil/mês.
-          </p>
-        </div>
-      </section>
+      <PinnedTagline />
 
       {/* ===== CRONOGRAMA ===== */}
       <section className="v4-section" id="cronograma">
@@ -1089,15 +1373,15 @@ export default function MentoriaMvpLaunchPagoV4() {
           </h2>
           <div className="v4-stats-row">
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">234+</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="234+" /></div>
               <div className="v4-stat-cell-label">Donos aplicando o método dentro do MVP</div>
             </div>
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">67%</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="67%" /></div>
               <div className="v4-stat-cell-label">Aumento médio de faturamento em 90 dias</div>
             </div>
             <div className="v4-stat-cell">
-              <div className="v4-stat-cell-num">5 anos</div>
+              <div className="v4-stat-cell-num"><AnimatedNumber value="5 anos" /></div>
               <div className="v4-stat-cell-label">De método testado em barbearia real</div>
             </div>
           </div>
