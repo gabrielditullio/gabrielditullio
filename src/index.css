@@ -159,6 +159,13 @@
     --nova-border: rgba(255, 255, 255, 0.06);
     --nova-font-display: 'Cormorant Garamond', serif;
     --nova-font-body: 'DM Sans', sans-serif;
+
+    /* Toledo gradients */
+    --toledo-grad-numbers: linear-gradient(6deg, #C97540 0%, #1A0E08 100%);
+    --toledo-grad-host: linear-gradient(180deg, #C97540 0%, #1F0E08 59%);
+    --toledo-grad-side-left: linear-gradient(270deg, transparent 0%, #0E0B09 100%);
+    --toledo-grad-side-right: linear-gradient(90deg, transparent 0%, #0E0B09 100%);
+    --toledo-grad-card-overlay: linear-gradient(180deg, transparent 0%, rgba(14,11,9,0.5) 100%);
   }
 }
 

@@ -24,6 +24,7 @@ import MentoriaMvpLaunchPagoV4 from "./pages/MentoriaMvpLaunchPagoV4";
 import DidierSodreRosa from "./pages/DidierSodreRosa";
 import PropostaWitzWealth from "./pages/PropostaWitzWealth";
 import Orbyka from "./pages/Orbyka";
+import WorkshopBarbearia from "./pages/WorkshopBarbearia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -56,6 +57,7 @@ const App = () => (
           <Route path="/pp_didiersodre&rosa" element={<DidierSodreRosa />} />
           <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           <Route path="/0rb1k4" element={<Orbyka />} />
+          <Route path="/workshop-barbearia" element={<WorkshopBarbearia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
