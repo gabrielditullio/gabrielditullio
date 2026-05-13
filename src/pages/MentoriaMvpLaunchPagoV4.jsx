@@ -1051,15 +1051,15 @@ export default function MentoriaMvpLaunchPagoV4() {
 
           <div className="v4-hero-stats">
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">234+</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="234+" /></div>
               <div className="v4-hero-stat-label">Donos aplicando o método</div>
             </div>
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">3,8x</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="3,8x" /></div>
               <div className="v4-hero-stat-label">Crescimento médio · Toledos</div>
             </div>
             <div className="v4-hero-stat">
-              <div className="v4-hero-stat-num">16h</div>
+              <div className="v4-hero-stat-num"><AnimatedNumber value="16h" /></div>
               <div className="v4-hero-stat-label">Ao vivo construindo seu plano</div>
             </div>
           </div>
