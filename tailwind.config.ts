@@ -16,8 +16,20 @@ export default {
       fontFamily: {
         heading: ["Montserrat", "sans-serif"],
         body: ["Inter", "sans-serif"],
+        'display-toledo': ['"Playfair Display"', 'serif'],
+        'body-toledo': ['Inter', 'sans-serif'],
       },
       colors: {
+        toledo: {
+          carbono: '#0E0B09',
+          couro: '#1A1410',
+          cobre: '#C97540',
+          'cobre-claro': '#E89A6B',
+          'vermelho-brasa': '#A33B2A',
+          creme: '#F5EDDF',
+          'creme-suave': '#D9CFC1',
+          'cinza-pele': '#7A6F62',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
