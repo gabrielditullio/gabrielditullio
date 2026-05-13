@@ -1085,6 +1085,20 @@ export default function MentoriaMvpLaunchPagoV4() {
         </div>
       </section>
 
+      {/* ===== TICKER ===== */}
+      <Ticker
+        items={[
+          "Sair do balcão",
+          "R$60K/mês",
+          "Mesma equipe",
+          "Plano de 90 dias",
+          "POPs prontos",
+          "Sem novo cliente",
+          "Liderar sem desgaste",
+          "Toledos · 3,8x",
+        ]}
+      />
+
       {/* ===== STACK INTRO + 4 COL ARCH ===== */}
       <section className="v4-section">
         <div className="v4-container">
