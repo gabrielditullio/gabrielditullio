@@ -1,5 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useSpring,
+  useTransform,
+  useInView,
+  useMotionValue,
+  useMotionValueEvent,
+} from "framer-motion";
 import {
   ChevronDown,
   ShieldCheck,
