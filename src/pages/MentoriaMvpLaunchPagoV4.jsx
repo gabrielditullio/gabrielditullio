@@ -1240,19 +1240,7 @@ export default function MentoriaMvpLaunchPagoV4() {
       </section>
 
       {/* ===== TAGLINE ===== */}
-      <section className="v4-section" style={{ padding: "160px 0" }}>
-        <div className="v4-container">
-          <h2 className="v4-stack" style={{ fontSize: "clamp(48px, 9vw, 140px)" }}>
-            Esse será o<br />
-            workshop mais <span className="red">prático,</span><br />
-            <span className="rose">técnico</span> e direto<br />
-            que você já fez.
-          </h2>
-          <p style={{ marginTop: 36, fontSize: 17, color: "var(--cream-mute)", maxWidth: 600 }}>
-            Não recomendado para quem ainda não abriu a barbearia ou fatura abaixo de R$10 mil/mês.
-          </p>
-        </div>
-      </section>
+      <PinnedTagline />
 
       {/* ===== CRONOGRAMA ===== */}
       <section className="v4-section" id="cronograma">
