@@ -989,6 +989,9 @@ export default function MentoriaMvpLaunchPagoV4() {
   return (
     <div className="v4">
       <style>{STYLES}</style>
+      <ScrollProgress />
+      <GrainOverlay />
+      <MagneticCursor />
 
       {/* Top bar */}
       <div className="v4-topbar">
