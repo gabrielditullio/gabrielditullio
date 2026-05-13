@@ -1103,10 +1103,11 @@ export default function MentoriaMvpLaunchPagoV4() {
       <section className="v4-section">
         <div className="v4-container">
           <span className="v4-eyebrow">A virada</span>
-          <h2 className="v4-stack">
-            Toda barbearia <span className="red">trava</span> nos<br />
-            R$30 mil/mês. <span className="light">Por quê?</span>
-          </h2>
+          <MaskHeading>
+            <>Toda barbearia <span className="red">trava</span> nos</>
+            <br />
+            <>R$30 mil/mês. <span className="light">Por quê?</span></>
+          </MaskHeading>
 
           <div className="v4-arch">
             {[
@@ -1147,13 +1148,7 @@ export default function MentoriaMvpLaunchPagoV4() {
                 ],
               },
             ].map((c, i) => (
-              <div className="v4-arch-col" key={c.t}>
-                <div className="v4-arch-num">0{i + 1}</div>
-                <div className="v4-arch-title">{c.t}</div>
-                <ul className="v4-arch-list">
-                  {c.items.map((x) => <li key={x}>{x}</li>)}
-                </ul>
-              </div>
+              <ArchCol key={c.t} data={c} index={i} />
             ))}
           </div>
         </div>
