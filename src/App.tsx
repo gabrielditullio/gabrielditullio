@@ -33,15 +33,7 @@ const App = () => (
           <Route path="/v2" element={<IndexV2 />} />
           <Route path="/fallen_major_playbook" element={<FallenMajorPlaybook />} />
           <Route path="/nova" element={<Nova />} />
-          <Route path="/tiofiis_vsl" element={<TioFiisVSL />} />
-          <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
-          <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
-          <Route path="/tiofiis_apresentacao" element={<TioFiisApresentacao />} />
           <Route path="/mvp_education" element={<MvpEducation />} />
-          <Route path="/Bioconversionv1" element={<BioconversionPitchDeckV1 />} />
-          <Route path="/Bioconversionv2" element={<BioconversionPitchDeckV2 />} />
-          <Route path="/Bioconversionv3" element={<BioconversionPitchDeckV3 />} />
-          <Route path="/Bioconversionv4" element={<PropostaComercialBioconversionAcademy />} />
           <Route path="/mentoriamvp_launch_pago" element={<MentoriaMvpLaunchPago />} />
           <Route path="/mentoriamvp_launch_pago_v2" element={<MentoriaMvpLaunchPagoV2 />} />
           <Route path="/mentoriamvp_launch_pago_v3" element={<MentoriaMvpLaunchPagoV3 />} />
