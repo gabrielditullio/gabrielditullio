@@ -17,10 +17,19 @@ import DidierSodreRosa from "./pages/DidierSodreRosa";
 import PropostaWitzWealth from "./pages/PropostaWitzWealth";
 import Orbyka from "./pages/Orbyka";
 import WorkshopBarbearia from "./pages/WorkshopBarbearia";
-import DashboardBL0626 from "./pages/DashboardBL0626";
+import ControlTower from "./dashboard-bl0626/pages/ControlTower";
+import Home from "./dashboard-bl0626/pages/Home";
+import Diagnostic from "./dashboard-bl0626/pages/Diagnostic";
+import WWarRoom from "./dashboard-bl0626/pages/WWarRoom";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+const DashboardLayout = ({ children }: { children: React.ReactNode }) => (
+  <div className="dark bg-background text-foreground min-h-screen">
+    {children}
+  </div>
+);
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -43,7 +52,17 @@ const App = () => (
           <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           <Route path="/0rb1k4" element={<Orbyka />} />
           <Route path="/workshop-barbearia" element={<WorkshopBarbearia />} />
-          <Route path="/dashboard_BL0626/*" element={<DashboardBL0626 />} />
+          <Route path="/dashboard_BL0626" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626/control-tower" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626/home" element={<DashboardLayout><Home /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626/war-room-original" element={<DashboardLayout><Home /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626/diagnostic" element={<DashboardLayout><Diagnostic /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626/w-war-room" element={<DashboardLayout><WWarRoom /></DashboardLayout>} />
+          
+          {/* Redirects for common paths or case-insensitivity */}
+          <Route path="/dashboard_BL0626/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
+          <Route path="/dashboard_bl0626/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
+          <Route path="/dashboard/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
