@@ -1,0 +1,3622 @@
+{
+  "unit_economics": [
+    {
+      "premissa_bump": "0%",
+      "ingressos_meta": 2557,
+      "faturamento_bruto": 142524.0,
+      "faturamento_liquido": 128536.44,
+      "faturamento_cancelado": 7524.9,
+      "deficit_operacional": 7522.41,
+      "investimento_diario_teto": 20485.16,
+      "investimento_total_max": 245821.97,
+      "cac_max_permitido": 96.14,
+      "vendas_diarias_necessarias": 213.1,
+      "vendas_brutas_historico": 197,
+      "vendas_liquidas_historico": 197,
+      "cancelamentos_estornos": 0,
+      "compras_meta_ads": 173,
+      "vendas_rastreadas_utm": 0
+    },
+    {
+      "premissa_bump": "20%",
+      "ingressos_meta": 2557,
+      "faturamento_bruto": 243269.8,
+      "faturamento_liquido": 219216.44,
+      "faturamento_cancelado": 7524.9,
+      "deficit_operacional": 7522.41,
+      "investimento_diario_teto": 20485.16,
+      "investimento_total_max": 245821.97,
+      "cac_max_permitido": 96.14,
+      "vendas_diarias_necessarias": 213.1,
+      "vendas_brutas_historico": 197,
+      "vendas_liquidas_historico": 197,
+      "cancelamentos_estornos": 0,
+      "compras_meta_ads": 173,
+      "vendas_rastreadas_utm": 0
+    },
+    {
+      "premissa_bump": "22%",
+      "ingressos_meta": 2557,
+      "faturamento_bruto": 253344.38,
+      "faturamento_liquido": 228306.44,
+      "faturamento_cancelado": 7524.9,
+      "deficit_operacional": 7522.41,
+      "investimento_diario_teto": 20485.16,
+      "investimento_total_max": 245821.97,
+      "cac_max_permitido": 96.14,
+      "vendas_diarias_necessarias": 213.1,
+      "vendas_brutas_historico": 197,
+      "vendas_liquidas_historico": 197,
+      "cancelamentos_estornos": 0,
+      "compras_meta_ads": 173,
+      "vendas_rastreadas_utm": 0
+    }
+  ],
+  "campaigns": [
+    {
+      "nome_da_campanha": "[01][BL0626][CAP][VENDAS][ING][HOT][MIX_QUENTE][AUT][CBO][10.05][TESTE_CRIATIVO][PAG_1]",
+      "resultados": 11,
+      "valor_usado_brl": 782.28,
+      "ctr_taxa_de_cliques_no_link": 0.60374,
+      "cpm_custo_por_1_000_impressoes_brl": 18.377185,
+      "visualizacoes_da_pagina_de_destino": 244,
+      "cliques_no_link": 257,
+      "finalizacoes_de_compra_iniciadas": 34
+    },
+    {
+      "nome_da_campanha": "[02][BL0626][CAP][VENDAS][ING][COLD][ADVTG_MIX_QUENTE][AUT][CBO][11.05][TESTE_CRIATIVO][PAG_1]",
+      "resultados": 12,
+      "valor_usado_brl": 892.77,
+      "ctr_taxa_de_cliques_no_link": 0.676166,
+      "cpm_custo_por_1_000_impressoes_brl": 17.052565,
+      "visualizacoes_da_pagina_de_destino": 341,
+      "cliques_no_link": 354,
+      "finalizacoes_de_compra_iniciadas": 45
+    },
+    {
+      "nome_da_campanha": "[03][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][CBO][12.05][TESTE_CRIATIVO][PAG_1]",
+      "resultados": 4,
+      "valor_usado_brl": 548.69,
+      "ctr_taxa_de_cliques_no_link": 0.612461,
+      "cpm_custo_por_1_000_impressoes_brl": 18.164934,
+      "visualizacoes_da_pagina_de_destino": 167,
+      "cliques_no_link": 185,
+      "finalizacoes_de_compra_iniciadas": 24
+    },
+    {
+      "nome_da_campanha": "[04][BL0626][CAP][VENDAS][ING][HOT][ENG_30D][AUT][CBO][12.05][TESTE_CRIATIVO][PAG_1]",
+      "resultados": 7,
+      "valor_usado_brl": 634.81,
+      "ctr_taxa_de_cliques_no_link": 0.586964,
+      "cpm_custo_por_1_000_impressoes_brl": 18.537846,
+      "visualizacoes_da_pagina_de_destino": 182,
+      "cliques_no_link": 201,
+      "finalizacoes_de_compra_iniciadas": 29
+    },
+    {
+      "nome_da_campanha": "[05][BL0626][CAP][VENDAS][ING][COLD][ADVTG_MIX_QUENTE][AUT][ABO][12.05][TESTE_CRIATIVO][PAG_1]",
+      "resultados": 1,
+      "valor_usado_brl": 368.43,
+      "ctr_taxa_de_cliques_no_link": 0.595993,
+      "cpm_custo_por_1_000_impressoes_brl": 14.166571,
+      "visualizacoes_da_pagina_de_destino": 148,
+      "cliques_no_link": 155,
+      "finalizacoes_de_compra_iniciadas": 8
+    },
+    {
+      "nome_da_campanha": "[06][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][ABO][13.05][MELHORES_CRIATIVOS][PAG_1]",
+      "resultados": 14,
+      "valor_usado_brl": 659.81,
+      "ctr_taxa_de_cliques_no_link": 0.852619,
+      "cpm_custo_por_1_000_impressoes_brl": 20.091657,
+      "visualizacoes_da_pagina_de_destino": 258,
+      "cliques_no_link": 280,
+      "finalizacoes_de_compra_iniciadas": 68
+    },
+    {
+      "nome_da_campanha": "[07][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][ABO][13.05][MELHORES_CRIATIVOS][PAG_1]",
+      "resultados": 10,
+      "valor_usado_brl": 827.0,
+      "ctr_taxa_de_cliques_no_link": 0.796526,
+      "cpm_custo_por_1_000_impressoes_brl": 19.204867,
+      "visualizacoes_da_pagina_de_destino": 341,
+      "cliques_no_link": 343,
+      "finalizacoes_de_compra_iniciadas": 82
+    },
+    {
+      "nome_da_campanha": "[08][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][ABO][14.05][MELHORES_CRIATIVOS][PAG_1]",
+      "resultados": 4,
+      "valor_usado_brl": 393.71,
+      "ctr_taxa_de_cliques_no_link": 0.617229,
+      "cpm_custo_por_1_000_impressoes_brl": 17.609357,
+      "visualizacoes_da_pagina_de_destino": 140,
+      "cliques_no_link": 138,
+      "finalizacoes_de_compra_iniciadas": 23
+    },
+    {
+      "nome_da_campanha": "[09][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][ABO][17.05][TESTE_CRIATIVOS][PAG_1]",
+      "resultados": 19,
+      "valor_usado_brl": 1005.76,
+      "ctr_taxa_de_cliques_no_link": 0.889072,
+      "cpm_custo_por_1_000_impressoes_brl": 27.684008,
+      "visualizacoes_da_pagina_de_destino": 305,
+      "cliques_no_link": 323,
+      "finalizacoes_de_compra_iniciadas": 73
+    },
+    {
+      "nome_da_campanha": "[10][BL0626][CAP][VENDAS][ING][COLD][MIXQUENTE][AUT][ABO][17.05][TESTE_CRIATIVOS][PAG_1]",
+      "resultados": 17,
+      "valor_usado_brl": 967.54,
+      "ctr_taxa_de_cliques_no_link": 0.863777,
+      "cpm_custo_por_1_000_impressoes_brl": 22.286359,
+      "visualizacoes_da_pagina_de_destino": 364,
+      "cliques_no_link": 375,
+      "finalizacoes_de_compra_iniciadas": 58
+    },
+    {
+      "nome_da_campanha": "[CP]-[FASE_04]-[C4]-[TESTE]-[17_MAIO]- [BL0626]",
+      "resultados": 21,
+      "valor_usado_brl": 1442.43,
+      "ctr_taxa_de_cliques_no_link": 0.779701,
+      "cpm_custo_por_1_000_impressoes_brl": 24.238447,
+      "visualizacoes_da_pagina_de_destino": 429,
+      "cliques_no_link": 464,
+      "finalizacoes_de_compra_iniciadas": 91
+    },
+    {
+      "nome_da_campanha": "[LPG01]-[ABO]-[TESTE-CRIATIVOS]-[BL0626]",
+      "resultados": 9,
+      "valor_usado_brl": 992.25,
+      "ctr_taxa_de_cliques_no_link": 0.620126,
+      "cpm_custo_por_1_000_impressoes_brl": 26.408591,
+      "visualizacoes_da_pagina_de_destino": 218,
+      "cliques_no_link": 233,
+      "finalizacoes_de_compra_iniciadas": 36
+    },
+    {
+      "nome_da_campanha": "[LPG01]-[CBO]-[VENDA]-[BL0626]",
+      "resultados": 40,
+      "valor_usado_brl": 2412.28,
+      "ctr_taxa_de_cliques_no_link": 0.663965,
+      "cpm_custo_por_1_000_impressoes_brl": 20.197599,
+      "visualizacoes_da_pagina_de_destino": 714,
+      "cliques_no_link": 793,
+      "finalizacoes_de_compra_iniciadas": 115
+    },
+    {
+      "nome_da_campanha": "[11][BL0626][CAP][VENDAS][ING][COLD][ADVTG][AUT][ABO][14.05][TESTE_CRIATIVOS][PAG_1]",
+      "resultados": 3,
+      "valor_usado_brl": 99.09,
+      "ctr_taxa_de_cliques_no_link": 1.200229,
+      "cpm_custo_por_1_000_impressoes_brl": 18.877882,
+      "visualizacoes_da_pagina_de_destino": 63,
+      "cliques_no_link": 63,
+      "finalizacoes_de_compra_iniciadas": 21
+    }
+  ],
+  "adsets": [
+    {
+      "nome_do_conjunto_de_anuncios": "Público Quente (Engajados/Envolvidos)",
+      "resultados": 41,
+      "valor_usado_brl": 3011.02,
+      "ctr_taxa_de_cliques_no_link": 0.7706,
+      "cpm_custo_por_1_000_impressoes_brl": 21.0504,
+      "visualizacoes_da_pagina_de_destino": 1097,
+      "cliques_no_link": 1141,
+      "finalizacoes_de_compra_iniciadas": 145
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG]",
+      "resultados": 22,
+      "valor_usado_brl": 1602.21,
+      "ctr_taxa_de_cliques_no_link": 0.6941,
+      "cpm_custo_por_1_000_impressoes_brl": 18.622,
+      "visualizacoes_da_pagina_de_destino": 565,
+      "cliques_no_link": 603,
+      "finalizacoes_de_compra_iniciadas": 115
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ENG_30D]",
+      "resultados": 7,
+      "valor_usado_brl": 634.81,
+      "ctr_taxa_de_cliques_no_link": 0.587,
+      "cpm_custo_por_1_000_impressoes_brl": 18.5378,
+      "visualizacoes_da_pagina_de_destino": 182,
+      "cliques_no_link": 201,
+      "finalizacoes_de_compra_iniciadas": 29
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "resultados": 2,
+      "valor_usado_brl": 225.67,
+      "ctr_taxa_de_cliques_no_link": 0.7355,
+      "cpm_custo_por_1_000_impressoes_brl": 19.5267,
+      "visualizacoes_da_pagina_de_destino": 83,
+      "cliques_no_link": 85,
+      "finalizacoes_de_compra_iniciadas": 20
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "resultados": 5,
+      "valor_usado_brl": 320.66,
+      "ctr_taxa_de_cliques_no_link": 0.7533,
+      "cpm_custo_por_1_000_impressoes_brl": 20.2988,
+      "visualizacoes_da_pagina_de_destino": 120,
+      "cliques_no_link": 119,
+      "finalizacoes_de_compra_iniciadas": 25
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "resultados": 3,
+      "valor_usado_brl": 280.67,
+      "ctr_taxa_de_cliques_no_link": 0.8849,
+      "cpm_custo_por_1_000_impressoes_brl": 17.868,
+      "visualizacoes_da_pagina_de_destino": 138,
+      "cliques_no_link": 139,
+      "finalizacoes_de_compra_iniciadas": 37
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD02][VID]",
+      "resultados": 2,
+      "valor_usado_brl": 119.69,
+      "ctr_taxa_de_cliques_no_link": 0.9942,
+      "cpm_custo_por_1_000_impressoes_brl": 33.0544,
+      "visualizacoes_da_pagina_de_destino": 34,
+      "cliques_no_link": 36,
+      "finalizacoes_de_compra_iniciadas": 8
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD05][VID]",
+      "resultados": 8,
+      "valor_usado_brl": 192.73,
+      "ctr_taxa_de_cliques_no_link": 1.1908,
+      "cpm_custo_por_1_000_impressoes_brl": 23.906,
+      "visualizacoes_da_pagina_de_destino": 104,
+      "cliques_no_link": 96,
+      "finalizacoes_de_compra_iniciadas": 30
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD06][VID]",
+      "resultados": 0,
+      "valor_usado_brl": 165.13,
+      "ctr_taxa_de_cliques_no_link": 0.6878,
+      "cpm_custo_por_1_000_impressoes_brl": 26.4123,
+      "visualizacoes_da_pagina_de_destino": 36,
+      "cliques_no_link": 43,
+      "finalizacoes_de_compra_iniciadas": 2
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ENV30D]-[IG]+[VV50%_E3]",
+      "resultados": 21,
+      "valor_usado_brl": 1358.27,
+      "ctr_taxa_de_cliques_no_link": 0.7854,
+      "cpm_custo_por_1_000_impressoes_brl": 24.0811,
+      "visualizacoes_da_pagina_de_destino": 410,
+      "cliques_no_link": 443,
+      "finalizacoes_de_compra_iniciadas": 89
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADV+]",
+      "resultados": 8,
+      "valor_usado_brl": 846.16,
+      "ctr_taxa_de_cliques_no_link": 0.6326,
+      "cpm_custo_por_1_000_impressoes_brl": 26.8981,
+      "visualizacoes_da_pagina_de_destino": 186,
+      "cliques_no_link": 199,
+      "finalizacoes_de_compra_iniciadas": 31
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ENV30D]",
+      "resultados": 1,
+      "valor_usado_brl": 102.53,
+      "ctr_taxa_de_cliques_no_link": 0.5253,
+      "cpm_custo_por_1_000_impressoes_brl": 24.4819,
+      "visualizacoes_da_pagina_de_destino": 21,
+      "cliques_no_link": 22,
+      "finalizacoes_de_compra_iniciadas": 5
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[INTERESSES]",
+      "resultados": 0,
+      "valor_usado_brl": 43.56,
+      "ctr_taxa_de_cliques_no_link": 0.6227,
+      "cpm_custo_por_1_000_impressoes_brl": 22.6051,
+      "visualizacoes_da_pagina_de_destino": 11,
+      "cliques_no_link": 12,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ENV30D]+[CP]",
+      "resultados": 15,
+      "valor_usado_brl": 1163.7,
+      "ctr_taxa_de_cliques_no_link": 0.6694,
+      "cpm_custo_por_1_000_impressoes_brl": 22.1932,
+      "visualizacoes_da_pagina_de_destino": 303,
+      "cliques_no_link": 351,
+      "finalizacoes_de_compra_iniciadas": 40
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD13][VID]",
+      "resultados": 0,
+      "valor_usado_brl": 19.36,
+      "ctr_taxa_de_cliques_no_link": 0.6936,
+      "cpm_custo_por_1_000_impressoes_brl": 22.3815,
+      "visualizacoes_da_pagina_de_destino": 7,
+      "cliques_no_link": 6,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD14][VID]",
+      "resultados": 2,
+      "valor_usado_brl": 36.18,
+      "ctr_taxa_de_cliques_no_link": 1.5849,
+      "cpm_custo_por_1_000_impressoes_brl": 18.4969,
+      "visualizacoes_da_pagina_de_destino": 31,
+      "cliques_no_link": 31,
+      "finalizacoes_de_compra_iniciadas": 15
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD15][VID]",
+      "resultados": 0,
+      "valor_usado_brl": 19.28,
+      "ctr_taxa_de_cliques_no_link": 1.4572,
+      "cpm_custo_por_1_000_impressoes_brl": 17.5592,
+      "visualizacoes_da_pagina_de_destino": 18,
+      "cliques_no_link": 16,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD17][VID]",
+      "resultados": 1,
+      "valor_usado_brl": 14.69,
+      "ctr_taxa_de_cliques_no_link": 0.9721,
+      "cpm_custo_por_1_000_impressoes_brl": 17.8493,
+      "visualizacoes_da_pagina_de_destino": 5,
+      "cliques_no_link": 8,
+      "finalizacoes_de_compra_iniciadas": 6
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD01][VID]",
+      "resultados": 3,
+      "valor_usado_brl": 194.59,
+      "ctr_taxa_de_cliques_no_link": 0.8906,
+      "cpm_custo_por_1_000_impressoes_brl": 29.3721,
+      "visualizacoes_da_pagina_de_destino": 51,
+      "cliques_no_link": 59,
+      "finalizacoes_de_compra_iniciadas": 8
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD03][VID]",
+      "resultados": 3,
+      "valor_usado_brl": 197.51,
+      "ctr_taxa_de_cliques_no_link": 0.829,
+      "cpm_custo_por_1_000_impressoes_brl": 28.7245,
+      "visualizacoes_da_pagina_de_destino": 51,
+      "cliques_no_link": 57,
+      "finalizacoes_de_compra_iniciadas": 11
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD04][VID]",
+      "resultados": 3,
+      "valor_usado_brl": 136.11,
+      "ctr_taxa_de_cliques_no_link": 0.6539,
+      "cpm_custo_por_1_000_impressoes_brl": 27.8116,
+      "visualizacoes_da_pagina_de_destino": 29,
+      "cliques_no_link": 32,
+      "finalizacoes_de_compra_iniciadas": 14
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[LAL1%]-[INGRESSOS]",
+      "resultados": 0,
+      "valor_usado_brl": 87.35,
+      "ctr_taxa_de_cliques_no_link": 0.7244,
+      "cpm_custo_por_1_000_impressoes_brl": 26.3658,
+      "visualizacoes_da_pagina_de_destino": 21,
+      "cliques_no_link": 24,
+      "finalizacoes_de_compra_iniciadas": 4
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADV+]-[FULL]",
+      "resultados": 11,
+      "valor_usado_brl": 686.26,
+      "ctr_taxa_de_cliques_no_link": 0.5749,
+      "cpm_custo_por_1_000_impressoes_brl": 17.4572,
+      "visualizacoes_da_pagina_de_destino": 214,
+      "cliques_no_link": 226,
+      "finalizacoes_de_compra_iniciadas": 36
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "Público Frio (Amplo/Geral)",
+      "resultados": 14,
+      "valor_usado_brl": 563.48,
+      "ctr_taxa_de_cliques_no_link": 0.7779,
+      "cpm_custo_por_1_000_impressoes_brl": 20.2932,
+      "visualizacoes_da_pagina_de_destino": 197,
+      "cliques_no_link": 216,
+      "finalizacoes_de_compra_iniciadas": 39
+    },
+    {
+      "nome_do_conjunto_de_anuncios": "[ADVTG][AD16][VID]",
+      "resultados": 0,
+      "valor_usado_brl": 14.37,
+      "ctr_taxa_de_cliques_no_link": 0.7398,
+      "cpm_custo_por_1_000_impressoes_brl": 17.7189,
+      "visualizacoes_da_pagina_de_destino": 5,
+      "cliques_no_link": 6,
+      "finalizacoes_de_compra_iniciadas": 0
+    }
+  ],
+  "ads": [
+    {
+      "nome_do_anuncio": "AD 02 - IMG",
+      "resultados": 22,
+      "valor_usado_brl": 1794.36,
+      "ctr_taxa_de_cliques_no_link": 0.5233,
+      "cpm_custo_por_1_000_impressoes_brl": 21.4114,
+      "visualizacoes_da_pagina_de_destino": 522,
+      "cliques_no_link": 547,
+      "finalizacoes_de_compra_iniciadas": 83
+    },
+    {
+      "nome_do_anuncio": "AD 04 - IMG",
+      "resultados": 3,
+      "valor_usado_brl": 368.53,
+      "ctr_taxa_de_cliques_no_link": 0.4281,
+      "cpm_custo_por_1_000_impressoes_brl": 14.2741,
+      "visualizacoes_da_pagina_de_destino": 106,
+      "cliques_no_link": 119,
+      "finalizacoes_de_compra_iniciadas": 8
+    },
+    {
+      "nome_do_anuncio": "AD 01 - IMG",
+      "resultados": 1,
+      "valor_usado_brl": 249.98,
+      "ctr_taxa_de_cliques_no_link": 0.5419,
+      "cpm_custo_por_1_000_impressoes_brl": 17.6219,
+      "visualizacoes_da_pagina_de_destino": 68,
+      "cliques_no_link": 67,
+      "finalizacoes_de_compra_iniciadas": 5
+    },
+    {
+      "nome_do_anuncio": "AD 05 - IMG",
+      "resultados": 2,
+      "valor_usado_brl": 178.62,
+      "ctr_taxa_de_cliques_no_link": 0.7491,
+      "cpm_custo_por_1_000_impressoes_brl": 13.9715,
+      "visualizacoes_da_pagina_de_destino": 100,
+      "cliques_no_link": 111,
+      "finalizacoes_de_compra_iniciadas": 12
+    },
+    {
+      "nome_do_anuncio": "AD 05 - VID",
+      "resultados": 16,
+      "valor_usado_brl": 382.17,
+      "ctr_taxa_de_cliques_no_link": 0.8056,
+      "cpm_custo_por_1_000_impressoes_brl": 14.0645,
+      "visualizacoes_da_pagina_de_destino": 233,
+      "cliques_no_link": 223,
+      "finalizacoes_de_compra_iniciadas": 59
+    },
+    {
+      "nome_do_anuncio": "AD 01 - VID",
+      "resultados": 19,
+      "valor_usado_brl": 1192.23,
+      "ctr_taxa_de_cliques_no_link": 1.7939,
+      "cpm_custo_por_1_000_impressoes_brl": 25.6336,
+      "visualizacoes_da_pagina_de_destino": 356,
+      "cliques_no_link": 386,
+      "finalizacoes_de_compra_iniciadas": 56
+    },
+    {
+      "nome_do_anuncio": "AD 02 - VID",
+      "resultados": 6,
+      "valor_usado_brl": 453.96,
+      "ctr_taxa_de_cliques_no_link": 1.0144,
+      "cpm_custo_por_1_000_impressoes_brl": 28.0136,
+      "visualizacoes_da_pagina_de_destino": 132,
+      "cliques_no_link": 137,
+      "finalizacoes_de_compra_iniciadas": 28
+    },
+    {
+      "nome_do_anuncio": "AD 04 - VID",
+      "resultados": 17,
+      "valor_usado_brl": 1701.24,
+      "ctr_taxa_de_cliques_no_link": 0.4958,
+      "cpm_custo_por_1_000_impressoes_brl": 26.1607,
+      "visualizacoes_da_pagina_de_destino": 392,
+      "cliques_no_link": 419,
+      "finalizacoes_de_compra_iniciadas": 76
+    },
+    {
+      "nome_do_anuncio": "AD 09 - IMG (Antes que Acabe V2)",
+      "resultados": 6,
+      "valor_usado_brl": 355.37,
+      "ctr_taxa_de_cliques_no_link": 0.4429,
+      "cpm_custo_por_1_000_impressoes_brl": 29.2339,
+      "visualizacoes_da_pagina_de_destino": 129,
+      "cliques_no_link": 128,
+      "finalizacoes_de_compra_iniciadas": 27
+    },
+    {
+      "nome_do_anuncio": "AD LOTE 1 LIBERADO - IMG",
+      "resultados": 19,
+      "valor_usado_brl": 1166.45,
+      "ctr_taxa_de_cliques_no_link": 0.6263,
+      "cpm_custo_por_1_000_impressoes_brl": 17.7992,
+      "visualizacoes_da_pagina_de_destino": 366,
+      "cliques_no_link": 400,
+      "finalizacoes_de_compra_iniciadas": 60
+    },
+    {
+      "nome_do_anuncio": "AD CORTE - VID",
+      "resultados": 2,
+      "valor_usado_brl": 156.12,
+      "ctr_taxa_de_cliques_no_link": 0.5774,
+      "cpm_custo_por_1_000_impressoes_brl": 19.2303,
+      "visualizacoes_da_pagina_de_destino": 40,
+      "cliques_no_link": 47,
+      "finalizacoes_de_compra_iniciadas": 7
+    },
+    {
+      "nome_do_anuncio": "AD 03 - VID",
+      "resultados": 13,
+      "valor_usado_brl": 700.78,
+      "ctr_taxa_de_cliques_no_link": 0.7363,
+      "cpm_custo_por_1_000_impressoes_brl": 25.6901,
+      "visualizacoes_da_pagina_de_destino": 224,
+      "cliques_no_link": 246,
+      "finalizacoes_de_compra_iniciadas": 53
+    },
+    {
+      "nome_do_anuncio": "AD 13 - VID",
+      "resultados": 0,
+      "valor_usado_brl": 19.36,
+      "ctr_taxa_de_cliques_no_link": 0.6936,
+      "cpm_custo_por_1_000_impressoes_brl": 22.3815,
+      "visualizacoes_da_pagina_de_destino": 7,
+      "cliques_no_link": 6,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_anuncio": "AD 15 - VID",
+      "resultados": 0,
+      "valor_usado_brl": 19.28,
+      "ctr_taxa_de_cliques_no_link": 1.4572,
+      "cpm_custo_por_1_000_impressoes_brl": 17.5592,
+      "visualizacoes_da_pagina_de_destino": 18,
+      "cliques_no_link": 16,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_anuncio": "AD 17 - VID",
+      "resultados": 1,
+      "valor_usado_brl": 14.69,
+      "ctr_taxa_de_cliques_no_link": 0.9721,
+      "cpm_custo_por_1_000_impressoes_brl": 17.8493,
+      "visualizacoes_da_pagina_de_destino": 5,
+      "cliques_no_link": 8,
+      "finalizacoes_de_compra_iniciadas": 6
+    },
+    {
+      "nome_do_anuncio": "AD 06 - IMG",
+      "resultados": 7,
+      "valor_usado_brl": 717.71,
+      "ctr_taxa_de_cliques_no_link": 0.5441,
+      "cpm_custo_por_1_000_impressoes_brl": 10.8981,
+      "visualizacoes_da_pagina_de_destino": 304,
+      "cliques_no_link": 327,
+      "finalizacoes_de_compra_iniciadas": 34
+    },
+    {
+      "nome_do_anuncio": "AD 08 - IMG (Antes que Acabe V1)",
+      "resultados": 25,
+      "valor_usado_brl": 1671.91,
+      "ctr_taxa_de_cliques_no_link": 0.7618,
+      "cpm_custo_por_1_000_impressoes_brl": 21.3962,
+      "visualizacoes_da_pagina_de_destino": 592,
+      "cliques_no_link": 634,
+      "finalizacoes_de_compra_iniciadas": 123
+    },
+    {
+      "nome_do_anuncio": "AD 10 - IMG (Antes que Acabe V3)",
+      "resultados": 8,
+      "valor_usado_brl": 537.57,
+      "ctr_taxa_de_cliques_no_link": 0.752,
+      "cpm_custo_por_1_000_impressoes_brl": 20.3602,
+      "visualizacoes_da_pagina_de_destino": 214,
+      "cliques_no_link": 225,
+      "finalizacoes_de_compra_iniciadas": 49
+    },
+    {
+      "nome_do_anuncio": "AD 14 - VID",
+      "resultados": 2,
+      "valor_usado_brl": 36.18,
+      "ctr_taxa_de_cliques_no_link": 1.5849,
+      "cpm_custo_por_1_000_impressoes_brl": 18.4969,
+      "visualizacoes_da_pagina_de_destino": 31,
+      "cliques_no_link": 31,
+      "finalizacoes_de_compra_iniciadas": 15
+    },
+    {
+      "nome_do_anuncio": "AD 16 - VID",
+      "resultados": 0,
+      "valor_usado_brl": 14.37,
+      "ctr_taxa_de_cliques_no_link": 0.7398,
+      "cpm_custo_por_1_000_impressoes_brl": 17.7189,
+      "visualizacoes_da_pagina_de_destino": 5,
+      "cliques_no_link": 6,
+      "finalizacoes_de_compra_iniciadas": 0
+    },
+    {
+      "nome_do_anuncio": "AD 06 - VID",
+      "resultados": 3,
+      "valor_usado_brl": 305.11,
+      "ctr_taxa_de_cliques_no_link": 0.6845,
+      "cpm_custo_por_1_000_impressoes_brl": 23.8011,
+      "visualizacoes_da_pagina_de_destino": 75,
+      "cliques_no_link": 88,
+      "finalizacoes_de_compra_iniciadas": 8
+    }
+  ],
+  "cross_performance": [
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 269.15,
+      "resultados": 3,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 02 - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 179.44,
+      "resultados": 2,
+      "cpa": 89.72
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 55.28,
+      "resultados": 0,
+      "cpa": 55.28
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 04 - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 36.85,
+      "resultados": 0,
+      "cpa": 36.85
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 37.5,
+      "resultados": 0,
+      "cpa": 37.5
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 01 - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 25.0,
+      "resultados": 0,
+      "cpa": 25.0
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 26.79,
+      "resultados": 0,
+      "cpa": 26.79
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 17.86,
+      "resultados": 0,
+      "cpa": 17.86
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 133.76,
+      "resultados": 5,
+      "cpa": 26.75
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 05 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 38.22,
+      "resultados": 1,
+      "cpa": 38.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 417.28,
+      "resultados": 6,
+      "cpa": 69.55
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 01 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 119.22,
+      "resultados": 1,
+      "cpa": 119.22
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 158.89,
+      "resultados": 2,
+      "cpa": 79.44
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 02 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 45.4,
+      "resultados": 0,
+      "cpa": 45.4
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 595.43,
+      "resultados": 5,
+      "cpa": 119.09
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 04 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 170.12,
+      "resultados": 1,
+      "cpa": 170.12
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 53.31,
+      "resultados": 0,
+      "cpa": 53.31
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD 09 - IMG (Antes que Acabe V2)",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 35.54,
+      "resultados": 0,
+      "cpa": 35.54
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 174.97,
+      "resultados": 2,
+      "cpa": 87.48
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD LOTE 1 LIBERADO - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 116.65,
+      "resultados": 1,
+      "cpa": 116.65
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 54.64,
+      "resultados": 0,
+      "cpa": 54.64
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD CORTE - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 15.61,
+      "resultados": 0,
+      "cpa": 15.61
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 245.27,
+      "resultados": 4,
+      "cpa": 61.32
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 03 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 70.08,
+      "resultados": 1,
+      "cpa": 70.08
+    },
+    {
+      "criativo": "AD 13 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 6.78,
+      "resultados": 0,
+      "cpa": 6.78
+    },
+    {
+      "criativo": "AD 15 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 6.75,
+      "resultados": 0,
+      "cpa": 6.75
+    },
+    {
+      "criativo": "AD 17 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 5.14,
+      "resultados": 0,
+      "cpa": 5.14
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 107.66,
+      "resultados": 1,
+      "cpa": 107.66
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 06 - IMG",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 71.77,
+      "resultados": 0,
+      "cpa": 71.77
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 250.79,
+      "resultados": 3,
+      "cpa": 83.6
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 08 - IMG (Antes que Acabe V1)",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 167.19,
+      "resultados": 2,
+      "cpa": 83.59
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 80.64,
+      "resultados": 1,
+      "cpa": 80.64
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 10 - IMG (Antes que Acabe V3)",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 53.76,
+      "resultados": 0,
+      "cpa": 53.76
+    },
+    {
+      "criativo": "AD 14 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 12.66,
+      "resultados": 0,
+      "cpa": 12.66
+    },
+    {
+      "criativo": "AD 16 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 5.03,
+      "resultados": 0,
+      "cpa": 5.03
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "Público Quente (Engajados/Envolvidos)",
+      "valor_usado_brl": 106.79,
+      "resultados": 1,
+      "cpa": 106.79
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ENG_30D]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD 08 - IMG  ANTES_QUE_ACABE_V1]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD 09 - IMG  ANTES_QUE_ACABE_V2]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD 10 - IMG  ANTES_QUE_ACABE_V3]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD02][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD05][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD06][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ENV30D]-[IG]+[VV50%_E3]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADV+]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ENV30D]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[INTERESSES]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ENV30D]+[CP]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD13][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD14][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD15][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD17][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD01][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD03][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD04][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[LAL1%]-[INGRESSOS]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADV+]-[FULL]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "Público Frio (Amplo/Geral)",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    },
+    {
+      "criativo": "AD 06 - VID",
+      "publico": "[ADVTG][AD16][VID]",
+      "valor_usado_brl": 30.51,
+      "resultados": 0,
+      "cpa": 30.51
+    }
+  ],
+  "buyer_avatar_age": {},
+  "buyer_avatar_revenue": {},
+  "buyer_avatar_pain": {},
+  "buyer_avatar_scenario": {},
+  "daily_sales": [
+    {
+      "data": "2026-05-11",
+      "ingressos": 6
+    },
+    {
+      "data": "2026-05-12",
+      "ingressos": 7
+    },
+    {
+      "data": "2026-05-13",
+      "ingressos": 32
+    },
+    {
+      "data": "2026-05-14",
+      "ingressos": 12
+    },
+    {
+      "data": "2026-05-15",
+      "ingressos": 7
+    },
+    {
+      "data": "2026-05-16",
+      "ingressos": 6
+    },
+    {
+      "data": "2026-05-17",
+      "ingressos": 38
+    },
+    {
+      "data": "2026-05-18",
+      "ingressos": 58
+    },
+    {
+      "data": "2026-05-19",
+      "ingressos": 11
+    },
+    {
+      "data": "2026-05-20",
+      "ingressos": 5
+    },
+    {
+      "data": "2026-05-21",
+      "ingressos": 3
+    },
+    {
+      "data": "2026-05-22",
+      "ingressos": 5
+    },
+    {
+      "data": "2026-05-23",
+      "ingressos": 1
+    },
+    {
+      "data": "2026-05-24",
+      "ingressos": 2
+    }
+  ],
+  "creative_recommendations": [
+    {
+      "id": "C1",
+      "headline": "Você é dono ou empregado da própria barbearia?",
+      "pain_target": "Preso na cadeira / barbearia depende 100% de mim",
+      "evidence_count": 28,
+      "format_sugerido": "Vídeo 30-45s, dono diante do espelho da barbearia, primeira pessoa",
+      "priority": "ALTA"
+    },
+    {
+      "id": "C2",
+      "headline": "Pare de misturar o caixa da barbearia com o seu. Em 2 dias eu te mostro como",
+      "pain_target": "Caixa misturado PF e PJ",
+      "evidence_count": 26,
+      "format_sugerido": "Vídeo 45s, B-roll de planilha + áudio em primeira pessoa",
+      "priority": "ALTA"
+    },
+    {
+      "id": "C3",
+      "headline": "Como dobrar o faturamento da sua barbearia sem precisar atrair mais clientes",
+      "pain_target": "Quero dobrar o faturamento mantendo a estrutura atual",
+      "evidence_count": 30,
+      "format_sugerido": "Vídeo 45s, estilo storytelling, antes/depois",
+      "priority": "ALTA"
+    },
+    {
+      "id": "C4",
+      "headline": "Por que seu barbeiro não veste a camisa (e o que eu fiz pra mudar isso)",
+      "pain_target": "Funcionário não veste a camisa",
+      "evidence_count": 11,
+      "format_sugerido": "Vídeo 60s, depoimento em primeira pessoa",
+      "priority": "MÉDIA"
+    }
+  ],
+  "realtime_snapshot": {
+    "ad_spend_total": 12153.72,
+    "sales_hotmart": 197,
+    "sales_meta_attributed": 173,
+    "revenue_net_total": 4513.58,
+    "days_captacao_so_far": 14,
+    "current_lot": {
+      "numero": 2,
+      "preco": 32,
+      "vendidos_no_lote": 41,
+      "capacidade": 175
+    },
+    "last_3_days_sales": 8,
+    "last_7_days_sales": 85,
+    "avg_last_3_days_per_day": 2.67,
+    "avg_last_7_days_per_day": 12.14,
+    "yesterday_sales": 2,
+    "media_metrics_aggregate": {
+      "total_visits": 3914,
+      "total_purchases": 172,
+      "total_initiate_checkout": 707,
+      "total_clicks": 4164,
+      "page_conversion_pct": 4.39,
+      "checkout_conversion_pct": 24.33,
+      "connect_rate_pct": 94.0,
+      "cpa_avg": 70.66
+    }
+  }
+}
