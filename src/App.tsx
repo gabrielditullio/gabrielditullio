@@ -60,6 +60,7 @@ const App = () => (
           <Route path="/dashboard_BL0626/w-war-room" element={<DashboardLayout><WWarRoom /></DashboardLayout>} />
           
           {/* Redirects for common paths or case-insensitivity */}
+          <Route path="/dashboard_BL0626/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
           <Route path="/dashboard_bl0626/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
           <Route path="/dashboard/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
