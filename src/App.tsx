@@ -17,6 +17,7 @@ import DidierSodreRosa from "./pages/DidierSodreRosa";
 import PropostaWitzWealth from "./pages/PropostaWitzWealth";
 import Orbyka from "./pages/Orbyka";
 import WorkshopBarbearia from "./pages/WorkshopBarbearia";
+import DashboardBL0626 from "./pages/DashboardBL0626";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           <Route path="/0rb1k4" element={<Orbyka />} />
           <Route path="/workshop-barbearia" element={<WorkshopBarbearia />} />
+          <Route path="/dashboard_BL0626/*" element={<DashboardBL0626 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
