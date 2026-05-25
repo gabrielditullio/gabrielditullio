@@ -21,6 +21,7 @@ import ControlTower from "./dashboard-bl0626/pages/ControlTower";
 import Home from "./dashboard-bl0626/pages/Home";
 import Diagnostic from "./dashboard-bl0626/pages/Diagnostic";
 import WWarRoom from "./dashboard-bl0626/pages/WWarRoom";
+import DashboardBL0626V2 from "./pages/DashboardBL0626V2";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -58,6 +59,7 @@ const App = () => (
           <Route path="/dashboard_BL0626/war-room-original" element={<DashboardLayout><Home /></DashboardLayout>} />
           <Route path="/dashboard_BL0626/diagnostic" element={<DashboardLayout><Diagnostic /></DashboardLayout>} />
           <Route path="/dashboard_BL0626/w-war-room" element={<DashboardLayout><WWarRoom /></DashboardLayout>} />
+          <Route path="/dashboard_BL0626_v2" element={<DashboardBL0626V2 />} />
           
           {/* Redirects for common paths or case-insensitivity */}
           <Route path="/dashboard_BL0626/*" element={<DashboardLayout><ControlTower /></DashboardLayout>} />
