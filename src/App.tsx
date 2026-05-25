@@ -8,15 +8,7 @@ import IndexV2 from "./pages/IndexV2";
 import IndexV3 from "./pages/IndexV3";
 import FallenMajorPlaybook from "./pages/FallenMajorPlaybook";
 import Nova from "./pages/Nova";
-import TioFiisVSL from "./pages/TioFiisVSL";
-import TioFiisVSL2 from "./pages/TioFiisVSL2";
-import TioFiisFunis from "./pages/TioFiisFunis";
-import TioFiisApresentacao from "./pages/TioFiisApresentacao";
 import MvpEducation from "./pages/MvpEducation";
-import BioconversionPitchDeckV1 from "./pages/BioconversionPitchDeckV1";
-import BioconversionPitchDeckV2 from "./pages/BioconversionPitchDeckV2";
-import BioconversionPitchDeckV3 from "./pages/BioconversionPitchDeckV3";
-import PropostaComercialBioconversionAcademy from "./pages/PropostaComercialBioconversionAcademy";
 import MentoriaMvpLaunchPago from "./pages/MentoriaMvpLaunchPago";
 import MentoriaMvpLaunchPagoV2 from "./pages/MentoriaMvpLaunchPagoV2";
 import MentoriaMvpLaunchPagoV3 from "./pages/MentoriaMvpLaunchPagoV3";
@@ -41,15 +33,7 @@ const App = () => (
           <Route path="/v2" element={<IndexV2 />} />
           <Route path="/fallen_major_playbook" element={<FallenMajorPlaybook />} />
           <Route path="/nova" element={<Nova />} />
-          <Route path="/tiofiis_vsl" element={<TioFiisVSL />} />
-          <Route path="/tiofiis_vsl2" element={<TioFiisVSL2 />} />
-          <Route path="/tiofiis_funis" element={<TioFiisFunis />} />
-          <Route path="/tiofiis_apresentacao" element={<TioFiisApresentacao />} />
           <Route path="/mvp_education" element={<MvpEducation />} />
-          <Route path="/Bioconversionv1" element={<BioconversionPitchDeckV1 />} />
-          <Route path="/Bioconversionv2" element={<BioconversionPitchDeckV2 />} />
-          <Route path="/Bioconversionv3" element={<BioconversionPitchDeckV3 />} />
-          <Route path="/Bioconversionv4" element={<PropostaComercialBioconversionAcademy />} />
           <Route path="/mentoriamvp_launch_pago" element={<MentoriaMvpLaunchPago />} />
           <Route path="/mentoriamvp_launch_pago_v2" element={<MentoriaMvpLaunchPagoV2 />} />
           <Route path="/mentoriamvp_launch_pago_v3" element={<MentoriaMvpLaunchPagoV3 />} />
