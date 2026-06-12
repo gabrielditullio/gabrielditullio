@@ -1,0 +1,40 @@
+/* DT Coproduções — Typography tokens
+   Outfit (display, weight 200–400, tight tracking) + Inter (body/UI, 300–500)
+   + Geist Mono (números, micro-labels, dados). */
+:root {
+  --font-display: 'Outfit', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-ui: 'Geist', 'Inter', sans-serif;
+  --font-mono: 'Geist Mono', 'SF Mono', monospace;
+
+  /* Display scale (landing + slides) */
+  --text-hero: clamp(2.6rem, 5.5vw, 4.5rem);    /* hero / slide title */
+  --text-display: clamp(2.4rem, 5vw, 3.8rem);
+  --text-h2: clamp(1.8rem, 3vw, 2.4rem);        /* section heading */
+  --text-h3: 1.25rem;                            /* card title */
+  --text-body-lg: 1.05rem;
+  --text-body-md: 0.9rem;
+  --text-body-sm: 0.84rem;
+  --text-caption: 0.75rem;
+  --text-micro: 0.68rem;
+
+  /* Weights */
+  --weight-display: 200;     /* Outfit ultralight headings */
+  --weight-display-strong: 400;
+  --weight-body: 300;
+  --weight-medium: 500;
+
+  /* Tracking */
+  --tracking-display: -0.03em;
+  --tracking-tight: -0.02em;
+  --tracking-label: 0.12em;  /* uppercase section labels */
+
+  /* Leading */
+  --leading-display: 1.1;
+  --leading-body: 1.7;
+
+  /* Metric numbers */
+  --text-metric-xl: 3rem;
+  --text-metric-lg: 2.25rem;
+  --text-metric-md: 1.5rem;
+}

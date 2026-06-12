@@ -1,0 +1,83 @@
+/* DT Coproduções — Color tokens
+   Three semantic accents, one per "act" of the narrative:
+   FUNIL (sky)  → captação, jornada, passos numerados   [Launchoria]
+   MÉTRICA (teal) → KPIs, dashboards, previsibilidade   [Cadence]
+   ROI (emerald)  → retorno, dinheiro, resultado        [MatrixPay]
+*/
+:root {
+  /* ---- Base / backgrounds ---- */
+  --bg-page: #09090b;        /* zinc-950 — default page background */
+  --bg-deep: #060610;        /* navy-black — metric & slide sections */
+  --bg-raised: #0a0a18;      /* alt section background */
+  --bg-panel: #0d0d1f;       /* elevated panels */
+  --bg-card-solid: #18181b;  /* zinc-900 — solid card / step circle */
+
+  /* ---- Neutrals (zinc scale) ---- */
+  --fg-1: #fafafa;           /* headings, primary CTA bg */
+  --fg-2: #e4e4e7;           /* CTA hover, subtitles */
+  --fg-3: #d4d4d8;           /* checklist, FAQ text */
+  --fg-body: #a1a1aa;        /* body text */
+  --fg-muted: #71717a;       /* captions, icons */
+  --fg-ghost: #52525b;       /* muted / de-emphasized headline spans */
+  --fg-invert: #09090b;      /* text on light CTAs */
+
+  /* ---- Accent: FUNIL (sky) ---- */
+  --sky-300: #7dd3fc;
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+
+  /* ---- Accent: MÉTRICA (teal) ---- */
+  --teal-light: #2dd4bf;
+  --teal: #14b8a6;
+  --teal-dark: #0d9488;
+
+  /* ---- Accent: ROI (emerald) ---- */
+  --emerald-200: #a7f3d0;
+  --emerald-300: #6ee7b7;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --emerald-600: #059669;
+
+  /* ---- Feedback ---- */
+  --negative: #f43f5e;       /* rose-500 — quedas, custo, "antes" */
+
+  /* ---- Semantic aliases ---- */
+  --accent-funnel: var(--sky-400);
+  --accent-funnel-soft: rgba(14, 165, 233, 0.10);
+  --accent-funnel-border: rgba(12, 74, 110, 0.30);   /* sky-900/30 */
+  --accent-metric: var(--teal);
+  --accent-metric-light: var(--teal-light);
+  --accent-metric-soft: rgba(20, 184, 166, 0.08);
+  --accent-roi: var(--emerald-500);
+  --accent-roi-soft: rgba(16, 185, 129, 0.10);
+
+  /* ---- Surfaces (opacity layers over dark bg) ---- */
+  --surface-card: rgba(24, 24, 27, 0.20);      /* default card */
+  --surface-card-hover: rgba(24, 24, 27, 0.40);
+  --surface-glass: rgba(255, 255, 255, 0.03);
+  --surface-subtle: rgba(255, 255, 255, 0.02);
+  --surface-bento: rgba(8, 8, 22, 0.80);       /* metric bento card */
+  --surface-input: rgba(255, 255, 255, 0.05);
+
+  /* ---- Borders ---- */
+  --border-faint: rgba(255, 255, 255, 0.05);
+  --border-soft: rgba(255, 255, 255, 0.10);
+  --border-metric-s: rgba(20, 184, 166, 0.12);
+  --border-metric-m: rgba(20, 184, 166, 0.20);
+  --border-metric-l: rgba(20, 184, 166, 0.30);
+  --border-roi: rgba(16, 185, 129, 0.25);
+
+  /* ---- Glows ---- */
+  --glow-metric-sm: 0 0 20px rgba(20, 184, 166, 0.15);
+  --glow-metric-md: 0 0 40px rgba(20, 184, 166, 0.20);
+  --glow-roi: 0 0 15px rgba(16, 185, 129, 0.30);
+
+  /* ---- Text on surfaces ---- */
+  --text-heading: var(--fg-1);
+  --text-body: var(--fg-body);
+  --text-label-funnel: var(--sky-300);
+  --text-label-metric: var(--teal-light);
+  --text-label-roi: var(--emerald-300);
+  --text-positive: var(--emerald-200);
+  --text-negative: #fda4af;  /* rose-300 on dark */
+}
