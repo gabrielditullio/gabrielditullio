@@ -31,7 +31,7 @@ const App = () => (
           <Route path="/pp_didiersodre&rosa" element={<DidierSodreRosa />} />
           <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           <Route path="/0rb1k4" element={<Orbyka />} />
-          <Route path="/mvp_launch" element={<MvpLaunch />} />
+          <Route path="/report-BL0626" element={<MvpLaunch />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
