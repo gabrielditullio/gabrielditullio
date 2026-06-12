@@ -1,0 +1,94 @@
+/* DT Coproduções — Base styles */
+*, *::before, *::after { box-sizing: border-box; }
+
+body.dt {
+  margin: 0;
+  background: var(--bg-page);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  font-size: var(--text-body-md);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+}
+body.dt ::selection { background: rgba(56, 189, 248, 0.20); color: var(--sky-300); }
+
+.dt h1, .dt h2, .dt h3, .dt h4 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  font-weight: var(--weight-display);
+  letter-spacing: var(--tracking-display);
+  line-height: var(--leading-display);
+  margin: 0;
+}
+.dt p { margin: 0; }
+
+/* Section label — uppercase eyebrow */
+.dt-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+.dt-label--funnel { color: var(--sky-300); }
+.dt-label--metric { color: var(--teal-light); }
+.dt-label--roi { color: var(--emerald-300); }
+.dt-label--neutral { color: var(--fg-muted); }
+
+/* Headline ghost span — second line in zinc-600 */
+.dt-ghost { color: var(--fg-ghost); }
+
+/* Gradient text */
+.dt-gradient-metric {
+  background: linear-gradient(135deg, var(--teal-light) 0%, var(--teal) 50%, #5eead4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.dt-gradient-roi {
+  background: linear-gradient(90deg, var(--emerald-200), var(--emerald-400), var(--emerald-200));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Glow backgrounds */
+.dt-glow-funnel { background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 70%); }
+.dt-glow-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+}
+.dt-glow-blob--metric { background: radial-gradient(circle, rgba(20, 184, 166, 0.13), transparent 70%); }
+.dt-glow-blob--roi { background: radial-gradient(circle, rgba(16, 185, 129, 0.15), transparent 70%); }
+
+/* Dividers */
+.dt-divider { height: 1px; width: 100%; border: none; margin: 0; }
+.dt-divider--faint { background: linear-gradient(90deg, transparent, var(--border-soft), transparent); }
+.dt-divider--metric { background: linear-gradient(90deg, transparent, var(--border-metric-l), transparent); }
+.dt-divider--roi { background: linear-gradient(90deg, transparent, rgba(16, 185, 129, 0.20), transparent); }
+
+/* Entrance animation (gated: only runs inside an active deck slide — deck_stage sets
+   [data-deck-active]; static renders, prints e screenshots mostram o estado final) */
+@keyframes dtFadeInUpBlur {
+  0% { opacity: 0; transform: translateY(20px); filter: blur(8px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-deck-active] .dt-animate-in { animation: dtFadeInUpBlur var(--duration-entrance) var(--ease-entrance) both; }
+  [data-deck-active] .dt-delay-100 { animation-delay: 100ms; }
+  [data-deck-active] .dt-delay-200 { animation-delay: 200ms; }
+  [data-deck-active] .dt-delay-300 { animation-delay: 300ms; }
+  [data-deck-active] .dt-delay-400 { animation-delay: 400ms; }
+  [data-deck-active] .dt-delay-500 { animation-delay: 500ms; }
+}
+
+/* Layout helpers */
+.dt-container { max-width: var(--container); margin: 0 auto; padding: 0 40px; }
+.dt-section { position: relative; padding: var(--section-pad) 0; overflow: hidden; }
+.dt-section--alt { background: var(--bg-raised); }

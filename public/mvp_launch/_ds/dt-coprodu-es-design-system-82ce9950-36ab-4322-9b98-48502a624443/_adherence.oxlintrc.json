@@ -1,0 +1,363 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/cards/**",
+              "components/core/**",
+              "components/metrics/**",
+              "ui_kits/landing/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Outfit|Inter|Geist|Geist Mono))/i]",
+        "message": "Font not provided by the design system. Available: Outfit, Inter, Geist, Geist Mono."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute > JSXIdentifier[name!=/^(?:tone|icon|dot|children|key|ref|className|style|children)$/]",
+        "message": "<Badge> doesn't accept that prop. Declared props: tone, icon, dot, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Badge'] > JSXAttribute[name.name='tone'] > Literal[value!=/^(?:funnel|metric|roi|neutral)$/]",
+        "message": "<Badge> tone must be one of 'funnel' | 'metric' | 'roi' | 'neutral'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='BentoCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:title|icon|gridBg|style|children|key|ref|className|style|children)$/]",
+        "message": "<BentoCard> doesn't accept that prop. Declared props: title, icon, gridBg, style, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|size|icon|href|disabled|onClick|children|key|ref|className|style|children)$/]",
+        "message": "<Button> doesn't accept that prop. Declared props: variant, size, icon, href, disabled, onClick, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:primary|ghost|link|metric|roi)$/]",
+        "message": "<Button> variant must be one of 'primary' | 'ghost' | 'link' | 'metric' | 'roi'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Button'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:sm|md|lg)$/]",
+        "message": "<Button> size must be one of 'sm' | 'md' | 'lg'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Card'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|lift|style|children|key|ref|className|style|children)$/]",
+        "message": "<Card> doesn't accept that prop. Declared props: variant, lift, style, children."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Card'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:default|accent|glass|roi)$/]",
+        "message": "<Card> variant must be one of 'default' | 'accent' | 'glass' | 'roi'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Input'] > JSXAttribute > JSXIdentifier[name!=/^(?:icon|placeholder|type|value|onChange|key|ref|className|style|children)$/]",
+        "message": "<Input> doesn't accept that prop. Declared props: icon, placeholder, type, value, onChange."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='KpiStat'] > JSXAttribute > JSXIdentifier[name!=/^(?:value|label|delta|down|size|roi|key|ref|className|style|children)$/]",
+        "message": "<KpiStat> doesn't accept that prop. Declared props: value, label, delta, down, size, roi."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='KpiStat'] > JSXAttribute[name.name='size'] > Literal[value!=/^(?:md|lg|xl)$/]",
+        "message": "<KpiStat> size must be one of 'md' | 'lg' | 'xl'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute > JSXIdentifier[name!=/^(?:variant|height|withName|key|ref|className|style|children)$/]",
+        "message": "<Logo> doesn't accept that prop. Declared props: variant, height, withName."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='Logo'] > JSXAttribute[name.name='variant'] > Literal[value!=/^(?:white|navy|gray|black|red)$/]",
+        "message": "<Logo> variant must be one of 'white' | 'navy' | 'gray' | 'black' | 'red'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='StepCard'] > JSXAttribute > JSXIdentifier[name!=/^(?:number|title|description|active|children|key|ref|className|style|children)$/]",
+        "message": "<StepCard> doesn't accept that prop. Declared props: number, title, description, active, children."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "Badge": {
+        "replaces": []
+      },
+      "BentoCard": {
+        "replaces": []
+      },
+      "Button": {
+        "replaces": []
+      },
+      "Card": {
+        "replaces": []
+      },
+      "Input": {
+        "replaces": []
+      },
+      "KpiStat": {
+        "replaces": []
+      },
+      "Logo": {
+        "replaces": []
+      },
+      "StepCard": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--accent-funnel",
+      "--accent-funnel-border",
+      "--accent-funnel-soft",
+      "--accent-metric",
+      "--accent-metric-light",
+      "--accent-metric-soft",
+      "--accent-roi",
+      "--accent-roi-soft",
+      "--bg-card-solid",
+      "--bg-deep",
+      "--bg-page",
+      "--bg-panel",
+      "--bg-raised",
+      "--border-faint",
+      "--border-metric-l",
+      "--border-metric-m",
+      "--border-metric-s",
+      "--border-roi",
+      "--border-soft",
+      "--card-pad",
+      "--card-pad-sm",
+      "--container",
+      "--container-wide",
+      "--duration-base",
+      "--duration-entrance",
+      "--duration-fast",
+      "--ease-entrance",
+      "--ease-out",
+      "--emerald-200",
+      "--emerald-300",
+      "--emerald-400",
+      "--emerald-500",
+      "--emerald-600",
+      "--fg-1",
+      "--fg-2",
+      "--fg-3",
+      "--fg-body",
+      "--fg-ghost",
+      "--fg-invert",
+      "--fg-muted",
+      "--font-body",
+      "--font-display",
+      "--font-mono",
+      "--font-ui",
+      "--gap-cards",
+      "--gap-grid",
+      "--glow-metric-md",
+      "--glow-metric-sm",
+      "--glow-roi",
+      "--leading-body",
+      "--leading-display",
+      "--negative",
+      "--radius-bento",
+      "--radius-card",
+      "--radius-card-lg",
+      "--radius-chip",
+      "--radius-inner",
+      "--radius-pill",
+      "--section-pad",
+      "--shadow-bento",
+      "--shadow-card-hover",
+      "--sky-300",
+      "--sky-400",
+      "--sky-500",
+      "--space-1",
+      "--space-12",
+      "--space-16",
+      "--space-2",
+      "--space-3",
+      "--space-4",
+      "--space-6",
+      "--space-8",
+      "--surface-bento",
+      "--surface-card",
+      "--surface-card-hover",
+      "--surface-glass",
+      "--surface-input",
+      "--surface-subtle",
+      "--teal",
+      "--teal-dark",
+      "--teal-light",
+      "--text-body",
+      "--text-body-lg",
+      "--text-body-md",
+      "--text-body-sm",
+      "--text-caption",
+      "--text-display",
+      "--text-h2",
+      "--text-h3",
+      "--text-heading",
+      "--text-hero",
+      "--text-label-funnel",
+      "--text-label-metric",
+      "--text-label-roi",
+      "--text-metric-lg",
+      "--text-metric-md",
+      "--text-metric-xl",
+      "--text-micro",
+      "--text-negative",
+      "--text-positive",
+      "--tracking-display",
+      "--tracking-label",
+      "--tracking-tight",
+      "--weight-body",
+      "--weight-display",
+      "--weight-display-strong",
+      "--weight-medium"
+    ],
+    "tokenKinds": {
+      "--bg-page": "color",
+      "--bg-deep": "color",
+      "--bg-raised": "color",
+      "--bg-panel": "color",
+      "--bg-card-solid": "color",
+      "--fg-1": "color",
+      "--fg-2": "color",
+      "--fg-3": "color",
+      "--fg-body": "color",
+      "--fg-muted": "color",
+      "--fg-ghost": "color",
+      "--fg-invert": "color",
+      "--sky-300": "color",
+      "--sky-400": "color",
+      "--sky-500": "color",
+      "--teal-light": "color",
+      "--teal": "color",
+      "--teal-dark": "color",
+      "--emerald-200": "color",
+      "--emerald-300": "color",
+      "--emerald-400": "color",
+      "--emerald-500": "color",
+      "--emerald-600": "color",
+      "--negative": "color",
+      "--accent-funnel": "color",
+      "--accent-funnel-soft": "color",
+      "--accent-funnel-border": "color",
+      "--accent-metric": "color",
+      "--accent-metric-light": "color",
+      "--accent-metric-soft": "color",
+      "--accent-roi": "color",
+      "--accent-roi-soft": "color",
+      "--surface-card": "color",
+      "--surface-card-hover": "color",
+      "--surface-glass": "color",
+      "--surface-subtle": "color",
+      "--surface-bento": "color",
+      "--surface-input": "color",
+      "--border-faint": "color",
+      "--border-soft": "color",
+      "--border-metric-s": "color",
+      "--border-metric-m": "color",
+      "--border-metric-l": "color",
+      "--border-roi": "color",
+      "--glow-metric-sm": "shadow",
+      "--glow-metric-md": "shadow",
+      "--glow-roi": "shadow",
+      "--text-heading": "font",
+      "--text-body": "font",
+      "--text-label-funnel": "font",
+      "--text-label-metric": "font",
+      "--text-label-roi": "font",
+      "--text-positive": "font",
+      "--text-negative": "font",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-ui": "font",
+      "--font-mono": "font",
+      "--text-hero": "font",
+      "--text-display": "font",
+      "--text-h2": "font",
+      "--text-h3": "font",
+      "--text-body-lg": "font",
+      "--text-body-md": "font",
+      "--text-body-sm": "font",
+      "--text-caption": "font",
+      "--text-micro": "font",
+      "--weight-display": "font",
+      "--weight-display-strong": "font",
+      "--weight-body": "font",
+      "--weight-medium": "font",
+      "--tracking-display": "font",
+      "--tracking-tight": "font",
+      "--tracking-label": "font",
+      "--leading-display": "font",
+      "--leading-body": "font",
+      "--text-metric-xl": "font",
+      "--text-metric-lg": "font",
+      "--text-metric-md": "font",
+      "--radius-pill": "radius",
+      "--radius-card": "radius",
+      "--radius-card-lg": "radius",
+      "--radius-bento": "radius",
+      "--radius-inner": "radius",
+      "--radius-chip": "radius",
+      "--container": "spacing",
+      "--container-wide": "spacing",
+      "--section-pad": "spacing",
+      "--card-pad": "spacing",
+      "--card-pad-sm": "spacing",
+      "--gap-grid": "spacing",
+      "--gap-cards": "spacing",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-6": "spacing",
+      "--space-8": "spacing",
+      "--space-12": "spacing",
+      "--space-16": "spacing",
+      "--shadow-bento": "shadow",
+      "--shadow-card-hover": "shadow",
+      "--ease-out": "other",
+      "--ease-entrance": "other",
+      "--duration-fast": "other",
+      "--duration-base": "other",
+      "--duration-entrance": "other"
+    },
+    "fontFamilies": [
+      "Geist",
+      "Geist Mono",
+      "Inter",
+      "Outfit"
+    ]
+  }
+}

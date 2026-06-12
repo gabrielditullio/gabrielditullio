@@ -1,0 +1,275 @@
+/* DT Coproduções — Component recipes (CSS layer consumed by React components & slides) */
+
+/* ============ BUTTONS ============ */
+.dt-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-tight);
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all var(--duration-fast) ease;
+}
+.dt-btn:active { transform: scale(0.95); }
+
+/* Primary — white pill (Launchoria) */
+.dt-btn--primary {
+  background: var(--fg-1);
+  color: var(--fg-invert);
+  border-radius: var(--radius-pill);
+  padding: 12px 32px;
+}
+.dt-btn--primary:hover { background: var(--fg-2); transform: scale(1.05); }
+
+/* Ghost — bordered pill */
+.dt-btn--ghost {
+  background: var(--surface-input);
+  color: var(--fg-2);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  padding: 11px 24px;
+  font-weight: 400;
+}
+.dt-btn--ghost:hover { background: rgba(255, 255, 255, 0.10); border-color: rgba(255, 255, 255, 0.20); }
+
+/* Text link */
+.dt-btn--link {
+  background: none;
+  color: var(--fg-3);
+  padding: 12px 8px;
+}
+.dt-btn--link:hover { color: var(--fg-1); }
+.dt-btn--link:active { transform: none; }
+
+/* Metric — teal glass + conic spinning border (Cadence) */
+@keyframes dt-spin-border { to { transform: translate(-50%, -50%) rotate(360deg); } }
+.dt-btn--metric {
+  position: relative;
+  background: rgba(20, 184, 166, 0.10);
+  color: var(--fg-1);
+  border-radius: var(--radius-inner);
+  padding: 13px 28px;
+  font-weight: 400;
+  backdrop-filter: blur(10px);
+  z-index: 0;
+  overflow: hidden;
+}
+.dt-btn--metric::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 220%;
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: conic-gradient(from 0deg, var(--teal-light), var(--teal), var(--teal-dark), transparent, var(--teal-dark), var(--teal), var(--teal-light));
+  z-index: -2;
+  animation: dt-spin-border 3s linear infinite;
+}
+.dt-btn--metric::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 11px;
+  background: rgba(6, 6, 16, 0.90);
+  z-index: -1;
+}
+.dt-btn--metric:hover {
+  transform: translateY(-2px);
+  background: rgba(20, 184, 166, 0.15);
+  box-shadow: 0 12px 36px rgba(20, 184, 166, 0.25);
+}
+
+/* ROI — emerald beam pill (MatrixPay) */
+.dt-btn--roi {
+  position: relative;
+  border-radius: var(--radius-pill);
+  padding: 12px 28px;
+  color: #fff;
+  background: radial-gradient(65% 65% at 50% 100%, rgba(52, 211, 153, 0.8) 0%, rgba(52, 211, 153, 0) 100%), linear-gradient(0deg, var(--emerald-600), var(--emerald-500));
+  box-shadow: var(--glow-roi);
+  overflow: hidden;
+  z-index: 0;
+}
+.dt-btn--roi::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  background: linear-gradient(178deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: var(--radius-pill);
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+}
+.dt-btn--roi:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(52, 211, 153, 0.6); }
+
+/* Sizes */
+.dt-btn--sm { padding: 7px 16px; font-size: 0.75rem; }
+.dt-btn--lg { padding: 16px 40px; font-size: 0.95rem; }
+.dt-btn[disabled] { opacity: 0.4; pointer-events: none; }
+
+/* ============ BADGES & PILLS ============ */
+.dt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: var(--radius-pill);
+  padding: 5px 14px;
+  font-size: var(--text-caption);
+  font-weight: 400;
+  letter-spacing: var(--tracking-tight);
+}
+.dt-badge--funnel { background: var(--accent-funnel-soft); border: 1px solid var(--accent-funnel-border); color: var(--sky-300); }
+.dt-badge--metric { background: var(--accent-metric-soft); border: 1px solid var(--border-metric-m); color: var(--teal-light); text-transform: uppercase; font-size: var(--text-micro); font-weight: 500; letter-spacing: 0.1em; }
+.dt-badge--roi { background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.20); color: var(--emerald-300); }
+.dt-badge--neutral { background: var(--surface-input); border: 1px solid var(--border-soft); color: var(--fg-3); }
+
+/* Delta chips (variação +/-) */
+.dt-delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: var(--radius-pill);
+  padding: 2px 10px;
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+}
+.dt-delta--up { background: rgba(16, 185, 129, 0.15); color: var(--text-positive); }
+.dt-delta--down { background: rgba(244, 63, 94, 0.15); color: var(--text-negative); }
+
+/* Status dot (ping) */
+.dt-dot { position: relative; display: inline-flex; width: 8px; height: 8px; }
+.dt-dot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.75;
+  animation: dt-ping 1.2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+.dt-dot::after { content: ''; position: absolute; inset: 0; border-radius: 50%; background: currentColor; }
+@keyframes dt-ping { 75%, 100% { transform: scale(2.2); opacity: 0; } }
+
+/* ============ CARDS ============ */
+/* Default card (Launchoria) */
+.dt-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-faint);
+  border-radius: var(--radius-card);
+  padding: var(--card-pad);
+  transition: background var(--duration-base) ease, border-color var(--duration-base) ease, transform var(--duration-base) var(--ease-entrance), box-shadow var(--duration-base) ease;
+}
+.dt-card:hover { background: var(--surface-card-hover); }
+.dt-card--lift:hover { transform: translateY(-4px); box-shadow: var(--shadow-card-hover); }
+.dt-card--accent { background: rgba(12, 74, 110, 0.05); border-color: var(--accent-funnel-border); }
+
+/* Metric bento card (Cadence) */
+.dt-bento {
+  position: relative;
+  background: var(--surface-bento);
+  border-radius: var(--radius-bento);
+  box-shadow: var(--shadow-bento);
+  backdrop-filter: blur(16px);
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.35s var(--ease-out), box-shadow 0.35s ease;
+}
+.dt-bento::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-bento);
+  padding: 1px;
+  background: linear-gradient(160deg, rgba(20, 184, 166, 0.45), rgba(20, 184, 166, 0.06) 40%, transparent 60%, rgba(45, 212, 191, 0.25));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 3;
+}
+.dt-bento::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 15%;
+  right: 15%;
+  height: 60px;
+  background: radial-gradient(ellipse 100% 100% at 50% 0%, rgba(20, 184, 166, 0.10), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+.dt-bento:hover { transform: translateY(-3px); box-shadow: 0 20px 60px rgba(20, 184, 166, 0.10), 0 0 0 1px rgba(20, 184, 166, 0.12); }
+.dt-bento__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(20, 184, 166, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(20, 184, 166, 0.025) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 50%);
+  border-radius: var(--radius-bento);
+}
+.dt-bento__body { position: relative; z-index: 2; padding: var(--card-pad-sm); }
+
+/* ROI glass card (MatrixPay) */
+.dt-glass {
+  position: relative;
+  background: var(--surface-subtle);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-card);
+  padding: var(--card-pad);
+  transition: border-color var(--duration-base) ease, background var(--duration-base) ease;
+}
+.dt-glass--roi:hover { border-color: rgba(16, 185, 129, 0.30); background: rgba(255, 255, 255, 0.04); }
+
+/* ============ STEP (Espinha de Tubarão) ============ */
+.dt-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--bg-card-solid);
+  border: 1px solid var(--border-soft);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--sky-400);
+}
+
+/* ============ KPI / METRIC ============ */
+.dt-kpi-value {
+  font-family: var(--font-display);
+  font-weight: 300;
+  letter-spacing: var(--tracking-tight);
+  color: var(--teal-light);
+  font-variant-numeric: tabular-nums;
+}
+.dt-kpi-label {
+  font-size: var(--text-micro);
+  color: var(--fg-muted);
+  letter-spacing: 0.03em;
+}
+.dt-kpi-sep { width: 1px; height: 24px; background: linear-gradient(to bottom, transparent, var(--border-metric-m), transparent); }
+
+/* ============ INPUT ============ */
+.dt-input {
+  background: var(--surface-input);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  padding: 10px 18px;
+  font-family: var(--font-body);
+  font-size: var(--text-body-sm);
+  color: var(--fg-3);
+  outline: none;
+  transition: border-color var(--duration-fast) ease, background var(--duration-fast) ease;
+}
+.dt-input::placeholder { color: var(--fg-ghost); }
+.dt-input:focus { border-color: rgba(56, 189, 248, 0.50); background: rgba(255, 255, 255, 0.10); }

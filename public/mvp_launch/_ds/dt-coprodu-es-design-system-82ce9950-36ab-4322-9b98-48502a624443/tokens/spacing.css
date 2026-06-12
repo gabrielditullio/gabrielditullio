@@ -1,0 +1,40 @@
+/* DT Coproduções — Spacing, radii, motion */
+:root {
+  /* Radii */
+  --radius-pill: 9999px;     /* CTAs, badges, pills */
+  --radius-card: 24px;       /* default card (rounded-3xl) */
+  --radius-card-lg: 32px;    /* feature card */
+  --radius-bento: 16px;      /* metric bento card */
+  --radius-inner: 12px;      /* inner blocks, code, buttons (metric style) */
+  --radius-chip: 6px;        /* tiny badges */
+
+  /* Layout */
+  --container: 1180px;
+  --container-wide: 1280px;
+  --section-pad: 100px;      /* vertical section padding */
+  --card-pad: 32px;
+  --card-pad-sm: 20px;
+  --gap-grid: 16px;
+  --gap-cards: 24px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Shadows */
+  --shadow-bento: 0 8px 40px rgba(0, 0, 0, 0.30), 0 0 0 1px rgba(20, 184, 166, 0.04);
+  --shadow-card-hover: 0 20px 40px -10px rgba(0, 0, 0, 0.50);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --ease-entrance: cubic-bezier(0.2, 0.8, 0.2, 1); /* @kind other */
+  --duration-fast: 0.2s; /* @kind other */
+  --duration-base: 0.3s; /* @kind other */
+  --duration-entrance: 0.8s; /* @kind other */
+}
