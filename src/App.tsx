@@ -12,6 +12,10 @@ import DidierSodreRosa from "./pages/DidierSodreRosa";
 import PropostaWitzWealth from "./pages/PropostaWitzWealth";
 import Orbyka from "./pages/Orbyka";
 import MvpLaunch from "./pages/MvpLaunch";
+import DomenicoPizzeria from "./pages/DomenicoPizzeria";
+import MerceariaBresser from "./pages/MerceariaBresser";
+import GdtDiagnostico from "./pages/GdtDiagnostico";
+import GdtTortarelli from "./pages/GdtTortarelli";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +36,10 @@ const App = () => (
           <Route path="/ppst_witz" element={<PropostaWitzWealth />} />
           <Route path="/0rb1k4" element={<Orbyka />} />
           <Route path="/report-BL0626" element={<MvpLaunch />} />
+          <Route path="/domenico_pizzeria" element={<DomenicoPizzeria />} />
+          <Route path="/mercearia_bresser" element={<MerceariaBresser />} />
+          <Route path="/gdt_diagnostico" element={<GdtDiagnostico />} />
+          <Route path="/gdt_tortarelli" element={<GdtTortarelli />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
