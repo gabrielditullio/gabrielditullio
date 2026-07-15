@@ -16,6 +16,7 @@ import DomenicoPizzeria from "./pages/DomenicoPizzeria";
 import MerceariaBresser from "./pages/MerceariaBresser";
 import GdtDiagnostico from "./pages/GdtDiagnostico";
 import GdtTortarelli from "./pages/GdtTortarelli";
+import HerbemMaia from "./pages/HerbemMaia";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/mercearia_bresser" element={<MerceariaBresser />} />
           <Route path="/gdt_diagnostico" element={<GdtDiagnostico />} />
           <Route path="/gdt_tortarelli" element={<GdtTortarelli />} />
+          <Route path="/herbem-maia" element={<HerbemMaia />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
