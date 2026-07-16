@@ -18,6 +18,7 @@ import GdtDiagnostico from "./pages/GdtDiagnostico";
 import GdtTortarelli from "./pages/GdtTortarelli";
 import HerbemMaia from "./pages/HerbemMaia";
 import Myrian from "./pages/Myrian";
+import LorenaFontoura from "./pages/LorenaFontoura";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
