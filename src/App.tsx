@@ -19,6 +19,7 @@ import GdtTortarelli from "./pages/GdtTortarelli";
 import HerbemMaia from "./pages/HerbemMaia";
 import Myrian from "./pages/Myrian";
 import LorenaFontoura from "./pages/LorenaFontoura";
+import StudyoG from "./pages/StudyoG";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,7 @@ const App = () => (
           <Route path="/herbem-maia" element={<HerbemMaia />} />
           <Route path="/myrian" element={<Myrian />} />
           <Route path="/lorena-fontoura" element={<LorenaFontoura />} />
+          <Route path="/studyo-g" element={<StudyoG />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
